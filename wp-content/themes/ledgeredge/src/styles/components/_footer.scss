@@ -1,0 +1,19 @@
+.global-footer {
+	margin-top: auto;
+	text-align: center;
+	background-color: var(--color-primary);
+	padding: var(--spacing);
+}
+
+.global-footer__inner {
+	@extend .container;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.global-footer p {
+	color: white;
+	margin: 0;
+	font-size: var(--font-size-small);
+}

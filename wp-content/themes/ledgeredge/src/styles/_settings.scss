@@ -1,0 +1,25 @@
+$debug:	false;
+$grid-overlay: true;
+$mq-responsive: true;
+
+$mq-breakpoints: (
+	small: 30em,
+	small-major: 40em,
+	medium: 50em,
+	medium-major: 60em,
+	large: 70em,
+	xlarge: 80em,
+	xxlarge: 90em,
+	xxxlarge: 100em
+);
+
+$z-scale: (
+	foreground: 1,
+	overlay: 10,
+	navigation: 100,
+	modal: 200
+);
+
+@if $debug == true {
+	$mq-show-breakpoints: (small, small-major, medium, medium-major, large, xlarge, xxlarge, xxxlarge);
+}
