@@ -38,7 +38,7 @@ jQuery(document).ready(function($) {
 		} else {
 			// Scroll Up
 			if(st + $(window).height() < $(document).height()) {
-				$('header').removeClass('global-header__up').addClass('global-header__down');
+				$('header').removeClass('global-header__up');
 			}
 		}
 

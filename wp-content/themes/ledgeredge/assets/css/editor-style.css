@@ -17,7 +17,7 @@
   --font-weight-heavy: 900;
   --font-weight-heavy: var(--font-weight-bold);
   --line-height: 1.5;
-  --line-height-headings: 1.2;
+  --line-height-headings: 1;
   --color-grey-dark: #6a6a6a;
   --color-grey: #efece6;
   --color-grey-light: #efefef;
@@ -46,12 +46,12 @@
   --spacing-xs: 0.25em;
   --content-width: 768px;
   --container-small: 768px;
-  --container: 1400px;
+  --container: 1200px;
   --container-large: 1600px;
 }
 @media (min-width: 70em) {
   :root {
-    --font-size-h1: calc(3.2rem + 0.2vw);
+    --font-size-h1: calc(2.7rem + 0.2vw);
     --font-size-h2: calc(2rem + 0.2vw);
     --font-size-h3: calc(1.6rem + 0.2vw);
     --font-size-h4: calc(1.4rem + 0.2vw);
@@ -261,38 +261,113 @@ pre {
 }
 
 .banner {
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.banner .logo {
+  width: 350px;
+  margin-bottom: 2.5rem;
+}
+.banner--content {
+  width: 50%;
+  max-width: 500px;
+  z-index: 1;
+}
+.banner--content p + h1 {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.banner--content p {
+  margin-top: 0;
+}
+.banner--content h1 {
+  margin-bottom: 0;
+}
+.banner--content .btn, .banner--content .global-header--nav .menu-secondary-container ul li:last-of-type a, .global-header--nav .menu-secondary-container ul li:last-of-type .banner--content a {
+  margin-top: 2rem;
+}
+.banner--image {
+  width: 50%;
+  margin-left: auto;
+}
+
+.bkg__image {
+  background-size: cover;
+}
+.bkg__image:before {
+  content: url("../../src/images/banner-asset.svg");
+  position: absolute;
+  width: 60%;
+  top: 0;
+  left: -10%;
+  z-index: 0;
 }
 
 .btn, .global-header--nav .menu-secondary-container ul li:last-of-type a {
-  display: flex;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
   border-radius: 60px;
-  padding: 0.5rem 1.25rem;
+  padding: 0.5rem 1rem;
   border: 0px solid var(--color-grey);
   background-color: var(--color-primary);
   color: var(--color-text-dark);
   font-family: var(--display-family);
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-normal);
   font-size: var(--font-size);
   text-align: center;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
+  z-index: 1;
+  flex: 1 1 auto;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.btn:after, .global-header--nav .menu-secondary-container ul li:last-of-type a:after {
+  position: absolute;
+  transition: 0.3s;
+  content: "";
+  width: 0;
+  bottom: -1px;
+  background: var(--color-secondary);
+  height: 120%;
+  left: -10%;
+  transform: skewX(15deg);
+  z-index: -1;
 }
 .btn:hover, .global-header--nav .menu-secondary-container ul li:last-of-type a:hover, .btn:focus, .global-header--nav .menu-secondary-container ul li:last-of-type a:focus {
-  background-color: var(--color-secondary);
-  outline: 0;
   color: var(--color-text-dark);
   text-decoration: none;
+  cursor: pointer;
+}
+.btn:hover:after, .global-header--nav .menu-secondary-container ul li:last-of-type a:hover:after, .btn:focus:after, .global-header--nav .menu-secondary-container ul li:last-of-type a:focus:after {
+  left: -10%;
+  width: 120%;
+}
+.btn:before, .global-header--nav .menu-secondary-container ul li:last-of-type a:before {
+  content: url("../../src/icons/arrow.svg");
+  position: relative;
+  order: 2;
+  padding: 0;
+  margin-left: 0.5rem;
+}
+.btn + .btn, .global-header--nav .menu-secondary-container ul li:last-of-type a + .btn, .global-header--nav .menu-secondary-container ul li:last-of-type .btn + a, .global-header--nav .menu-secondary-container ul li:last-of-type a + a {
+  margin-left: 1rem;
+}
+.btn .icon, .global-header--nav .menu-secondary-container ul li:last-of-type a .icon {
+  margin-left: 0.5rem;
 }
 
 .btn--primary {
-  background-color: var(--color-primary);
-  border: 1px solid var(--color-primary);
-  color: var(--color-text-reversed);
+  background-color: var(--color-quaternary);
 }
-.btn--primary:hover, .btn--primary:focus {
-  border-color: var(--color-primary);
-  color: var(--color-primary);
+
+.btn--secondary {
+  background-color: white;
 }
 
 .content > * {
@@ -415,6 +490,7 @@ pre {
   top: 0;
   width: 100%;
   transition: all 0.2s ease-in-out;
+  z-index: 9999;
 }
 .global-header__up {
   transform: translateY(-100%);
@@ -452,7 +528,7 @@ pre {
   width: 100%;
   max-width: var(--container-large);
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1.5rem;
   z-index: 9;
 }
 .global-header--logo {
@@ -505,6 +581,10 @@ pre {
 }
 .global-header--nav ul .current-menu-item > a {
   position: relative;
+  border-bottom: 2px solid var(--color-primary);
+}
+.global-header--nav ul .current-menu-item > a:hover {
+  border-bottom: 2px solid var(--color-primary);
 }
 .global-header--nav-btn {
   cursor: pointer;
@@ -651,6 +731,9 @@ ul.menu .sub-menu li a:after {
   position: fixed;
   right: 1rem;
 }
+.global-header--nav-btn.is-active .global-header--nav-box {
+  right: 0.5rem;
+}
 
 .global-header--nav-box {
   width: 30px;
@@ -675,7 +758,7 @@ ul.menu .sub-menu li a:after {
 .global-header--nav-inner::after {
   width: 30px;
   height: 2px;
-  background-color: black;
+  background-color: white;
   border-radius: 20px;
   position: absolute;
   transition-property: transform;
@@ -740,8 +823,11 @@ ul.menu .sub-menu li a:after {
   display: inline-block;
   vertical-align: middle;
   fill: currentColor;
-  width: 20px;
-  height: 20px;
+}
+
+.icon--arrow {
+  width: 40px;
+  height: 18px;
 }
 
 .icon--small {
@@ -784,9 +870,9 @@ ul.menu .sub-menu li a:after {
 
 .container, .main, .global-footer__inner {
   margin: 0 auto;
-  padding: 0 1em;
+  padding: 0 2rem;
   width: 100%;
-  max-width: var(--container-width);
+  max-width: var(--container-large);
 }
 
 .main {
@@ -794,6 +880,39 @@ ul.menu .sub-menu li a:after {
   margin-top: var(--spacing-l);
   margin-bottom: var(--spacing-l);
   flex: 1;
+}
+
+.bkg__blue {
+  background-color: var(--color-quinary);
+}
+.bkg__black {
+  background-color: black;
+}
+.bkg__white {
+  background-color: white;
+}
+
+.bkg__blue h1, .bkg__blue h2, .bkg__blue h3, .bkg__blue h4, .bkg__blue h5, .bkg__blue h6, .bkg__blue p,
+.bkg__black h1,
+.bkg__black h2,
+.bkg__black h3,
+.bkg__black h4,
+.bkg__black h5,
+.bkg__black h6,
+.bkg__black p,
+.bkg__image h1,
+.bkg__image h2,
+.bkg__image h3,
+.bkg__image h4,
+.bkg__image h5,
+.bkg__image h6,
+.bkg__image p {
+  color: white;
+}
+.bkg__blue p,
+.bkg__black p,
+.bkg__image p {
+  color: var(--color-secondary);
 }
 
 body.nav-open {

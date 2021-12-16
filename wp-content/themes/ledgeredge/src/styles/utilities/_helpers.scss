@@ -52,15 +52,22 @@ img.aligncenter     { display: block; margin-left: auto; margin-right: auto; }
     }
 }
 
-
-.bkg {
-	&__blue {
-		background-color: var(--color-quinary);
-	}
-	&__black {
-		background-color: black;
-	}
-	&__white {
-		background-color: white;
-	}
+.fade {
+	opacity: 0;
+	transition: all 0.3s ease-out;
+	transform: translateY(20px);
+}
+.fade--visible {
+	opacity: 1;
+	transform: translateY(0px);
+	transition: all 0.3s ease-out;
+}
+.fade--delay__1 {
+	transition-delay: 0.3s;
+}
+.fade--delay__2 {
+	transition-delay: 0.5s;
+}
+.fade--delay__3 {
+	transition-delay: 0.7s;
 }

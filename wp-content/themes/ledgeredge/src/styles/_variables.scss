@@ -19,7 +19,7 @@
 	--font-weight-heavy: var(--font-weight-bold);
 
 	--line-height: 1.5;
-	--line-height-headings: 1.2;
+	--line-height-headings: 1;
 
 	--color-grey-dark: #6a6a6a;
 	--color-grey: #efece6;
@@ -56,11 +56,11 @@
 
 	--content-width: 768px;
 	--container-small: 768px;
-	--container: 1400px;
+	--container: 1200px;
 	--container-large: 1600px;
 
 	@include mq(large) {
-		--font-size-h1: calc(3.2rem + 0.2vw);
+		--font-size-h1: calc(2.7rem + 0.2vw);
 		--font-size-h2: calc(2rem + 0.2vw);
 		--font-size-h3: calc(1.6rem + 0.2vw);
 		--font-size-h4: calc(1.4rem + 0.2vw);

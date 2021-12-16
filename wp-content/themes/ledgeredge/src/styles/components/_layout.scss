@@ -10,9 +10,9 @@
 
 .container {
 	margin: 0 auto;
-	padding: 0 1em;
+	padding: 0 2rem;
 	width: 100%;
-	max-width: var(--container-width);
+	max-width: var(--container-large);
 }
 
 .main {
@@ -21,4 +21,26 @@
 	margin-top: var(--spacing-l);
 	margin-bottom: var(--spacing-l);
 	flex: 1;
+}
+
+.bkg {
+	&__blue {
+		background-color: var(--color-quinary);
+	}
+	&__black {
+		background-color: black;
+	}
+	&__white {
+		background-color: white;
+	}
+}
+.bkg__blue,
+.bkg__black,
+.bkg__image {
+	h1, h2, h3, h4, h5, h6, p {
+		color: white;
+	}
+	p {
+		color: var(--color-secondary);
+	}
 }

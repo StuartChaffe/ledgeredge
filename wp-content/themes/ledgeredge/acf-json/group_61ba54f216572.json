@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_61ba54ff74131",
-            "label": "Background colour",
+            "label": "Background",
             "name": "background_colour",
             "type": "select",
             "instructions": "",
@@ -18,7 +18,8 @@
             "choices": {
                 "bkg__blue": "Blue",
                 "bkg__black": "Black",
-                "bkg__white": "White"
+                "bkg__white": "White",
+                "bkg__image": "Image"
             },
             "default_value": "bkg__blue",
             "allow_null": 0,
@@ -27,6 +28,197 @@
             "return_format": "value",
             "ajax": 0,
             "placeholder": ""
+        },
+        {
+            "key": "field_61bb504fbc89e",
+            "label": "Background image",
+            "name": "background_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61ba54ff74131",
+                        "operator": "==",
+                        "value": "bkg__image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "default_value": ""
+        },
+        {
+            "key": "field_61bb1f8723950",
+            "label": "Logo (icon \/ image)",
+            "name": "banner_logo",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "default_value": ""
+        },
+        {
+            "key": "field_61bb1b3659c71",
+            "label": "Label",
+            "name": "banner_label",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61bb1b6159c72",
+            "label": "Title",
+            "name": "banner_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61bb1b7f59c73",
+            "label": "Text",
+            "name": "banner_text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_61bb1ba659c74",
+            "label": "Buttons",
+            "name": "buttons",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_61bb1bdf59c75",
+                    "label": "Video button",
+                    "name": "banner_button",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_61bb1cea59c76",
+                    "label": "Button 2",
+                    "name": "banner_button_2",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                }
+            ]
+        },
+        {
+            "key": "field_61bb25c985979",
+            "label": "Image",
+            "name": "banner_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "default_value": ""
         }
     ],
     "location": [
@@ -46,5 +238,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1639601538
+    "show_in_rest": 0,
+    "modified": 1639666727
 }

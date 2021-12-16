@@ -3,6 +3,7 @@
 	top: 0;
 	width: 100%;
 	transition: all 0.2s ease-in-out;
+	z-index: 9999;
 	&__up {
 		transform: translateY(-100%); 
 	}
@@ -45,7 +46,7 @@
 		width: 100%;
 		max-width: var(--container-large);
 		margin: 0 auto;
-		padding: 1rem;
+		padding: 1.5rem;
 		z-index: 9;
 		// @include mq(medium) {
 		// 	padding: 0 0 0 1rem;
@@ -100,6 +101,10 @@
 			}
 			.current-menu-item > a {
 				position: relative;
+				border-bottom: 2px solid var(--color-primary);
+				&:hover {
+					border-bottom: 2px solid var(--color-primary);
+				}
 			}
 		}
 
@@ -273,6 +278,9 @@ ul.menu li:hover > .sub-menu {
 	position: fixed;
 	right: 1rem;
     // margin-top: 6px;
+	.global-header--nav-box {
+		right: 0.5rem;
+	}
 }
 
 .global-header--nav-box {
@@ -297,7 +305,7 @@ ul.menu li:hover > .sub-menu {
 .global-header--nav-inner::after {
 	width: 30px;
 	height: 2px;
-	background-color: black;
+	background-color: white;
 	border-radius: 20px;
 	position: absolute;
 	transition-property: transform;
