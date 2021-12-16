@@ -5,5 +5,7 @@
  */
 register_nav_menus(array(
 	'primary'   => __( 'Primary' ),
-	// 'secondary' => __( 'Secondary' ),
+	'secondary'   => __( 'Secondary' ),
+	'mobile' => __( 'Mobile' ),
+	'footer' => __( 'Footer' )
 ));
