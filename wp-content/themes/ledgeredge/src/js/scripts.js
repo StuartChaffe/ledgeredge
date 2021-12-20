@@ -5,3 +5,4 @@ import './components/no-js';
 import './components/toggle';
 import './components/menu';
 import './components/fade';
+import './components/modal';

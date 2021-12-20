@@ -1,0 +1,25 @@
+.text-image {
+	display: flex;
+	align-items: center;
+	margin: var(--spacing);
+	overflow: hidden;
+	padding: var(--spacing-xl) var(--spacing-l);
+	&__single {
+		border-radius: 30px;
+	}
+	&__double {
+		
+	}
+
+	&--text {
+		width: 40%;
+		// background-color: yellow;
+	}
+	&--image {
+		width: 50%;
+		margin-left: 10%;
+		svg, img {
+			width: 100%;
+		}
+	}
+}

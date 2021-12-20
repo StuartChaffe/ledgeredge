@@ -2,6 +2,7 @@
 @import "settings";
 @import "utilities/mq";
 @import "utilities/mixins";
+@import "utilities/modal";
 @import "variables";
 
 // Base
@@ -23,6 +24,8 @@
 @import "components/social-links";
 
 @import "components/banner";
+@import "components/cta";
+@import "components/text-image";
 
 @import "utilities/helpers";
 

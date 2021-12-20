@@ -1,4 +1,170 @@
 @charset "UTF-8";
+/**
+ * Featherlight – ultra slim jQuery lightbox
+ * Version 1.7.13 - http://noelboss.github.io/featherlight/
+ *
+ * Copyright 2018, Noël Raoul Bossart (http://www.noelboss.com)
+ * MIT Licensed.
+**/
+html.with-featherlight {
+  /* disable global scrolling when featherlights are visible */
+  overflow: hidden;
+}
+
+.lightbox {
+  display: none;
+}
+
+.lightbox iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  max-width: none;
+}
+
+.featherlight {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2147483647;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #000;
+  background: rgba(0, 0, 0, 0);
+}
+
+.featherlight:last-of-type {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.featherlight:before {
+  /* position: trick to center content vertically */
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.featherlight .featherlight-content {
+  vertical-align: middle;
+  display: inline-block;
+  padding: 0;
+  width: 100%;
+  height: 85%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background: #000;
+  cursor: auto;
+  white-space: normal;
+}
+@media (min-width: 50em) {
+  .featherlight .featherlight-content {
+    width: 90%;
+    max-height: 95%;
+  }
+}
+.featherlight .featherlight-content video {
+  width: 100%;
+  max-height: 100%;
+}
+
+iframe video {
+  width: 100%;
+  max-height: 100%;
+}
+
+/* contains the content */
+.featherlight .featherlight-inner {
+  /* make sure its visible */
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/* don't show these though */
+.featherlight script.featherlight-inner,
+.featherlight link.featherlight-inner,
+.featherlight style.featherlight-inner {
+  display: none;
+}
+
+.featherlight .featherlight-close-icon {
+  position: absolute;
+  z-index: 9999;
+  top: 15px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  padding: 0;
+  overflow: hidden;
+}
+.featherlight .featherlight-close-icon:before {
+  content: "";
+  background-image: url("../../src/icons/close.svg");
+  background-size: 100%;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+/* See http://stackoverflow.com/questions/16077341/how-to-reset-all-default-styles-of-the-html5-button-element */
+.featherlight .featherlight-close-icon::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.featherlight .featherlight-image {
+  /* styling */
+  width: 100%;
+}
+
+.featherlight-iframe .featherlight-content {
+  /* removed the border for image croping since iframe is edge to edge */
+  border-bottom: 0;
+  padding: 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.featherlight iframe {
+  /* styling */
+  border: none;
+}
+
+.featherlight * {
+  /* See https://github.com/noelboss/featherlight/issues/42 */
+  box-sizing: border-box;
+}
+
+/* handling phones and small screens */
+@media only screen and (max-width: 1024px) {
+  .featherlight .featherlight-content {
+    /* dimensions: maximize lightbox with for small screens */
+    margin-left: 0;
+    margin-right: 0;
+    max-height: 98%;
+    padding: 10px 10px 0;
+    border-bottom: 10px solid transparent;
+  }
+}
+/* hide non featherlight items when printing */
+@media print {
+  html.with-featherlight > * > :not(.featherlight) {
+    display: none;
+  }
+}
 :root {
   --body-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --display-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -38,12 +204,12 @@
   --color-linkedin: #0077B5;
   --body-background-color: var(--color-grey);
   --border-radius: 16px;
-  --spacing-xxl: 3em;
-  --spacing-xl: 2em;
-  --spacing-l: 1.5em;
-  --spacing: 1em;
-  --spacing-s: 0.5em;
-  --spacing-xs: 0.25em;
+  --spacing-xxl: 90px;
+  --spacing-xl: 60px;
+  --spacing-l: 45px;
+  --spacing: 30px;
+  --spacing-s: 10px;
+  --spacing-xs: 1rem;
   --content-width: 768px;
   --container-small: 768px;
   --container: 1200px;
@@ -157,7 +323,10 @@ select {
   }
 }
 p {
-  margin-top: var(--spacing-l);
+  margin-top: 0;
+  margin-bottom: var(--spacing-xs);
+}
+p:last-of-type {
   margin-bottom: 0;
 }
 
@@ -206,6 +375,7 @@ h3,
 h4,
 h5 {
   margin: 0;
+  margin-bottom: var(--spacing);
   line-height: var(--line-height-headings);
   font-weight: var(--font-weight-bold);
   color: var(--heading-color);
@@ -403,8 +573,14 @@ input[type=button]:focus {
   flex: 1;
 }
 
-.bkg__blue {
+.bkg__lightblue {
+  background-color: var(--color-quaternary);
+}
+.bkg__darkblue {
   background-color: var(--color-quinary);
+}
+.bkg__green {
+  background-color: var(--color-tertiary);
 }
 .bkg__black {
   background-color: black;
@@ -413,7 +589,14 @@ input[type=button]:focus {
   background-color: white;
 }
 
-.bkg__blue h1, .bkg__blue h2, .bkg__blue h3, .bkg__blue h4, .bkg__blue h5, .bkg__blue h6, .bkg__blue p,
+.bkg__lightblue h1, .bkg__lightblue h2, .bkg__lightblue h3, .bkg__lightblue h4, .bkg__lightblue h5, .bkg__lightblue h6, .bkg__lightblue p,
+.bkg__darkblue h1,
+.bkg__darkblue h2,
+.bkg__darkblue h3,
+.bkg__darkblue h4,
+.bkg__darkblue h5,
+.bkg__darkblue h6,
+.bkg__darkblue p,
 .bkg__black h1,
 .bkg__black h2,
 .bkg__black h3,
@@ -430,7 +613,8 @@ input[type=button]:focus {
 .bkg__image p {
   color: white;
 }
-.bkg__blue p,
+.bkg__lightblue p,
+.bkg__darkblue p,
 .bkg__black p,
 .bkg__image p {
   color: var(--color-secondary);
@@ -1086,6 +1270,32 @@ body.nav-open {
   top: 0;
   left: -10%;
   z-index: 0;
+}
+
+.cta {
+  background-color: red;
+  height: 200px;
+}
+
+.text-image {
+  display: flex;
+  align-items: center;
+  margin: var(--spacing);
+  overflow: hidden;
+  padding: var(--spacing-xl) var(--spacing-l);
+}
+.text-image__single {
+  border-radius: 30px;
+}
+.text-image--text {
+  width: 40%;
+}
+.text-image--image {
+  width: 50%;
+  margin-left: 10%;
+}
+.text-image--image svg, .text-image--image img {
+  width: 100%;
 }
 
 .u-bold {

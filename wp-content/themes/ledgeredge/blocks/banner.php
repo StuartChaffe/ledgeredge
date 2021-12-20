@@ -32,11 +32,14 @@ $image = get_field('banner_image');
 			<?php echo $text ?>
 		<?php } ?>
 		<?php if ($buttons['banner_button']) { ?>
-			<a class="btn" target="" href="">Play Video</a>
+			<a class="btn" href="#" data-featherlight="#banner-video" data-featherlight-iframe-allow="autoplay">Play Video</a>
 		<?php } ?>
 		<?php if ($buttons['banner_button_2']) { ?>
 			<a class="btn btn--secondary" href="<?php echo $buttons['banner_button_2']['url']; ?>" href="<?php echo $buttons['banner_button_2']['url']; ?>"><?php echo $buttons['banner_button_2']['title']; ?></a>
 		<?php } ?>
+		
+		<a class="" href="<?php echo $buttons['banner_button']; ?>" data-featherlight="iframe" allow="autoplay; fullscreen" allowfullscreen >Inline</a>
+		<a class="" href="https://player.vimeo.com/video/219014507?autoplay=1&loop=1&autopause=0" data-featherlight="iframe" allow="autoplay; fullscreen" allowfullscreen > YT</a>
 			
 		</div>
 		<div class="banner--image fade fade--delay__3">
@@ -46,3 +49,7 @@ $image = get_field('banner_image');
 		</div>
 	</div>
 </section>
+
+<div class="lightbox" id="banner-video">
+	<video src="<?php echo $buttons['banner_button']; ?>" loop="false" muted="false" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster=""></video>
+</div>

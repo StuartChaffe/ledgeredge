@@ -16,12 +16,13 @@
                 "id": ""
             },
             "choices": {
-                "bkg__blue": "Blue",
+                "bkg__lightblue": "Blue",
+                "bkg__darkblue": "Dark Blue",
                 "bkg__black": "Black",
                 "bkg__white": "White",
                 "bkg__image": "Image"
             },
-            "default_value": "bkg__blue",
+            "default_value": "bkg__darkblue",
             "allow_null": 0,
             "multiple": 0,
             "ui": 0,
@@ -239,5 +240,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1639666727
+    "modified": 1640034792
 }

@@ -7,6 +7,8 @@ function origin_scripts() {
 	if ( !is_admin() ) {
 		wp_enqueue_style( 'styles', mix( 'assets/css/styles.css' ), array(), null );
 
+		wp_register_script( 'modal', get_template_directory_uri().'/assets/js/featherlight.min.js', array( 'jquery' ), null, true );
+		wp_enqueue_script( 'modal' );
 
 		wp_register_script( 'scripts', get_template_directory_uri().'/assets/js/scripts.js', array( 'jquery' ), null, true );
 		wp_enqueue_script( 'scripts' );

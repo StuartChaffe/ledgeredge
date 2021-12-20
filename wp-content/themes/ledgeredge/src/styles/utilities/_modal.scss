@@ -1,0 +1,181 @@
+/**
+ * Featherlight – ultra slim jQuery lightbox
+ * Version 1.7.13 - http://noelboss.github.io/featherlight/
+ *
+ * Copyright 2018, Noël Raoul Bossart (http://www.noelboss.com)
+ * MIT Licensed.
+**/
+
+html.with-featherlight {
+	/* disable global scrolling when featherlights are visible */
+	overflow: hidden;
+}
+.lightbox {
+	display: none;
+	// &--inner {
+	// 	background: red;
+	// 	border: 10px solid green;
+	// 	height: 100%;
+	// 	width: 100%;
+	// }
+}
+.lightbox {
+	iframe {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		height: 100%;
+		min-height: 100%;
+		min-width: 100%;
+		max-width: none;
+	}
+}
+.featherlight {
+	display: none;
+	position: fixed;
+	top: 0; right: 0; bottom: 0; left: 0;
+	z-index: 2147483647; 
+	white-space: nowrap;
+	cursor: pointer;
+	background: #000;
+	background: rgba(0, 0, 0, 0);
+}
+
+.featherlight:last-of-type {
+	background: rgba(0, 0, 0, 0.9);
+}
+
+.featherlight:before {
+	/* position: trick to center content vertically */
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.featherlight .featherlight-content {
+	// position: relative;
+	vertical-align: middle;
+	display: inline-block;
+	// overflow: auto;
+	padding: 0;
+    width: 100%;
+    height: 85%;
+	margin-left: 5%;
+	margin-right: 5%;
+	background: #000;
+	cursor: auto;
+	white-space: normal;
+	@include mq(medium) {
+		width: 90%;
+		max-height: 95%;
+	}
+
+	video {
+		width: 100%;
+		max-height: 100%;
+	}
+}
+
+iframe {
+	video {
+		width: 100%;
+		max-height: 100%;
+	}
+}
+
+/* contains the content */
+.featherlight .featherlight-inner {
+	/* make sure its visible */
+	position: relative;
+	display: block;
+	// background: red;
+	// border: 10px solid green;
+	height: 100%;
+	width: 100%;
+}
+
+/* don't show these though */
+.featherlight script.featherlight-inner,
+.featherlight link.featherlight-inner,
+.featherlight style.featherlight-inner {
+	display: none;
+}
+
+.featherlight .featherlight-close-icon {
+	position: absolute;
+	z-index: 9999;
+	top: 15px;
+	right: 15px;
+	// transform: translate(0, -100%);
+	width: 50px;
+	height: 50px;
+	background-color: transparent;
+	cursor: pointer;
+	text-align: center;
+	border: none;
+	padding: 0;
+	overflow: hidden;
+	
+	&:before {
+		// content: url('../../src/icons/close.svg');
+		content: '';
+		background-image: url('../../src/icons/close.svg');
+		background-size: 100%;
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+	}
+}
+
+/* See http://stackoverflow.com/questions/16077341/how-to-reset-all-default-styles-of-the-html5-button-element */
+.featherlight .featherlight-close-icon::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+.featherlight .featherlight-image {
+	/* styling */
+	width: 100%;
+}
+
+
+.featherlight-iframe .featherlight-content {
+	/* removed the border for image croping since iframe is edge to edge */
+	border-bottom: 0;
+	padding: 0;
+	-webkit-overflow-scrolling: touch;
+}
+
+.featherlight iframe {
+	/* styling */
+	border: none;
+}
+
+.featherlight * { /* See https://github.com/noelboss/featherlight/issues/42 */
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* handling phones and small screens */
+@media only screen and (max-width: 1024px) {
+	.featherlight .featherlight-content {
+		/* dimensions: maximize lightbox with for small screens */
+		margin-left: 0;
+		margin-right: 0;
+		max-height: 98%;
+
+		padding: 10px 10px 0;
+		border-bottom: 10px solid transparent;
+	}
+}
+
+/* hide non featherlight items when printing */
+@media print {
+	html.with-featherlight > * > :not(.featherlight) {
+		display: none;
+	}
+}
