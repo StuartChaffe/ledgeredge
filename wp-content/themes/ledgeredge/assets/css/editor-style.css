@@ -679,12 +679,14 @@ pre {
   width: 100%;
   transition: all 0.2s ease-in-out;
   z-index: 9999;
+  background-color: transparent;
 }
 .global-header__up {
   transform: translateY(-100%);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .global-header__down {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .global-header__light .global-header--nav a {
   color: white;
