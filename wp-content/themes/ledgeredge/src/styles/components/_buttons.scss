@@ -44,7 +44,7 @@
 		&:after {
 			left: -10%;
 			width: 120%;
-    	}
+		}
 	}
 	&:before {
 		content: url('../../src/icons/arrow.svg');
@@ -67,10 +67,20 @@
 
 .btn--primary {
 	background-color: var(--color-quaternary);
+	color: white;
+	&:before {
+		content: url('../../src/icons/arrow-white.svg');
+	}
+	&:hover, &:focus {
+		color: white;
+		// &:before {
+		// 	content: url('../../src/icons/arrow.svg');
+		// }
+	}
+	&:after {
+		background: var(--color-primary);
+	}
 
-	// &:hover, &:focus {
-	// 	color: var(--color-primary);
-	// }
 }
 
 .btn--secondary {

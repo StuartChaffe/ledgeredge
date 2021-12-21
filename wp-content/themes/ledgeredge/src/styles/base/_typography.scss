@@ -4,6 +4,9 @@ p {
 	&:last-of-type {
 		margin-bottom: 0;
 	}
+	+ .btn {
+		margin-top: var(--spacing-xs);
+	}
 }
 
 p.lead {

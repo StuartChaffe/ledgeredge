@@ -1,20 +1,25 @@
 .text-image {
 	display: flex;
-	align-items: center;
-	margin: var(--spacing);
 	overflow: hidden;
-	padding: var(--spacing-xl) var(--spacing-l);
 	&__single {
+		align-items: center;
 		border-radius: 30px;
+		padding: var(--spacing-xl) var(--spacing-l);
+		&--text {
+			width: 40%;
+			// background-color: yellow;
+		}
 	}
 	&__double {
-		
+		border-radius: 30px;
+		width: 50%;
+		padding: var(--spacing-l);
+		&:last-of-type {
+			margin-left: var(--spacing);
+		}
 	}
 
-	&--text {
-		width: 40%;
-		// background-color: yellow;
-	}
+	
 	&--image {
 		width: 50%;
 		margin-left: 10%;

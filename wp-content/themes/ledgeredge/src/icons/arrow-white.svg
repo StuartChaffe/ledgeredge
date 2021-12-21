@@ -1,6 +1,6 @@
 <svg width="32px" height="16px" viewBox="0 0 32 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-		<g class="stroke" transform="translate(0.000000, 1.000000)" stroke="currentColor">
+		<g class="stroke" transform="translate(0.000000, 1.000000)" stroke="white">
 			<line x1="0" y1="7.0413" x2="30.458" y2="7.0413" stroke-width="1.057"></line>
 			<polyline stroke-width="1.049" points="18.2618 0 30.4578 7.041 18.9948 13.66"></polyline>
 		</g>
