@@ -16,8 +16,9 @@ $image = get_field('banner_image');
 // $title = get_field('banner_title', false, false);
 ?>
 
-<section class="fade <?php echo $bkgcolor ?>" <?php if ( $bkgcolor == 'bkg__image' ) { ?>style="background-image: url('<?php echo $bkgimage['url']; ?>')"<?php } ?>>
+<section class="fade <?php echo $bkgcolor ?>" <?php if ( $bkgcolor == 'banner--bkg__image' ) { ?>style="background-image: url('<?php echo $bkgimage['url']; ?>')"<?php } ?>>
 	<div class="banner container">
+	<?php if ( $bkgcolor == 'banner--bkg__image' ) { ?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 899.95 843.78" class="banner--bkg__asset"><g data-name="Layer 2"><g data-name="Layer 1"><polygon points="590.24 0 899.95 419.57 596.61 843.78 99.44 686.38 95.5 164.89 590.24 0"/><polygon class="fill" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="3.94px" points="403.32 13.89 2.36 347.36 195.6 831.73 715.99 797.63 844.36 292.18 403.32 13.89"/></g></g></svg><?php } ?>
 		<div class="banner--content fade fade--delay__2">
 		<?php if ($label) { ?>
 			<p><?php echo $label ?></p>
@@ -32,10 +33,10 @@ $image = get_field('banner_image');
 			<?php echo $text ?>
 		<?php } ?>
 		<?php if ($buttons['banner_button']) { ?>
-			<a class="btn" href="#" data-featherlight="#banner-video" data-featherlight-iframe-allow="autoplay">Play Video</a>
+			<span class="btn btn--primary"><a href="#" data-featherlight="#banner-video" data-featherlight-iframe-allow="autoplay">Play Video</a></span>
 		<?php } ?>
 		<?php if ($buttons['banner_button_2']) { ?>
-			<a class="btn btn--secondary" href="<?php echo $buttons['banner_button_2']['url']; ?>" href="<?php echo $buttons['banner_button_2']['url']; ?>"><?php echo $buttons['banner_button_2']['title']; ?></a>
+			<span class="btn btn--white"><a href="<?php echo $buttons['banner_button_2']['url']; ?>" href="<?php echo $buttons['banner_button_2']['url']; ?>"><?php echo $buttons['banner_button_2']['title']; ?></a></span>
 		<?php } ?>
 		
 		<a class="" href="<?php echo $buttons['banner_button']; ?>" data-featherlight="iframe" allow="autoplay; fullscreen" allowfullscreen >Inline</a>

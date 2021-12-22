@@ -1,6 +1,9 @@
 .text-image {
 	display: flex;
 	overflow: hidden;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
 	&__single {
 		align-items: center;
 		border-radius: 30px;
@@ -8,14 +11,63 @@
 		&--text {
 			width: 40%;
 			// background-color: yellow;
+			p {
+				@extend .lead;
+			}
 		}
 	}
 	&__double {
 		border-radius: 30px;
 		width: 50%;
 		padding: var(--spacing-l);
+		min-height: calc(50vw - var(--spacing) * 1.5); 
+		@include mq(xlarge) {
+			min-height: calc(var(--container-large) / 2 - var(--spacing) * 1.5);
+		}
 		&:last-of-type {
 			margin-left: var(--spacing);
+			@extend .fade--delay__2 !optional;
+		}
+
+		p {
+			@extend .lead;
+		}
+		&--image {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			max-width: 60%;
+			z-index: -1;
+		}
+	}
+	&--text {
+		height: 100%;
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		&__half {
+			.text-image--text {
+				width: 50%;
+			}
+		}
+		p {
+			img {
+				margin-right: 1rem;
+			}
+		}
+		&__icons {
+			margin-top: auto;
+			display: flex;
+			// flex: auto;
+			width: 100%;
+			// flex-wrap: wrap;
+			// flex-direction: row;
+			height: 150px;
+			img {
+				width: 150px;
+				height: 150px;
+				margin-right: 1rem;
+			}
 		}
 	}
 

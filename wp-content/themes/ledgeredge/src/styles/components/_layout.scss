@@ -27,6 +27,30 @@ section {
 }
 
 .bkg {
+	&__image {
+		position: relative;
+		h1, .heading-1,
+		h2, .heading-2,
+		h3, .heading-3,
+		h4, .heading-4,
+		h5, .heading-5 {
+			color: white;
+		}
+		p {
+			color: white;
+		}
+
+		&::before {
+			position: absolute;
+			z-index: -1;
+			content: '';
+			top: 0;
+			left: 0;
+			width: 50%;
+			height: 100%;
+			background: linear-gradient(90deg, rgba(0,4,48,1) 0%, rgba(0,4,48,0) 100%);
+		}
+	}
 	&__lightblue {
 		background-color: var(--color-quaternary);
 	}
@@ -35,40 +59,37 @@ section {
 	}
 	&__green {
 		background-color: var(--color-tertiary);
-		// h1, .heading-1,
-		// h2, .heading-2,
-		// h3, .heading-3,
-		// h4, .heading-4,
-		// h5, .heading-5 {
-		// 	color: var(--color-quaternary);
-		// }
+		h1, .heading-1,
+		h2, .heading-2,
+		h3, .heading-3,
+		h4, .heading-4,
+		h5, .heading-5 {
+			color: var(--color-quaternary);
+		}
 		// p {
 		// 	color: white;
 		// }
-		.btn {
-			@extend .btn--primary;
-		}
 	}
 	&__black {
 		background-color: black;
-		.btn {
-			@extend .btn--secondary;
-		}
 	}
 	&__white {
 		background-color: white;
-		p {
+		h1, .heading-1,
+		h2, .heading-2,
+		h3, .heading-3,
+		h4, .heading-4,
+		h5, .heading-5 {
 			color: var(--color-primary);
 		}
-		.btn {
-			background-color: var(--color-primary);
+		p {
+			// color: var(--color-primary);
 		}
 	}
 }
 .bkg__lightblue,
 .bkg__darkblue,
-.bkg__black,
-.bkg__image {
+.bkg__black {
 	h1, h2, h3, h4, h5, h6, p {
 		color: white;
 	}

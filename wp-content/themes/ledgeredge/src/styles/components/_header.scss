@@ -48,7 +48,7 @@
 		width: 100%;
 		max-width: var(--container-large);
 		margin: 0 auto;
-		padding: 1.5rem;
+		padding: 1rem var(--spacing);
 		z-index: 9;
 		// @include mq(medium) {
 		// 	padding: 0 0 0 1rem;
@@ -168,6 +168,18 @@
 				&:last-of-type {
 					a {
 						@extend .btn;
+						@extend .btn--primary;
+						padding: 0.5rem 1rem;
+						&:after {
+							content: url('../../src/icons/arrow.svg');
+							position: relative;
+							// width: 40px;
+							// height: 18px;
+							order: 2;
+							padding: 0;
+							margin-left: 0.5rem;
+							background-color: transparent;
+						}
 					}					
 				}
 			}

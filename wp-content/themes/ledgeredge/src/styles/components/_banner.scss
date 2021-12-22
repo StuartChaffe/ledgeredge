@@ -14,6 +14,7 @@
 		width: 50%;
 		max-width: 500px;
 		z-index: 1;
+		padding-left: var(--spacing);
 		p + h1 {
 			margin-top: 0.5rem;
 			margin-bottom: 1.5rem;
@@ -34,18 +35,29 @@
 		width: 50%;
 		margin-left: auto;
 	}
-}
-.bkg__image {
-	// position: relative;
-	background-size: cover;
-	&:before {
-		content: url('../../src/images/banner-asset.svg');
+	&--bkg__asset {
 		position: absolute;
 		width: 60%;
-		// max-width: 1000px;
-		// height: 50%;
 		top: 0;
 		left: -10%;
 		z-index: 0;
+	}
+	&--bkg__image {
+		background-size: cover;
+		padding-top: 5%;
+		.banner {
+			align-items: flex-start;
+		}
+
+		.fill {
+			color: var(--color-secondary);
+		}
+
+		h1, h2, h3, h4, h5, h6, p {
+			color: white;
+		}
+		p {
+			color: var(--color-secondary);
+		}
 	}
 }

@@ -20,7 +20,7 @@
                 "bkg__darkblue": "Dark Blue",
                 "bkg__black": "Black",
                 "bkg__white": "White",
-                "bkg__image": "Image"
+                "banner--bkg__image": "Image"
             },
             "default_value": "bkg__darkblue",
             "allow_null": 0,
@@ -42,7 +42,7 @@
                     {
                         "field": "field_61ba54ff74131",
                         "operator": "==",
-                        "value": "bkg__image"
+                        "value": "banner--bkg__image"
                     }
                 ]
             ],
@@ -240,5 +240,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1640034792
+    "modified": 1640172137
 }

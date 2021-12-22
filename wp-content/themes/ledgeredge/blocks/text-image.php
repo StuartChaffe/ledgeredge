@@ -10,15 +10,16 @@ $text = get_field('text-image-text');
 $image = get_field('text-image-image');
 ?>
 <div class="container">
-<section class="text-image <?php echo $bkg ?><?php if ( $blocks == 'text-image__single' ) { ?> fade text-image__single<?php } ?>">
+<section class="text-image <?php if ( $bkg ) { ?><?php echo $bkg ?><?php } ?><?php if ( $bkgimage ) { ?>bkg__image<?php } ?><?php if ( $blocks == 'text-image__single' ) { ?> fade text-image__single<?php } ?>" <?php if ( $bkgimage ) { ?>style="background-image:url(<?php echo $bkgimage['url'] ?>);"<?php } ?>>
 <?php if ( $blocks == 'text-image__single' ) { ?>
-	<div class="text-image--text text-image__single--text fade fade--delay__2">
+	<div class="text-image--text text-image__single--text">
 		<?php echo $text ?>
-		<a href="" class="btn">Book a demo</a>
 	</div>
-	<div class="text-image--image fade fade--delay__3">
+	<?php if ( $image ) { ?>
+	<div class="text-image--image">
 		<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 	</div>
+	<?php } ?>
 <?php } ?>
 <?php if ( $blocks == 'text-image__double' ) { ?>
 	<?php if( have_rows('blocks') ): ?>
@@ -29,13 +30,23 @@ $image = get_field('text-image-image');
 			$text = get_sub_field('text-image-text');
 			$image = get_sub_field('text-image-image');
 		?>
-		<div class="text-image__double <?php echo $bkg ?> fade">
+		<div class="text-image__double fade <?php echo $bkg ?> <?php if ( $image ) { ?>text-image--text__half<?php } ?>">
 			<div class="text-image--text text-image__double--text">
 				<?php echo $text ?>
-				<a href="" class="btn">Book a demo</a>
+
+				<?php if( have_rows('icons') ): ?>
+					<div class="text-image--text__icons">
+					<?php while( have_rows('icons') ): the_row();
+						$icon = get_sub_field('icon');
+					?>
+						<img loading="lazy" src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt']; ?>" />
+					<?php endwhile; ?>
+					</div>
+				<?php endif; ?>
+
 			</div>
 			<?php if ( $image ) { ?>
-			<div class="text-image--image">
+			<div class="text-image__double--image">
 				<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 			</div>
 			<?php } ?>
