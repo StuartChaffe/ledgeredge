@@ -4,8 +4,22 @@
 @import "utilities/mixins";
 @import "variables";
 @import "utilities/modal";
+@import "utilities/helpers";
 
 // Base
 @import "base/base";
 @import "base/typography";
 @import "components/*";
+
+.fade {
+	opacity: 1;
+}
+
+/* Stop links being clickable in the block editor */
+.acf-block-preview a {
+	pointer-events: none!important;
+}
+
+.wp-block[data-align=wide] {
+	max-width: var(--container-large);
+}

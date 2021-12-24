@@ -10,7 +10,6 @@
 	font-weight: var(--font-weight-normal);
 	font-size: var(--font-size);
 	text-align: center;
-	cursor: pointer;
 	transition: all 0.1s ease-in-out;
 	z-index: 1;
 	flex: 1 1 auto;
@@ -30,6 +29,11 @@
 			order: 2;
 			padding: 0;
 			margin-left: 0.5rem;
+			width: 10px;
+			overflow: hidden;
+		}
+		&:hover, &:focus {
+			cursor: pointer;
 		}
 	}
 
@@ -62,6 +66,12 @@
 	.icon {
 		margin-left: 0.5rem;
 	}
+	&__small {
+		a {
+			padding: 0.5rem 0.5rem;
+			font-size: var(--font-size-small);
+		}
+	}
 }
 
 .btn--white {
@@ -71,30 +81,20 @@
 
 .btn--primary {
 	background-color: var(--color-primary);
-	&:after {
-		background: var(--color-secondary);
-	}
-
 }
 
 .btn--secondary {
 	background-color:  var(--color-secondary);
-	&:after {
+	&:before {
 		background: white;
 	}
 }
 .btn--tertiary {
 	background-color: var(--color-tertiary);
-	&:after {
-		background: white;
-	}
 }
 .btn--quaternary {
 	background-color:  var(--color-quaternary);
 	color: white;
-	&:after {
-		background: var(--color-primary);
-	}
 
 	&:hover, &:focus {
 		color: white;

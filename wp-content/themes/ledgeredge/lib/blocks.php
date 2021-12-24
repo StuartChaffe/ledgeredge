@@ -67,17 +67,17 @@ function ledgeredge_acf_blocks() {
 		// 	'align' 			=> 'full',
 		// 	'keywords'			=> array( 'carousel' ),
 		// ));
-		// acf_register_block(array(
-		// 	'name'				=> 'content',
-		// 	'title'				=> __('Content'),
-		// 	'description'		=> __('Add a content block'),
-		// 	'render_callback'	=> 'ledgeredge_acf_block_render_callback',
-		// 	'category'			=> 'ledgeredge-blocks',
-		// 	'icon'				=> 'format-aside',
-		// 	'align' 			=> 'wide',
-		// 	'mode' => 'auto',
-		// 	'keywords'			=> array( 'content' ),
-		// ));
+		acf_register_block(array(
+			'name'				=> 'content',
+			'title'				=> __('Content'),
+			'description'		=> __('Add a content block'),
+			'render_callback'	=> 'ledgeredge_acf_block_render_callback',
+			'category'			=> 'ledgeredge-blocks',
+			'icon'				=> 'format-aside',
+			'align' 			=> 'wide',
+			'mode' => 'auto',
+			'keywords'			=> array( 'content' ),
+		));
 		acf_register_block(array(
 			'name'				=> 'cta',
 			'title'				=> __('Call to action'),
@@ -169,16 +169,6 @@ function ledgeredge_acf_blocks() {
 		// 	'keywords'			=> array( 'link list, links' ),
 		// ));
 		// acf_register_block(array(
-		// 	'name'				=> 'offices',
-		// 	'title'				=> __('Office list'),
-		// 	'description'		=> __('Add office list'),
-		// 	'render_callback'	=> 'ledgeredge_acf_block_render_callback',
-		// 	'category'			=> 'ledgeredge-blocks',
-		// 	'icon'				=> 'columns',
-		// 	'align' 			=> 'wide',
-		// 	'keywords'			=> array( 'office' ),
-		// ));
-		// acf_register_block(array(
 		// 	'name'				=> 'platforms',
 		// 	'title'				=> __('Platform list'),
 		// 	'description'		=> __('Add platform list'),
@@ -208,16 +198,16 @@ function ledgeredge_acf_blocks() {
 		// 	'align' 			=> 'wide',
 		// 	'keywords'			=> array( 'form, signup' ),
 		// ));
-		// acf_register_block(array(
-		// 	'name'				=> 'team',
-		// 	'title'				=> __('Team'),
-		// 	'description'		=> __('Add all team members'),
-		// 	'render_callback'	=> 'ledgeredge_acf_block_render_callback',
-		// 	'category'			=> 'ledgeredge-blocks',
-		// 	'icon'				=> 'groups',
-		// 	'align' 			=> 'wide',
-		// 	'keywords'			=> array( 'team, people' ),
-		// ));
+		acf_register_block(array(
+			'name'				=> 'team',
+			'title'				=> __('Team'),
+			'description'		=> __('Add all team members'),
+			'render_callback'	=> 'ledgeredge_acf_block_render_callback',
+			'category'			=> 'ledgeredge-blocks',
+			'icon'				=> 'groups',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'team, people' ),
+		));
 		// acf_register_block(array(
 		// 	'name'				=> 'testimonial',
 		// 	'title'				=> __('Testimonial'),
@@ -237,6 +227,16 @@ function ledgeredge_acf_blocks() {
 			'icon'				=> 'align-pull-right',
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'content, text, image' ),
+		));
+		acf_register_block(array(
+			'name'				=> 'timeline',
+			'title'				=> __('Timeline'),
+			'description'		=> __('Add a timeline'),
+			'render_callback'	=> 'ledgeredge_acf_block_render_callback',
+			'category'			=> 'ledgeredge-blocks',
+			'icon'				=> 'airplane',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'timeline' ),
 		));
 		// acf_register_block(array(
 		// 	'name'				=> 'video',
@@ -270,20 +270,20 @@ function ledgeredge_allowed_block_types( $allowed_blocks ) {
 		'acf/text-image',
 		// 'acf/careers',
 		// 'acf/carousel',
-		// 'acf/content',
+		'acf/content',
 		// 'acf/cta',
 		// 'acf/download',
 		// 'acf/featured-posts',
 		// 'acf/featured-lists',
 		// 'acf/featured-team',
 		// 'acf/form',
-		// 'acf/highlighted-text',
 		// 'acf/link-list',
 		// 'acf/offices',
 		// 'acf/platforms',
 		// 'acf/posts',
 		// 'acf/signup',
-		// 'acf/team',
+		'acf/team',
+		'acf/timeline',
 		// 'acf/testimonial',
 		// 'acf/video'
 	);

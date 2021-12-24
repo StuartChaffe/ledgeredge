@@ -69,6 +69,10 @@
 			align-items: center;
 			height: 100%;
 			margin: 0 -0.75rem;
+			width: 50%;
+		}
+		&__secondary {
+			justify-content: flex-end;
 		}
 		ul {
 			padding-left: 0;

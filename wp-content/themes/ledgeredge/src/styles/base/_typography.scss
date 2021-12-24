@@ -2,7 +2,7 @@ p {
 	margin-top: 0;
 	margin-bottom: var(--spacing-s);
 	letter-spacing: -0.2px;
-	display: inline-flex;
+	// display: inline-flex;
 	&:last-of-type {
 		margin-bottom: 0;
 	}
@@ -56,7 +56,7 @@ h3,
 h4,
 h5 {
 	margin: 0;
-	margin-bottom: var(--spacing-s);
+	margin-bottom: var(--spacing);
 	line-height: var(--line-height-headings);
 	font-weight: var(--font-weight-bold);
 	color: var(--heading-color);

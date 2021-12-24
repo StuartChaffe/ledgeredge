@@ -201,10 +201,10 @@
             "delay": 0
         },
         {
-            "key": "field_61c0ebd24cdd1",
+            "key": "field_61c5bb84057e2",
             "label": "Image",
-            "name": "text-image-image",
-            "type": "image",
+            "name": "image",
+            "type": "group",
             "instructions": "",
             "required": 0,
             "conditional_logic": [
@@ -221,17 +221,53 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array",
-            "preview_size": "medium",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
-            "default_value": ""
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_61c5bba0057e3",
+                    "label": "Image",
+                    "name": "text-image-image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "default_value": ""
+                },
+                {
+                    "key": "field_61c5bbac057e4",
+                    "label": "Pad image?",
+                    "name": "text-image-pad",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                }
+            ]
         },
         {
             "key": "field_61c0ec6540066",
@@ -364,5 +400,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1640195251
+    "modified": 1640349538
 }

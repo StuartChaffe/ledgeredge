@@ -44,6 +44,21 @@ img.aligncenter     { display: block; margin-left: auto; margin-right: auto; }
 	clip: rect(0,0,0,0);
 	border: 0;
 }
+.hide {
+	display: none;
+}
+// Show and hide
+.hidemobile {
+	@include mq($until: medium) {
+		display: none !important;
+	}
+}
+
+.hidedesktop {
+	@include mq(medium) {
+		display: none !important;
+	}
+}
 
 // debugging
 @if $debug == true {

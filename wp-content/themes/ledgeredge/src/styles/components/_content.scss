@@ -1,17 +1,21 @@
 .content {
-	> * {
-		max-width: var(--content-width);
-		margin-right: auto;
-		margin-left: auto;
-	}
+	max-width: var(--container-small);
+	margin-right: auto;
+	margin-left: auto;
+	padding: var(--spacing-l) 0;
+	// > * {
+	// 	max-width: var(--content-width);
+	// 	margin-right: auto;
+	// 	margin-left: auto;
+	// }
 
-	h2,
-	h3,
-	h4,
-	h5 {
-		margin-top: var(--spacing-l);
-		margin-bottom: 0;
-	}
+	// h2,
+	// h3,
+	// h4,
+	// h5 {
+	// 	margin-top: var(--spacing-l);
+	// 	margin-bottom: 0;
+	// }
 
 	a {
 		color: var(--link-color);

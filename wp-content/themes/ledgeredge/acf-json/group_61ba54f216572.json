@@ -64,6 +64,40 @@
             "default_value": ""
         },
         {
+            "key": "field_61c468794f14c",
+            "label": "Asset colour",
+            "name": "banner_colour",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61ba54ff74131",
+                        "operator": "==",
+                        "value": "banner--bkg__image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "banner--bkg__asset--green": "Green",
+                "banner--bkg__asset--blue": "Blue",
+                "banner--bkg__asset--orange": "Orange"
+            },
+            "default_value": "banner--bkg__asset--green",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
             "key": "field_61bb1f8723950",
             "label": "Logo (icon \/ image)",
             "name": "banner_logo",
@@ -240,5 +274,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1640172137
+    "modified": 1640262320
 }

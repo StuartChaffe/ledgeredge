@@ -64,6 +64,12 @@ function my_custom_styles( $init_array ) {
 		array(  
 			'title' => 'Green button',  
 			'block' => 'span',  
+			'classes' => 'btn btn--secondary',
+			'wrapper' => false,
+		), 
+		array(  
+			'title' => 'Teal button',  
+			'block' => 'span',  
 			'classes' => 'btn btn--tertiary',
 			'wrapper' => false,
 		),  

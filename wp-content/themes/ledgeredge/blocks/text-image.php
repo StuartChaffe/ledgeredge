@@ -7,7 +7,7 @@ $bkg = get_field('bkg-colour');
 $bkgimage = get_field('bkg-image');
 
 $text = get_field('text-image-text');
-$image = get_field('text-image-image');
+$image = get_field('image');
 ?>
 <div class="container">
 <section class="text-image <?php if ( $bkg ) { ?><?php echo $bkg ?><?php } ?><?php if ( $bkgimage ) { ?>bkg__image<?php } ?><?php if ( $blocks == 'text-image__single' ) { ?> fade text-image__single<?php } ?>" <?php if ( $bkgimage ) { ?>style="background-image:url(<?php echo $bkgimage['url'] ?>);"<?php } ?>>
@@ -16,8 +16,8 @@ $image = get_field('text-image-image');
 		<?php echo $text ?>
 	</div>
 	<?php if ( $image ) { ?>
-	<div class="text-image--image">
-		<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+	<div class="text-image--image<?php if ( $image['text-image-pad'] == '1' ) { ?> text-image--image__pad<?php } else { ?> text-image--image__nopad<?php } ?>">
+		<img loading="lazy" src="<?php echo $image['text-image-image']['url']; ?>" alt="<?php echo $image['text-image-image']['alt']; ?>" />
 	</div>
 	<?php } ?>
 <?php } ?>
