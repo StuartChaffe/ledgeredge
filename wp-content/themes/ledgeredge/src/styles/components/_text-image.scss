@@ -22,9 +22,9 @@
 		width: 50%;
 		padding: var(--spacing-l);
 		min-height: calc(50vw - var(--spacing) * 1.5); 
-		@include mq(xlarge) {
-			min-height: calc(var(--container-large) / 2 - var(--spacing) * 1.5);
-		}
+		// @include mq(xlarge) {
+		// 	min-height: calc(var(--container-large) / 2 - var(--spacing) * 1.5);
+		// }
 		&:last-of-type {
 			margin-left: var(--spacing);
 			@extend .fade--delay__2 !optional;

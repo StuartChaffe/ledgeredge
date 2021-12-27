@@ -40,6 +40,13 @@
 		.global-header--logo__light {
 			display: none;
 		}
+		.global-header--nav-inner {
+			background-color: var(--color-quinary);
+			&:before,
+			&:after {
+				background-color: var(--color-quinary);
+			}
+		}
 	}
 	&--inner {
 		display: flex;
@@ -152,7 +159,7 @@
 					padding: 0;
 					margin-bottom: 0.75rem;
 					a {
-						color: white;
+						color: white !important;
 						font-size: 1.2rem;
 						&:hover {
 							color: white;
@@ -294,11 +301,11 @@ ul.menu li:hover > .sub-menu {
 }
 .global-header--nav-btn.is-active {
 	position: fixed;
-	right: 1rem;
+	right: 1.75rem;
     // margin-top: 6px;
-	.global-header--nav-box {
-		right: 0.5rem;
-	}
+	// .global-header--nav-box {
+	// 	right: 0.5rem;
+	// }
 }
 
 .global-header--nav-box {

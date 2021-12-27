@@ -3,13 +3,18 @@
 	position: relative;
 	flex-wrap: wrap;
 	&-item {
-		width: calc(100% / 3 - var(--spacing));
+		width: 100%;
 		border-radius: var(--border-radius);
 		background-color: var(--color-quinary);
 		color: white;
 		padding: var(--spacing-xs) var(--spacing) var(--spacing) var(--spacing);
 		text-align: center;
-		margin: 0 var(--spacing-s) var(--spacing) var(--spacing-s);
+		margin: 0 0 var(--spacing) 0;
+
+		@include mq(medium) {
+			width: calc(100% / 3 - var(--spacing));
+			margin: 0 var(--spacing-s) var(--spacing) var(--spacing-s);
+		}
 
 		h4 {
 			margin-bottom: 0;
@@ -20,10 +25,16 @@
 		}
 		&--image {
 			position: relative;
-			width: 100%;
-			height: calc(33.333vw - var(--spacing) - 80px);
-			max-height: calc(var(--container) / 3 - var(--spacing) - 80px);
+			width: 60vw;
+			height: calc(60vw - var(--spacing) - 0px);
+			// max-height: calc(var(--container) / 3 - var(--spacing) - 80px);
+			margin: 0 auto;
 			margin-bottom: var(--spacing);
+			@include mq(medium) {
+				width: 100%;
+				height: calc(33.333vw - var(--spacing) - 80px);
+				max-height: calc(var(--container) / 3 - var(--spacing) - 80px);
+			}
 
 			.icon {
 				position: absolute;
