@@ -1,17 +1,25 @@
 .text-image {
 	display: flex;
+	flex-direction: column;
 	overflow: hidden;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
+	@include mq(medium) {
+		flex-direction: row;
+	}
 	&__single {
 		align-items: center;
 		border-radius: var(--border-radius);
 		// padding: var(--spacing-xl) var(--spacing-l);
 		&--text {
-			width: 40%;
-			padding: var(--spacing-xl) var(--spacing-l);
+			width: 100%;
+			padding: var(--spacing-l);
 			// background-color: yellow;
+			@include mq(medium) {
+				width: 40%;
+				padding: var(--spacing-xl) var(--spacing-l);
+			}
 			p {
 				@extend .lead;
 			}
@@ -19,15 +27,26 @@
 	}
 	&__double {
 		border-radius: var(--border-radius);
-		width: 50%;
+		width: 100%;
 		padding: var(--spacing-l);
 		min-height: calc(50vw - var(--spacing) * 1.5); 
 		// @include mq(xlarge) {
 		// 	min-height: calc(var(--container-large) / 2 - var(--spacing) * 1.5);
 		// }
+		@include mq(medium) {
+			width: 50%;
+		}
+		&:first-of-type {
+			margin-bottom: var(--spacing);
+			@include mq(medium) {
+				margin-bottom: 0;
+			}
+		}
 		&:last-of-type {
-			margin-left: var(--spacing);
 			@extend .fade--delay__2 !optional;
+			@include mq(medium) {
+				margin-left: var(--spacing);
+			}
 		}
 
 		p {
@@ -37,8 +56,11 @@
 			position: absolute;
 			right: 0;
 			bottom: 0;
-			max-width: 60%;
+			max-width: 45%;
 			z-index: -1;
+			@include mq(medium) {
+				max-width: 60%;
+			}
 		}
 	}
 	&--text {
@@ -48,7 +70,10 @@
 		flex-direction: column;
 		&__half {
 			.text-image--text {
-				width: 50%;
+				width: 60%;
+				@include mq(medium) {
+					width: 50%;
+				}
 			}
 		}
 		p {
@@ -57,32 +82,46 @@
 			}
 		}
 		&__icons {
-			margin-top: auto;
+			margin-top: 1rem;
 			display: flex;
 			// flex: auto;
 			width: 100%;
 			// flex-wrap: wrap;
 			// flex-direction: row;
-			height: 150px;
-			img {
-				width: 150px;
+			height: 100px;
+			@include mq(medium) {
+				margin-top: auto;
 				height: 150px;
+			}
+			img {
+				width: 100px;
+				height: 100px;
 				margin-right: 1rem;
+				@include mq(medium) {
+					width: 150px;
+					height: 150px;
+				}
 			}
 		}
 	}
 
 	
 	&--image {
-		width: 50%;
-		margin-left: 10%;
+		width: 100%;
 		// height: 100%;
 		position: relative;
 		// svg, img {
 		// 	width: 100%;
 		// }
+		@include mq(medium) {
+			width: 50%;
+			margin-left: 10%;
+		}
 		&__pad {
-			padding: var(--spacing-xl) var(--spacing-l) var(--spacing-xl) 0;
+			padding: 0 var(--spacing-l) var(--spacing-l) var(--spacing-l);
+			@include mq(medium) {
+				padding: var(--spacing-xl) var(--spacing-l) var(--spacing-xl) 0;
+			}
 		}
 		&__nopad {
 			img {
