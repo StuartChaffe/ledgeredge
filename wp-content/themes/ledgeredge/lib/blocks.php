@@ -208,16 +208,16 @@ function ledgeredge_acf_blocks() {
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'team, people' ),
 		));
-		// acf_register_block(array(
-		// 	'name'				=> 'testimonial',
-		// 	'title'				=> __('Testimonial'),
-		// 	'description'		=> __('Add testimonial'),
-		// 	'render_callback'	=> 'ledgeredge_acf_block_render_callback',
-		// 	'category'			=> 'ledgeredge-blocks',
-		// 	'icon'				=> 'format-status',
-		// 	'align' 			=> 'wide',
-		// 	'keywords'			=> array( 'testimonial, quote' ),
-		// ));
+		acf_register_block(array(
+			'name'				=> 'testimonial',
+			'title'				=> __('Testimonial'),
+			'description'		=> __('Add testimonial'),
+			'render_callback'	=> 'ledgeredge_acf_block_render_callback',
+			'category'			=> 'ledgeredge-blocks',
+			'icon'				=> 'format-status',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'testimonial, quote' ),
+		));
 		acf_register_block(array(
 			'name'				=> 'text-image',
 			'title'				=> __('Text with image'),
@@ -284,7 +284,7 @@ function ledgeredge_allowed_block_types( $allowed_blocks ) {
 		// 'acf/signup',
 		'acf/team',
 		'acf/timeline',
-		// 'acf/testimonial',
+		'acf/testimonial',
 		// 'acf/video'
 	);
  

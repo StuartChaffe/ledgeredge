@@ -5,6 +5,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
+	overflow: hidden;
 	@include mq(medium) {
 		flex-direction: row;
 	}
@@ -88,18 +89,22 @@
 			width: 100%;
 			// flex-wrap: wrap;
 			// flex-direction: row;
-			height: 100px;
+			// height: 100px;
 			@include mq(medium) {
 				margin-top: auto;
-				height: 150px;
+				padding-top: 2rem;
+				// height: 150px;
 			}
 			img {
-				width: 100px;
-				height: 100px;
+				// width: 100px;
+				// height: 100px;
+				width: calc(33% - 1rem);
+				max-width: 100px;
 				margin-right: 1rem;
 				@include mq(medium) {
-					width: 150px;
-					height: 150px;
+					max-width: 150px;
+					// width: 150px;
+					// height: 150px;
 				}
 			}
 		}

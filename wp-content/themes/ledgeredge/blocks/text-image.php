@@ -15,7 +15,7 @@ $image = get_field('image');
 	<div class="text-image--text text-image__single--text">
 		<?php echo $text ?>
 	</div>
-	<?php if ( $image ) { ?>
+	<?php if ( $image['text-image-image'] ) { ?>
 	<div class="text-image--image<?php if ( $image['text-image-pad'] == '1' ) { ?> text-image--image__pad<?php } else { ?> text-image--image__nopad<?php } ?>">
 		<img loading="lazy" src="<?php echo $image['text-image-image']['url']; ?>" alt="<?php echo $image['text-image-image']['alt']; ?>" />
 	</div>

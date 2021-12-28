@@ -1,0 +1,21 @@
+.testimonial {
+	max-width: var(--container-small);
+	margin-right: auto;
+	margin-left: auto;
+	padding: var(--spacing-l) var(--spacing);
+	text-align: center;
+
+	&--title {
+		color: var(--color-quaternary);
+		font-weight: var(--font-weight-bold);
+	}
+	.lead {
+		@extend h4;
+		margin-bottom: var(--spacing-s) !important;
+	}
+	&--author,
+	&--company {
+		margin-bottom: 0;
+		color: var(--color-quaternary);
+	}
+}

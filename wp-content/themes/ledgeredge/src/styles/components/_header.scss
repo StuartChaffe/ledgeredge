@@ -63,7 +63,7 @@
 	}
 	&--logo {
 		z-index: 1;
-		width: 200px;
+		width: 150px;
 		margin-bottom: 0;
 		a {
 			display: block;
@@ -76,7 +76,7 @@
 			align-items: center;
 			height: 100%;
 			margin: 0 -0.75rem;
-			width: 50%;
+			// width: 50%;
 		}
 		&__secondary {
 			justify-content: flex-end;
