@@ -4,7 +4,6 @@
 	align-items: center;
 	padding-top: 150px;
 	padding-bottom: var(--spacing-xl);
-	
 
 	.logo {
 		width: 350px;
@@ -64,6 +63,7 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
+		overflow: hidden;
 		.banner {
 			align-items: flex-start;
 			padding-top: 15%;

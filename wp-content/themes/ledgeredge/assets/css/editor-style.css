@@ -664,6 +664,7 @@ pre {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  overflow: hidden;
 }
 .banner--bkg__image .banner {
   align-items: flex-start;
@@ -1517,6 +1518,9 @@ body.nav-open {
 
 .social-links__link {
   color: var(--color-text-base);
+}
+.social-links__link:hover {
+  color: var(--color-quaternary);
 }
 
 .team {

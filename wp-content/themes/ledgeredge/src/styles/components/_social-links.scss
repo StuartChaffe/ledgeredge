@@ -14,4 +14,7 @@
 
 .social-links__link {
 	color: var(--color-text-base);
+	&:hover {
+		color: var(--color-quaternary);
+	}
 }
