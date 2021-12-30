@@ -65,6 +65,38 @@
             },
             "default_value": "",
             "placeholder": ""
+        },
+        {
+            "key": "field_61ce0925a7095",
+            "label": "LinkedIn",
+            "name": "linkedin",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_61ce0961a7096",
+            "label": "Vimeo",
+            "name": "vimeo",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
         }
     ],
     "location": [
@@ -84,5 +116,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "Add social links",
-    "modified": 1615322175
+    "show_in_rest": 0,
+    "modified": 1640892782
 }
