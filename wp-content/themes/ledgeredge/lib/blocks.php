@@ -57,16 +57,16 @@ function ledgeredge_acf_blocks() {
 		// 	'align' 			=> 'full',
 		// 	'keywords'			=> array( 'careers, jobs' ),
 		// ));
-		// acf_register_block(array(
-		// 	'name'				=> 'carousel',
-		// 	'title'				=> __('Carousel'),
-		// 	'description'		=> __('Add a carousel'),
-		// 	'render_callback'	=> 'ledgeredge_acf_block_render_callback',
-		// 	'category'			=> 'ledgeredge-blocks',
-		// 	'icon'				=> 'slides',
-		// 	'align' 			=> 'full',
-		// 	'keywords'			=> array( 'carousel' ),
-		// ));
+		acf_register_block(array(
+			'name'				=> 'carousel',
+			'title'				=> __('Carousel'),
+			'description'		=> __('Add a carousel'),
+			'render_callback'	=> 'ledgeredge_acf_block_render_callback',
+			'category'			=> 'ledgeredge-blocks',
+			'icon'				=> 'slides',
+			'align' 			=> 'full',
+			'keywords'			=> array( 'carousel' ),
+		));
 		acf_register_block(array(
 			'name'				=> 'content',
 			'title'				=> __('Content'),
@@ -158,6 +158,16 @@ function ledgeredge_acf_blocks() {
 		// 	'align' 			=> 'wide',
 		// 	'keywords'			=> array( 'text, highlight' ),
 		// ));
+		acf_register_block(array(
+			'name'				=> 'image',
+			'title'				=> __('Image'),
+			'description'		=> __('Add an image block'),
+			'render_callback'	=> 'ledgeredge_acf_block_render_callback',
+			'category'			=> 'ledgeredge-blocks',
+			'icon'				=> 'format-gallery',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'images, image' )
+		));
 		// acf_register_block(array(
 		// 	'name'				=> 'link-list',
 		// 	'title'				=> __('Link list'),
@@ -188,16 +198,16 @@ function ledgeredge_acf_blocks() {
 		// 	'align' 			=> 'wide',
 		// 	'keywords'			=> array( 'posts, blogs' ),
 		// ));
-		// acf_register_block(array(
-		// 	'name'				=> 'signup',
-		// 	'title'				=> __('Signup'),
-		// 	'description'		=> __('Add a signup form'),
-		// 	'render_callback'	=> 'ledgeredge_acf_block_render_callback',
-		// 	'category'			=> 'ledgeredge-blocks',
-		// 	'icon'				=> 'email-alt',
-		// 	'align' 			=> 'wide',
-		// 	'keywords'			=> array( 'form, signup' ),
-		// ));
+		acf_register_block(array(
+			'name'				=> 'newsletter',
+			'title'				=> __('Newsletter'),
+			'description'		=> __('Add a newsletter'),
+			'render_callback'	=> 'ledgeredge_acf_block_render_callback',
+			'category'			=> 'ledgeredge-blocks',
+			'icon'				=> 'email-alt',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'form, signup' ),
+		));
 		acf_register_block(array(
 			'name'				=> 'team',
 			'title'				=> __('Team'),
@@ -269,7 +279,7 @@ function ledgeredge_allowed_block_types( $allowed_blocks ) {
 		'acf/banner',
 		'acf/text-image',
 		// 'acf/careers',
-		// 'acf/carousel',
+		'acf/carousel',
 		'acf/content',
 		// 'acf/cta',
 		// 'acf/download',
@@ -277,6 +287,8 @@ function ledgeredge_allowed_block_types( $allowed_blocks ) {
 		// 'acf/featured-lists',
 		// 'acf/featured-team',
 		// 'acf/form',
+		'acf/image',
+		'acf/newsletter',
 		// 'acf/link-list',
 		// 'acf/offices',
 		// 'acf/platforms',

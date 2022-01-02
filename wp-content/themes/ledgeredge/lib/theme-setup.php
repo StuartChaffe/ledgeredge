@@ -78,7 +78,25 @@ function my_custom_styles( $init_array ) {
 			'block' => 'span',  
 			'classes' => 'btn--quaternary',
 			'wrapper' => false,
-		),  
+		), 
+		array(  
+			'title' => 'Orange',  
+			'block' => 'span',  
+			'classes' => 'orange',
+			'wrapper' => false,
+		), 
+		array(  
+			'title' => 'Blue',  
+			'block' => 'span',  
+			'classes' => 'blue',
+			'wrapper' => false,
+		), 
+		array(  
+			'title' => 'Green',  
+			'block' => 'span',  
+			'classes' => 'green',
+			'wrapper' => false,
+		), 
 	);  
 	// Insert the array, JSON ENCODED, into 'style_formats'
 	$init_array['style_formats'] = json_encode( $style_formats );  

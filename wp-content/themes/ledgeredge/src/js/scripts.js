@@ -6,3 +6,4 @@ import './components/toggle';
 import './components/menu';
 import './components/fade';
 import './components/modal';
+import './components/carousel';

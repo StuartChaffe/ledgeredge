@@ -582,12 +582,24 @@ code {
 }
 
 pre {
-  background-color: #f4f4f4;
+  background-color: #774242;
   border-radius: 0.2rem;
   padding: 0.5rem;
   overflow: auto;
   width: calc(96vw - 2em);
   line-height: 1.3;
+}
+
+.orange {
+  color: var(--color-primary);
+}
+
+.blue {
+  color: var(--color-quaternary);
+}
+
+.green {
+  color: var(--color-secondary);
 }
 
 .global-alert {
@@ -768,6 +780,22 @@ pre {
 }
 .btn--quaternary:hover, .btn--quaternary:focus {
   color: white;
+}
+
+.carousel {
+  background-color: black;
+  margin-bottom: 0;
+  padding: var(--spacing-l) var(--spacing);
+  text-align: center;
+}
+.carousel--slider {
+  margin: 0 -0.75rem;
+}
+.carousel--slider-item {
+  padding: 1rem 4rem;
+}
+.carousel--slider-item img {
+  width: 100%;
 }
 
 .content {
@@ -1312,6 +1340,11 @@ ul.menu .sub-menu li a:after {
   margin-right: 5px;
 }
 
+.image {
+  width: 100%;
+  margin-bottom: var(--spacing-l);
+}
+
 .global-container {
   display: flex;
   flex-direction: column;
@@ -1329,7 +1362,7 @@ ul.menu .sub-menu li a:after {
   margin: 0 auto;
   padding: 0 var(--spacing);
   width: 100%;
-  max-width: var(--container);
+  max-width: var(--container-small);
 }
 
 section {
@@ -1503,6 +1536,266 @@ body.nav-open {
   transform: translateZ(0);
 }
 
+.newsletter {
+  background: black;
+  padding: var(--spacing) 0;
+  text-align: center;
+}
+.newsletter h1, .newsletter h2, .newsletter h3, .newsletter h4, .newsletter .testimonial .lead, .newsletter .testimonial .text-image__double p, .text-image__double .newsletter .testimonial p, .newsletter .testimonial .text-image__single--text p, .text-image__single--text .newsletter .testimonial p, .testimonial .newsletter .lead, .testimonial .newsletter .text-image__double p, .text-image__double .testimonial .newsletter p, .testimonial .newsletter .text-image__single--text p, .text-image__single--text .testimonial .newsletter p, .newsletter h5, .newsletter h6 {
+  color: var(--color-secondary);
+}
+.newsletter p {
+  color: white;
+}
+.newsletter .lead, .newsletter .text-image__double p, .text-image__double .newsletter p, .newsletter .text-image__single--text p, .text-image__single--text .newsletter p {
+  color: var(--color-secondary);
+}
+
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: auto !important;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: "";
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+[dir=rtl] .slick-slide {
+  float: right;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+/* Slider */
+/* Arrows */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background-color: transparent;
+  color: transparent;
+  top: 50%;
+  transform: translate(0, -50%);
+  border: none;
+  outline: none;
+  z-index: 9;
+  transition: 0.2s transform ease-in-out;
+}
+.slick-prev:hover, .slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  outline: none;
+  transition: 0.2s transform ease-in-out;
+}
+.slick-prev:before,
+.slick-next:before {
+  height: 36px;
+  width: 14px;
+}
+@media only screen and (min-width: 1330px) {
+  .slick-prev:before,
+.slick-next:before {
+    height: 71px;
+    width: 27px;
+  }
+}
+
+.slick-prev {
+  left: -20px;
+}
+@media only screen and (min-width: 1330px) {
+  .slick-prev {
+    left: -3rem;
+  }
+}
+.slick-prev:before {
+  margin-left: 0;
+  right: 0;
+  transition: 0.2s all ease-in-out;
+  content: url("../../src/icons/arrow-carousel--prev.svg");
+}
+[dir=rtl] .slick-prev:before {
+  content: url("../../src/icons/arrow-carousel--prev.svg");
+}
+
+.slick-next {
+  right: -20px;
+}
+@media only screen and (min-width: 1330px) {
+  .slick-next {
+    right: -3rem;
+  }
+}
+.slick-next:before {
+  transition: 0.2s all ease-in-out;
+  content: url("../../src/icons/arrow-carousel.svg");
+}
+[dir=rtl] .slick-next:before {
+  content: url("../../src/icons/arrow-carousel.svg");
+}
+
+.slick-disabled {
+  display: none !important;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 15px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+@media (min-width: 50em) {
+  .slick-dots {
+    bottom: 35px;
+  }
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li button {
+  border: 0;
+  border-radius: 40px;
+  background: white;
+  display: block;
+  height: 16px;
+  width: 16px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.slick-dots li button:hover, .slick-dots li button:focus {
+  outline: none;
+  background: white;
+  opacity: 1;
+}
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+  opacity: 0.5;
+}
+.slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  background: transparent;
+  opacity: 0.5;
+}
+.slick-dots li.slick-active button {
+  opacity: 1;
+  background: var(--color-secondary);
+}
+.slick-dots li.slick-active button:before {
+  background: white;
+  opacity: 1;
+  height: 10px;
+  width: 12px;
+}
+
 .social-links {
   display: flex;
 }
@@ -1527,6 +1820,7 @@ body.nav-open {
   display: flex;
   position: relative;
   flex-wrap: wrap;
+  margin-bottom: var(--spacing-l);
 }
 .team-item {
   width: 100%;
@@ -1773,4 +2067,8 @@ body.nav-open {
 
 .wp-block[data-align=wide] {
   max-width: var(--container-large);
+}
+
+.carousel--slider {
+  display: flex;
 }

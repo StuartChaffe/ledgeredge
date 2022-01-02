@@ -78,10 +78,19 @@ code {
 }
 
 pre {
-	background-color: #f4f4f4;
+	background-color: #774242;
 	border-radius: 0.2rem;
 	padding: 0.5rem;
 	overflow: auto;
 	width: calc(96vw - 2em);
 	line-height: 1.3;
+}
+.orange {
+	color: var(--color-primary);
+}
+.blue {
+	color: var(--color-quaternary);
+}
+.green {
+	color: var(--color-secondary);
 }

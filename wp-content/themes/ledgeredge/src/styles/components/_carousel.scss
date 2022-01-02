@@ -1,0 +1,16 @@
+.carousel {
+	background-color: black;
+	margin-bottom: 0;
+	padding: var(--spacing-l) var(--spacing);
+	text-align: center;
+
+	&--slider {
+		margin: 0 -0.75rem;
+		&-item {
+			padding: 1rem 4rem;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
