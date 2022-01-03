@@ -1,3 +1,33 @@
+.post {
+	&-header {
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px solid var(--color-text-base);
+		font-size: var(--font-size-small);
+		padding-bottom: var(--spacing);
+		a {
+			color: var(--color-text-base);
+			font-weight: var(--font-weight-bold);
+			&:hover {
+				text-decoration: none;
+				color: var(--color-primary);
+			}
+			.icon-arrow {
+				width: 20px;
+				height: 10px;
+				margin-right: 0.2rem;
+				transform: rotate(180deg);
+			}
+		}
+	}
+	&-footer {
+		border-top: 1px solid var(--color-text-base);
+		border-bottom: 0;
+		padding-top: var(--spacing);
+		margin-bottom: var(--spacing-xl);
+	}
+}
+
 .posts {
 	display: flex;
 	flex-direction: row;
@@ -10,12 +40,20 @@
 	&-item {
 		display: flex;
 		flex-direction: column;
-		min-height: 380px;
 		background-color: white;
 		border-radius: var(--border-radius);
-		width: calc(100% / 3 - 30px);
+		min-height: 250px;
+		width: 100%;
 		margin: var(--spacing-s);
 		flex-grow: 0;
+		@include mq(medium) {
+			min-height: 380px;
+			width: calc(100% / 2 - 30px);
+		}
+		@include mq(large) {
+			min-height: 380px;
+			width: calc(100% / 3 - 30px);
+		}
 		&--image {
 			border-top-left-radius: var(--border-radius);
 			border-top-right-radius: var(--border-radius);
@@ -28,6 +66,9 @@
 			display: flex;
 			font-size: var(--font-size-small);
 			color: var(--color-primary);
+			p {
+				margin-bottom: 0.5rem;
+			}
 		}
 
 		&--content {

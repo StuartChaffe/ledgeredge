@@ -7,8 +7,11 @@
 	}
 	&--info {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		justify-content: space-between;
+		@include mq(medium) {
+			flex-direction: column;
+		}
 		p {
 			margin-right: 1rem;
 		}
@@ -17,20 +20,30 @@
 		}
 	}
 	&--links {
-		width: 50%;
+		width: 100%;
 		display: flex;
+		@include mq(medium) {
+			width: 50%;
+		}
 		.menu {
 			display: flex;
 			flex-direction: column;
 			margin-right: 3rem;	
 		}
 		&__connect {
-			width: 30%;
+			// width: 30%;
 			margin-left: auto;
 		}
 	}
 	&--copy {
 		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-left: 1rem;
+		@include mq(medium) {
+			flex-direction: row;
+			padding-left: 0;
+		}
 	}
 	&--logo {
 		display: block;
@@ -41,12 +54,16 @@
 
 .global-footer--inner {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 	// align-items: center;
 	width: 100%;
 	max-width: var(--container-large);
 	margin: 0 auto;
 	padding: 1rem var(--spacing);
+	@include mq(medium) {
+		flex-direction: row;
+	}
 }
 
 .global-footer p {

@@ -27,7 +27,7 @@ $intro = get_field('posts_intro');
 					$category_link = get_category_link( $category->term_id );
 				}
 			?>
-			<div class="posts-item">	
+			<div class="posts-item fade">	
 					
 				<?php if (has_post_thumbnail() ) { ?><div class="posts-item--image"><?php the_post_thumbnail(); ?></div><?php } ?>
 				<div class="posts-item--content">

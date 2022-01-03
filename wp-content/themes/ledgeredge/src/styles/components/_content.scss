@@ -1,8 +1,20 @@
-.content {
+article {
 	max-width: var(--container-small);
 	margin-right: auto;
 	margin-left: auto;
 	padding: var(--spacing-l) var(--spacing);
+	.content {
+		padding: var(--spacing-l) 0;
+	}
+}
+.content {
+	max-width: var(--container-small);
+	margin-right: auto;
+	margin-left: auto;
+	padding: var(--spacing-s) var(--spacing);
+	@include mq(medium) {
+		padding: var(--spacing-l) var(--spacing);
+	}
 	// > * {
 	// 	max-width: var(--content-width);
 	// 	margin-right: auto;
@@ -24,7 +36,7 @@
 	}
 
 	a:hover {
-		color: var(--link-hover-color);
+		color: var(--color-primary);
 		text-decoration: underline;
 	}
 
@@ -57,8 +69,9 @@
 
 	li {
 		position: relative;
-		padding-left: 1.2rem;
+		padding-left: 1.5rem;
 		margin-bottom: 0.3em;
+		margin-left: 1rem;
 	}
 
 	li p {
@@ -70,7 +83,7 @@
 		position: absolute;
 		left: 0;
 		top: 0;
-		font-size: 1.7rem;
+		font-size: 1.2rem;
 		line-height: 1;
 		font-weight: bold;
 		margin-right: 0.6em;
