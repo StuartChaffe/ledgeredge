@@ -13,6 +13,10 @@ p {
 
 p.lead {
 	font-size: var(--font-size-lead);
+	// line-height: 1.2;
+}
+p.small {
+	font-size: var(--font-size-small);
 }
 
 ul,

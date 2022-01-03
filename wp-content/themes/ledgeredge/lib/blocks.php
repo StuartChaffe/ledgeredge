@@ -188,16 +188,16 @@ function ledgeredge_acf_blocks() {
 		// 	'align' 			=> 'wide',
 		// 	'keywords'			=> array( 'platform' ),
 		// ));
-		// acf_register_block(array(
-		// 	'name'				=> 'posts',
-		// 	'title'				=> __('Posts'),
-		// 	'description'		=> __('Add all posts'),
-		// 	'render_callback'	=> 'ledgeredge_acf_block_render_callback',
-		// 	'category'			=> 'ledgeredge-blocks',
-		// 	'icon'				=> 'calendar-alt',
-		// 	'align' 			=> 'wide',
-		// 	'keywords'			=> array( 'posts, blogs' ),
-		// ));
+		acf_register_block(array(
+			'name'				=> 'posts',
+			'title'				=> __('Posts'),
+			'description'		=> __('Add all posts'),
+			'render_callback'	=> 'ledgeredge_acf_block_render_callback',
+			'category'			=> 'ledgeredge-blocks',
+			'icon'				=> 'calendar-alt',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'posts, blogs' ),
+		));
 		acf_register_block(array(
 			'name'				=> 'newsletter',
 			'title'				=> __('Newsletter'),
@@ -292,7 +292,7 @@ function ledgeredge_allowed_block_types( $allowed_blocks ) {
 		// 'acf/link-list',
 		// 'acf/offices',
 		// 'acf/platforms',
-		// 'acf/posts',
+		'acf/posts',
 		// 'acf/signup',
 		'acf/team',
 		'acf/timeline',
