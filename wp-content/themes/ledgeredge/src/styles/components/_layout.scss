@@ -42,7 +42,7 @@ section {
 		h5, .heading-5 {
 			color: white;
 		}
-		p {
+		p, li, li:before {
 			color: white;
 		}
 
@@ -105,16 +105,16 @@ section {
 	h5, .heading-5 {
 		color: var(--color-secondary);
 	}
-	p {
+	p, li, li:before {
 		color: white;
 	}
 }
 .bkg__darkblue,
 .bkg__black {
-	h1, h2, h3, h4, h5, h6, p {
+	h1, h2, h3, h4, h5, h6 {
 		color: white;
 	}
-	p {
+	p, li, li:before {
 		color: var(--color-secondary);
 	}
 }

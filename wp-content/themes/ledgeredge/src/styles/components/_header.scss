@@ -95,6 +95,9 @@
 				&:last-of-type {
 					// margin-right: 0;
 				}
+				&:before {
+					display: none;
+				}
 				a {
 					// color: white;
 					font-weight: var(--font-weight-medium);

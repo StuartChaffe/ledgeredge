@@ -352,7 +352,7 @@ ol {
   list-style: none;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  padding-left: 1em;
+  padding-left: 0;
 }
 
 ul ul,
@@ -363,8 +363,28 @@ ol ol {
   margin-bottom: 0;
 }
 
+li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.3em;
+  margin-left: 0;
+}
+
 li p {
   margin: 0;
+  display: inline;
+}
+
+li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2rem;
+  line-height: 1;
+  font-weight: bold;
+  margin-right: 0.6em;
+  color: var(--color-text-dark);
 }
 
 blockquote {
@@ -634,7 +654,7 @@ section {
 .bkg__image h5, .bkg__image .heading-5 {
   color: white;
 }
-.bkg__image p {
+.bkg__image p, .bkg__image li, .bkg__image li:before {
   color: white;
 }
 .bkg__image::before {
@@ -719,11 +739,11 @@ section {
 .bkg__lightblue h5, .bkg__lightblue .heading-5 {
   color: var(--color-secondary);
 }
-.bkg__lightblue p {
+.bkg__lightblue p, .bkg__lightblue li, .bkg__lightblue li:before {
   color: white;
 }
 
-.bkg__darkblue h1, .bkg__darkblue h2, .bkg__darkblue h3, .bkg__darkblue h4, .bkg__darkblue .testimonial .lead, .bkg__darkblue .testimonial .text-image__double p, .text-image__double .bkg__darkblue .testimonial p, .bkg__darkblue .testimonial .text-image__single--text p, .text-image__single--text .bkg__darkblue .testimonial p, .testimonial .bkg__darkblue .lead, .testimonial .bkg__darkblue .text-image__double p, .text-image__double .testimonial .bkg__darkblue p, .testimonial .bkg__darkblue .text-image__single--text p, .text-image__single--text .testimonial .bkg__darkblue p, .bkg__darkblue h5, .bkg__darkblue h6, .bkg__darkblue p,
+.bkg__darkblue h1, .bkg__darkblue h2, .bkg__darkblue h3, .bkg__darkblue h4, .bkg__darkblue .testimonial .lead, .bkg__darkblue .testimonial .text-image__double p, .text-image__double .bkg__darkblue .testimonial p, .bkg__darkblue .testimonial .text-image__single--text p, .text-image__single--text .bkg__darkblue .testimonial p, .testimonial .bkg__darkblue .lead, .testimonial .bkg__darkblue .text-image__double p, .text-image__double .testimonial .bkg__darkblue p, .testimonial .bkg__darkblue .text-image__single--text p, .text-image__single--text .testimonial .bkg__darkblue p, .bkg__darkblue h5, .bkg__darkblue h6,
 .bkg__black h1,
 .bkg__black h2,
 .bkg__black h3,
@@ -739,12 +759,13 @@ section {
 .testimonial .bkg__black .text-image__single--text p,
 .text-image__single--text .testimonial .bkg__black p,
 .bkg__black h5,
-.bkg__black h6,
-.bkg__black p {
+.bkg__black h6 {
   color: white;
 }
-.bkg__darkblue p,
-.bkg__black p {
+.bkg__darkblue p, .bkg__darkblue li, .bkg__darkblue li:before,
+.bkg__black p,
+.bkg__black li,
+.bkg__black li:before {
   color: var(--color-secondary);
 }
 
@@ -1091,6 +1112,9 @@ article .content {
     padding: 0;
   }
 }
+.global-header--nav ul li:before {
+  display: none;
+}
 .global-header--nav ul li a {
   font-weight: var(--font-weight-medium);
   height: 100%;
@@ -1389,6 +1413,12 @@ body.nav-open {
 .global-footer a {
   color: var(--color-text-base);
 }
+.global-footer li {
+  padding-left: 0;
+}
+.global-footer li:before {
+  display: none;
+}
 .global-footer--info {
   display: flex;
   flex-direction: row;
@@ -1479,8 +1509,6 @@ body.nav-open {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: 150px;
-  padding-bottom: var(--spacing-xl);
 }
 .banner__small {
   position: relative;
@@ -1577,7 +1605,7 @@ body.nav-open {
   text-align: center;
 }
 .carousel--slider {
-  margin: 0 -0.75rem;
+  padding: 0 var(--spacing-l);
 }
 .carousel--slider-item {
   padding: 1rem 4rem;
@@ -1749,7 +1777,6 @@ body.nav-open {
   }
 }
 .text-image__single {
-  align-items: center;
   border-radius: var(--border-radius);
 }
 .text-image__single--text {
@@ -1860,8 +1887,8 @@ body.nav-open {
   left: 0;
   transform: translateY(-50%);
   min-height: 100%;
+  max-height: 100%;
   max-width: none;
-  width: 100%;
 }
 
 .team {
@@ -2095,12 +2122,7 @@ body.nav-open {
 }
 
 .slick-prev {
-  left: -20px;
-}
-@media only screen and (min-width: 1330px) {
-  .slick-prev {
-    left: -3rem;
-  }
+  left: 0;
 }
 .slick-prev:before {
   margin-left: 0;
@@ -2113,12 +2135,7 @@ body.nav-open {
 }
 
 .slick-next {
-  right: -20px;
-}
-@media only screen and (min-width: 1330px) {
-  .slick-next {
-    right: -3rem;
-  }
+  right: 0;
 }
 .slick-next:before {
   transition: 0.2s all ease-in-out;

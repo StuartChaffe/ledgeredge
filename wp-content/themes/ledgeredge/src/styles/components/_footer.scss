@@ -5,6 +5,12 @@
 	a {
 		color: var(--color-text-base);
 	}
+	li {
+		padding-left: 0;
+		&:before {
+			display: none;
+		}
+	}
 	&--info {
 		display: flex;
 		flex-direction: row;

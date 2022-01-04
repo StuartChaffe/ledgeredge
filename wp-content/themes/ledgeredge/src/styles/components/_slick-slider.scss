@@ -177,10 +177,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
-	left: -20px;
-	@media only screen and (min-width: 1330px) {
-		left: -3rem;
-	}
+	left: 0;
 	&:before {
 		margin-left: 0;
 		right: 0;
@@ -193,10 +190,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
-	right: -20px;
-	@media only screen and (min-width: 1330px) {
-		right: -3rem;
-	}
+	right: 0;
 	&:before {
 		transition: .2s all ease-in-out;
 		content: url("../../src/icons/arrow-carousel.svg");
