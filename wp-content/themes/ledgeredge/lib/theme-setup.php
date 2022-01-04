@@ -97,6 +97,12 @@ function my_custom_styles( $init_array ) {
 			'classes' => 'green',
 			'wrapper' => false,
 		), 
+		array(  
+			'title' => 'White',  
+			'block' => 'span',  
+			'classes' => 'white',
+			'wrapper' => false,
+		), 
 	);  
 	// Insert the array, JSON ENCODED, into 'style_formats'
 	$init_array['style_formats'] = json_encode( $style_formats );  

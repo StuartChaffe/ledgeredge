@@ -615,15 +615,19 @@ pre {
 }
 
 .orange {
-  color: var(--color-primary);
+  color: var(--color-primary) !important;
 }
 
 .blue {
-  color: var(--color-quaternary);
+  color: var(--color-quaternary) !important;
 }
 
 .green {
-  color: var(--color-secondary);
+  color: var(--color-secondary) !important;
+}
+
+.white {
+  color: white !important;
 }
 
 .global-alert {
@@ -828,6 +832,9 @@ pre {
   margin-bottom: 0;
   padding: var(--spacing-l) var(--spacing);
   text-align: center;
+}
+.carousel p {
+  color: var(--color-secondary);
 }
 .carousel--slider {
   padding: 0 var(--spacing-l);
@@ -1575,7 +1582,7 @@ section {
   color: white;
 }
 
-.bkg__darkblue h1, .bkg__darkblue h2, .bkg__darkblue h3, .bkg__darkblue h4, .bkg__darkblue .testimonial .lead, .bkg__darkblue .testimonial .text-image__double p, .text-image__double .bkg__darkblue .testimonial p, .bkg__darkblue .testimonial .text-image__single--text p, .text-image__single--text .bkg__darkblue .testimonial p, .testimonial .bkg__darkblue .lead, .testimonial .bkg__darkblue .text-image__double p, .text-image__double .testimonial .bkg__darkblue p, .testimonial .bkg__darkblue .text-image__single--text p, .text-image__single--text .testimonial .bkg__darkblue p, .bkg__darkblue h5, .bkg__darkblue h6,
+.bkg__darkblue h1, .bkg__darkblue h2, .bkg__darkblue h3, .bkg__darkblue h4, .bkg__darkblue .testimonial .lead, .bkg__darkblue .testimonial .text-image__double p, .text-image__double .bkg__darkblue .testimonial p, .bkg__darkblue .testimonial .text-image__single--text p, .text-image__single--text .bkg__darkblue .testimonial p, .testimonial .bkg__darkblue .lead, .testimonial .bkg__darkblue .text-image__double p, .text-image__double .testimonial .bkg__darkblue p, .testimonial .bkg__darkblue .text-image__single--text p, .text-image__single--text .testimonial .bkg__darkblue p, .bkg__darkblue h5, .bkg__darkblue h6, .bkg__darkblue li, .bkg__darkblue li:before,
 .bkg__black h1,
 .bkg__black h2,
 .bkg__black h3,
@@ -1591,13 +1598,13 @@ section {
 .testimonial .bkg__black .text-image__single--text p,
 .text-image__single--text .testimonial .bkg__black p,
 .bkg__black h5,
-.bkg__black h6 {
-  color: white;
-}
-.bkg__darkblue p, .bkg__darkblue li, .bkg__darkblue li:before,
-.bkg__black p,
+.bkg__black h6,
 .bkg__black li,
 .bkg__black li:before {
+  color: white;
+}
+.bkg__darkblue p,
+.bkg__black p {
   color: var(--color-secondary);
 }
 
@@ -2029,9 +2036,20 @@ body.nav-open {
   margin-bottom: var(--spacing) !important;
   color: var(--color-secondary);
 }
+.team-item .btn a:after, .team-item .global-header--nav .menu-secondary-container ul li:last-of-type a a:after, .global-header--nav .menu-secondary-container ul li:last-of-type .team-item a a:after {
+  display: none;
+}
+.team-item .btn a .icon, .team-item .global-header--nav .menu-secondary-container ul li:last-of-type a a .icon, .global-header--nav .menu-secondary-container ul li:last-of-type .team-item a a .icon {
+  width: 22px;
+  height: 11px;
+  margin-left: 0.2rem;
+  transform: translateY(-2px);
+}
 .team-item--image {
   position: relative;
   width: 60vw;
+  max-width: 290px;
+  max-height: 290px;
   height: calc(60vw - var(--spacing) - 0px);
   margin: 0 auto;
   margin-bottom: var(--spacing);

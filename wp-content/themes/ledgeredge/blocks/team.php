@@ -11,7 +11,7 @@
 		'order' => 'ASC'
 	));
 ?>
-<div class="container--small">
+<div class="container">
 <section class="team">
 	<?php while($team->have_posts()) : $team->the_post(); ?>
 
@@ -25,18 +25,16 @@
 		<!-- <div class="team-item--image" style="background-image: url('<?php echo $image['url']; ?>')"> -->
 		<?php if ($image) { ?>
 		<div class="team-item--image">
-			<svg class="icon"><use xlink:href="#asset-team"></use></svg>
+			<svg class="icon"><?php echo get_icon('asset-team'); ?></svg>
 			<div class="team-item--image__clip" style="background-image: url('<?php echo $image['url']; ?>">
 				<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 			</div>
 		</div>
 		<?php } ?>
-		<div class="link-list-item--content">
-			<h4><?php the_title(); ?></h4>
-			<?php if ($job) { ?><h4 class="team-item--job"><?php echo $job; ?></h4><?php } ?>
-			<?php if ($bio) { ?><p class="team-item--bio"><?php echo $bio; ?></p><?php } ?>
-			<?php if ($link) { ?><span class="btn btn--primary btn__small"><a href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a></span><?php } ?>
-		</div>
+		<h4><?php the_title(); ?></h4>
+		<?php if ($job) { ?><h4 class="team-item--job"><?php echo $job; ?></h4><?php } ?>
+		<?php if ($bio) { ?><p class="team-item--bio"><?php echo $bio; ?></p><?php } ?>
+		<?php if ($link) { ?><span class="btn btn--primary btn__small"><a href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?> <?php echo get_icon('arrow'); ?></a></span><?php } ?>
 	</div>
 
 	<?php endwhile; wp_reset_query(); ?>

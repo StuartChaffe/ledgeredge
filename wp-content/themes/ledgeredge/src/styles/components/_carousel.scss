@@ -4,6 +4,10 @@
 	padding: var(--spacing-l) var(--spacing);
 	text-align: center;
 
+	p {
+		color: var(--color-secondary);
+	}
+
 	&--slider {
 		// margin: 0 -0.75rem;
 		padding: 0 var(--spacing-l);
