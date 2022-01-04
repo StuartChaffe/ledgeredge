@@ -1,0 +1,111 @@
+.timeline {
+	position: relative;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	padding-top: var(--spacing-l);
+	.btn {
+		margin: 4rem auto 0 auto;
+	}
+	&-line {
+		width: 3px;
+		height: 100%;
+		background-color: var(--color-secondary);
+		left: 50%;
+		top: 0;
+		text-indent: -9999px;
+		transform: translateX(-50%);
+		position: absolute;
+		border-bottom: 60px solid var(--body-background-color);
+		// z-index: 9;
+		&::before {
+			content: '';
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			top: 0;
+			left: 1px;
+			transform: translate(-50%, -50%);
+			background-color: var(--color-secondary);
+			border-radius: 40px;
+		}
+	}
+
+	&-item {
+		display: flex;
+		flex-direction: column;
+		// align-items: center;
+		margin: var(--spacing-s) auto;
+		width: 400px;
+		&:nth-child(even) {
+			.timeline-item--content {
+				transform: translateX(-80%);
+				// background-color: orange;
+				text-align: right;
+			}
+			.timeline-item--image {
+				transform: translateX(calc(-100% - 75px));
+				&::before {
+					right: 0;
+					transform: translate(100%, -50%);
+				}
+			}
+		}
+		&:nth-child(odd) {
+			.timeline-item--content {
+				transform: translateX(80%);
+				// background-color: yellow;
+			}
+			.timeline-item--image {
+				transform: translateX(calc(100% + 75px));
+				&::before {
+					left: 0;
+					transform: translate(-100%, -50%);
+				}
+			}
+		}
+		&--image {
+			width: 150px;
+			height: 150px;
+			position: relative;
+			margin: 0 auto 1.5rem auto;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+			&::before {
+				content: '';
+				position: absolute;
+				width: 150px;
+				height: 3px;
+				top: 50%;
+				background-color: var(--color-secondary);
+			}
+		}
+
+		&--content {
+			// transform: translateX(80%);
+		}
+
+		&--date {
+			padding: 0;
+			position: absolute;
+			display: block;
+			// background-color: var(--color-quinary);
+			color: white;
+			font-weight: var(--font-weight-bold);
+			width: auto;
+			z-index: 999;
+			left: 50%;
+   			transform: translateX(-50%);
+			top: 75px;
+			transform: translate(-50%, -50%);
+			border-left: 20px solid var(--body-background-color);
+			border-right: 20px solid var(--body-background-color);
+			span {
+				padding: 0.1rem 0.75rem;
+				background-color: var(--color-quinary);
+			}
+		}
+	}
+}
