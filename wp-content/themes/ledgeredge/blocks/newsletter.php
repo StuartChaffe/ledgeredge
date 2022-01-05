@@ -8,6 +8,7 @@
 		<p class="lead">Newsletter sign up</p>
 		<p>Stay connected to the latest news, platform, team and industry updates from LedgerEdge and our partners. </p>
 	</div>
+	<span class="hide">Hubspot form displays here</span>
 	<!--[if lte IE 8]>
 	<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
 	<![endif]-->

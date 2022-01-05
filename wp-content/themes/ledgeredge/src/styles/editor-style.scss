@@ -10,6 +10,7 @@
 @import "base/base";
 @import "base/typography";
 @import "components/*";
+@import "components/form";
 
 .fade {
 	opacity: 1;
@@ -30,6 +31,22 @@
 .wp-block {
 	margin-top: 0 !important;
 	margin-bottom: 0 !important;
+}
+
+.form,
+.newsletter {
+	.hide {
+		display: flex;
+	}
+}
+
+
+.newsletter {
+	.hide {
+		justify-content: center;
+		color: white;
+		margin-top: 1rem;
+	}
 }
 
 // .team-item--image__clip {

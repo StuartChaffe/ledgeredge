@@ -524,7 +524,7 @@ textarea,
 select {
   padding: 8px 10px;
   background-color: #fff;
-  border: 1px solid #000430;
+  border: 1px solid #999BAC;
   border-radius: 0;
   box-shadow: none;
   box-sizing: border-box;
@@ -643,6 +643,28 @@ input[type=button]:focus {
   color: #BF5D58;
 }
 
+.hbspt-form {
+  width: 100%;
+}
+.hbspt-form form {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.5rem;
+}
+.hbspt-form form .hs-submit {
+  margin-top: 1rem;
+  width: 100%;
+  margin-left: 0.5rem;
+}
+.hbspt-form form .field {
+  margin: 0 0.5rem 1rem 0.5rem;
+  width: calc(50% - 1rem);
+}
+.hbspt-form form .field .input, .hbspt-form form .field input {
+  width: 100%;
+}
+
 .hs-error-msgs {
   font-size: var(--font-size-small);
 }
@@ -653,7 +675,8 @@ input[type=button]:focus {
   display: none;
 }
 .hs-error-msgs li label {
-  color: var(--color-secondary);
+  color: var(--color-primary);
+  font-weight: var(--font-weight-bold);
 }
 
 .global-container {
@@ -1680,6 +1703,7 @@ body.nav-open {
   background-color: white;
   border-radius: var(--border-radius);
   padding: var(--spacing-l);
+  margin-bottom: var(--spacing-xxl);
 }
 
 .image {
@@ -1708,6 +1732,7 @@ body.nav-open {
   text-align: left;
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
 }
 @media (min-width: 50em) {
   .newsletter .hbspt-form form {
@@ -1717,9 +1742,14 @@ body.nav-open {
 .newsletter .hbspt-form form .hs-submit {
   margin-top: 30px;
   margin-left: 1rem;
+  width: auto;
 }
 .newsletter .hbspt-form form .field {
   margin: 0 0.5rem;
+  width: auto;
+}
+.newsletter .hbspt-form form .field .input, .newsletter .hbspt-form form .field input {
+  width: 100%;
 }
 
 .post-header {

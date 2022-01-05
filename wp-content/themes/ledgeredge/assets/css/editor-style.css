@@ -1042,6 +1042,7 @@ article .content {
   background-color: white;
   border-radius: var(--border-radius);
   padding: var(--spacing-l);
+  margin-bottom: var(--spacing-xxl);
 }
 
 .global-header {
@@ -1662,6 +1663,7 @@ body.nav-open {
   text-align: left;
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
 }
 @media (min-width: 50em) {
   .newsletter .hbspt-form form {
@@ -1671,9 +1673,14 @@ body.nav-open {
 .newsletter .hbspt-form form .hs-submit {
   margin-top: 30px;
   margin-left: 1rem;
+  width: auto;
 }
 .newsletter .hbspt-form form .field {
   margin: 0 0.5rem;
+  width: auto;
+}
+.newsletter .hbspt-form form .field .input, .newsletter .hbspt-form form .field input {
+  width: 100%;
 }
 
 .post-header {
@@ -2390,6 +2397,13 @@ body.nav-open {
   background-color: var(--color-quinary);
 }
 
+.form {
+  background-color: white;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-l);
+  margin-bottom: var(--spacing-xxl);
+}
+
 .fade {
   opacity: 1;
   transform: translateY(0px) !important;
@@ -2411,4 +2425,15 @@ body.nav-open {
 .wp-block {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
+}
+
+.form .hide,
+.newsletter .hide {
+  display: flex;
+}
+
+.newsletter .hide {
+  justify-content: center;
+  color: white;
+  margin-top: 1rem;
 }
