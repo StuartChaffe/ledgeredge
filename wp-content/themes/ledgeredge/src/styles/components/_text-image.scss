@@ -24,6 +24,9 @@
 			p {
 				@extend .lead;
 			}
+			li {
+				font-size: var(--font-size-lead) !important;
+			}
 		}
 	}
 	&__double {
@@ -129,7 +132,10 @@
 			}
 		}
 		&__nopad {
+			background-size: cover;
+			background-position: left center;
 			img {
+				display: none; 
 				position: absolute;
 				top: 50%;
 				left: 0;

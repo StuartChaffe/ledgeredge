@@ -37,7 +37,7 @@ $image = get_field('banner_image');
 			<span class="btn btn--primary"><a href="#" data-featherlight="#banner-video" data-featherlight-iframe-allow="autoplay">Play Video</a></span>
 		<?php } ?>
 		<?php if ($buttons['banner_button_2']) { ?>
-			<span class="btn btn--white"><a href="<?php echo $buttons['banner_button_2']['url']; ?>" href="<?php echo $buttons['banner_button_2']['url']; ?>"><?php echo $buttons['banner_button_2']['title']; ?></a></span>
+			<span class="btn btn--white"><a href="<?php echo $buttons['banner_button_2']['url']; ?>"><?php echo $buttons['banner_button_2']['title']; ?></a></span>
 		<?php } ?>
 		
 		<a class="hide" href="<?php echo $buttons['banner_button']; ?>" data-featherlight="iframe" allow="autoplay; fullscreen" allowfullscreen >Inline</a>
