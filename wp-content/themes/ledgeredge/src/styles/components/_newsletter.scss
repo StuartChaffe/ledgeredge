@@ -5,10 +5,28 @@
 	h1, h2, h3, h4, h5, h6 {
 		color: var(--color-secondary);
 	}
-	p {
+	p, label {
 		color: white;
 	}
 	.lead {
 		color: var(--color-secondary);
+	}
+	.hbspt-form {
+		margin-top: 1rem;
+		form {
+			text-align: left;
+			display: flex;
+			flex-wrap: wrap;
+			@include mq(medium) {
+				justify-content: center;
+			}
+			.hs-submit {
+				margin-top: 30px;
+				margin-left: 1rem;
+			}
+			.field {
+				margin: 0 0.5rem;
+			}
+		}
 	}
 }

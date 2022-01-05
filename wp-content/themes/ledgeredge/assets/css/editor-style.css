@@ -525,7 +525,6 @@ li {
   padding-left: 1.5rem;
   margin-bottom: 0.3em;
   margin-left: 0;
-  font-size: var(--font-size);
 }
 
 li p {
@@ -646,10 +645,11 @@ pre {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  padding-top: 110px;
+  padding-bottom: var(--spacing-xl);
 }
 .banner__small {
-  position: relative;
-  min-height: 200px;
+  min-height: 450px;
   padding-top: 180px;
   padding-bottom: var(--spacing-xxl);
   overflow: hidden;
@@ -1036,6 +1036,12 @@ article .content {
   .global-footer--inner {
     flex-direction: row;
   }
+}
+
+.form {
+  background-color: white;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-l);
 }
 
 .global-header {
@@ -1456,7 +1462,7 @@ ul.menu .sub-menu li a:after {
   max-width: var(--container-large);
 }
 
-.container--small {
+.container--small, .form {
   margin: 0 auto;
   padding: 0 var(--spacing);
   width: 100%;
@@ -1643,11 +1649,31 @@ body.nav-open {
 .newsletter h1, .newsletter h2, .newsletter h3, .newsletter h4, .newsletter .testimonial .lead, .newsletter .testimonial .text-image__double p, .text-image__double .newsletter .testimonial p, .newsletter .testimonial .text-image__single--text p, .text-image__single--text .newsletter .testimonial p, .testimonial .newsletter .lead, .testimonial .newsletter .text-image__double p, .text-image__double .testimonial .newsletter p, .testimonial .newsletter .text-image__single--text p, .text-image__single--text .testimonial .newsletter p, .newsletter h5, .newsletter h6 {
   color: var(--color-secondary);
 }
-.newsletter p {
+.newsletter p, .newsletter label {
   color: white;
 }
 .newsletter .lead, .newsletter .text-image__double p, .text-image__double .newsletter p, .newsletter .text-image__single--text p, .text-image__single--text .newsletter p {
   color: var(--color-secondary);
+}
+.newsletter .hbspt-form {
+  margin-top: 1rem;
+}
+.newsletter .hbspt-form form {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 50em) {
+  .newsletter .hbspt-form form {
+    justify-content: center;
+  }
+}
+.newsletter .hbspt-form form .hs-submit {
+  margin-top: 30px;
+  margin-left: 1rem;
+}
+.newsletter .hbspt-form form .field {
+  margin: 0 0.5rem;
 }
 
 .post-header {
@@ -2366,6 +2392,7 @@ body.nav-open {
 
 .fade {
   opacity: 1;
+  transform: translateY(0px) !important;
 }
 
 /* Stop links being clickable in the block editor */
@@ -2379,4 +2406,9 @@ body.nav-open {
 
 .carousel--slider {
   display: flex;
+}
+
+.wp-block {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }

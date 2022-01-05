@@ -2,6 +2,7 @@
 /**
 * The template used for displaying a banner.
 */
+$size = get_field('banner_size');
 $bkgcolor = get_field('background_colour');
 $bkgimage = get_field('background_image');
 $asset = get_field('banner_colour');
@@ -18,7 +19,7 @@ $image = get_field('banner_image');
 ?>
 
 <section class="fade <?php echo $bkgcolor ?><?php if ($asset) { ?> <?php echo $asset ?><?php } ?>" <?php if ( $bkgcolor == 'banner--bkg__image' ) { ?> style="background-image: url('<?php echo $bkgimage['url']; ?>')"<?php } ?>>
-	<div class="banner container">
+	<div class="banner<?php if ( $size == 'banner__small' ) { ?> banner__small<?php } ?> container">
 	<?php if ( $bkgcolor == 'banner--bkg__image' ) { ?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 899.95 843.78" class="banner--bkg__asset fade fade--delay__2 <?php echo $asset ?>"><g data-name="Layer 2"><g data-name="Layer 1"><polygon points="590.24 0 899.95 419.57 596.61 843.78 99.44 686.38 95.5 164.89 590.24 0"/><polygon fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="3.94px" points="403.32 13.89 2.36 347.36 195.6 831.73 715.99 797.63 844.36 292.18 403.32 13.89"/></g></g></svg><?php } ?>
 		<div class="banner--content fade fade--delay__2">
 		<?php if ($label) { ?>
@@ -44,7 +45,7 @@ $image = get_field('banner_image');
 		<a class="hide" href="https://player.vimeo.com/video/219014507?autoplay=1&loop=1&autopause=0" data-featherlight="iframe" allow="autoplay; fullscreen" allowfullscreen > YT</a>
 			
 		</div>
-		<div class="banner--image fade fade--delay__3">
+		<div class="banner--image fade fade--delay__3" <?php if ( $size == 'banner__small' ) { ?>style="background-image: url('<?php echo $image['url']; ?>')"<?php } ?>>
 		<?php if ($image) { ?>
 			<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 		<?php } ?>

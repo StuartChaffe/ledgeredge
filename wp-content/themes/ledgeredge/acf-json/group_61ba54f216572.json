@@ -3,6 +3,31 @@
     "title": "Banner",
     "fields": [
         {
+            "key": "field_61d578662034d",
+            "label": "Size",
+            "name": "banner_size",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "banner__large": "Large",
+                "banner__small": "Small"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
             "key": "field_61ba54ff74131",
             "label": "Background",
             "name": "background_colour",
@@ -274,5 +299,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1640262320
+    "modified": 1641380987
 }

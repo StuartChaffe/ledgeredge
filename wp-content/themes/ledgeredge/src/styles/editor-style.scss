@@ -13,11 +13,12 @@
 
 .fade {
 	opacity: 1;
+	transform: translateY(0px) !important;
 }
 
 /* Stop links being clickable in the block editor */
 .acf-block-preview a {
-	pointer-events: none!important;
+	pointer-events: none !important;
 }
 
 .wp-block[data-align=wide] {
@@ -25,6 +26,10 @@
 }
 .carousel--slider {
 	display: flex;
+}
+.wp-block {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
 }
 
 // .team-item--image__clip {

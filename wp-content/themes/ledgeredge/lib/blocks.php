@@ -128,16 +128,16 @@ function ledgeredge_acf_blocks() {
 		// 	'align' 			=> 'wide',
 		// 	'keywords'			=> array( 'team, featured' ),
 		// ));
-		// acf_register_block(array(
-		// 	'name'				=> 'form',
-		// 	'title'				=> __('Form'),
-		// 	'description'		=> __('Add a form'),
-		// 	'render_callback'	=> 'ledgeredge_acf_block_render_callback',
-		// 	'category'			=> 'ledgeredge-blocks',
-		// 	'icon'				=> 'email-alt',
-		// 	'align' 			=> 'wide',
-		// 	'keywords'			=> array( 'form, contact' ),
-		// ));
+		acf_register_block(array(
+			'name'				=> 'form',
+			'title'				=> __('Form'),
+			'description'		=> __('Add a form'),
+			'render_callback'	=> 'ledgeredge_acf_block_render_callback',
+			'category'			=> 'ledgeredge-blocks',
+			'icon'				=> 'email-alt',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'form, contact' ),
+		));
 		// acf_register_block(array(
 		// 	'name'				=> 'highlighted-service',
 		// 	'title'				=> __('Highlighted service'),
@@ -286,7 +286,7 @@ function ledgeredge_allowed_block_types( $allowed_blocks ) {
 		// 'acf/featured-posts',
 		// 'acf/featured-lists',
 		// 'acf/featured-team',
-		// 'acf/form',
+		'acf/form',
 		'acf/image',
 		'acf/newsletter',
 		// 'acf/link-list',
