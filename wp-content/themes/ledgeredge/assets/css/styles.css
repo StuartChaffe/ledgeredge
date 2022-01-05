@@ -1702,6 +1702,7 @@ body.nav-open {
 .form {
   background-color: white;
   border-radius: var(--border-radius);
+  max-width: 750px;
   padding: var(--spacing-l);
   margin-bottom: var(--spacing-xxl);
 }

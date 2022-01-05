@@ -2,6 +2,7 @@
 	background-color: white;
 	border-radius: var(--border-radius);
 	@extend .container--small;
+	max-width: 750px;
 	padding: var(--spacing-l);
 	margin-bottom: var(--spacing-xxl)
 }
