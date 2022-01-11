@@ -9,7 +9,7 @@ $bkgimage = get_field('bkg-image');
 $text = get_field('text-image-text');
 $image = get_field('image');
 ?>
-<div class="container">
+<div class="container--large">
 <section class="text-image <?php if ( $bkg ) { ?><?php echo $bkg ?><?php } ?><?php if ( $bkgimage ) { ?>bkg__image<?php } ?><?php if ( $blocks == 'text-image__single' ) { ?> fade text-image__single<?php } ?>" <?php if ( $bkgimage ) { ?>style="background-image:url(<?php echo $bkgimage['url'] ?>);"<?php } ?>>
 <?php if ( $blocks == 'text-image__single' ) { ?>
 	<div class="text-image--text text-image__single--text">

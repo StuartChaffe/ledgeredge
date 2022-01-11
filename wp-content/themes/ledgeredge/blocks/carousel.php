@@ -7,7 +7,7 @@ $items = get_field('carousel');
 ?>
 
 <section class="fade carousel">
-	<div class="container">
+	<div class="container--large">
 	<?php if ( $content ) { ?>
 		<?php echo $content ?>
 	<?php } ?>

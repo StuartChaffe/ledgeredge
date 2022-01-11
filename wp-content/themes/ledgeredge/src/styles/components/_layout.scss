@@ -12,13 +12,19 @@
 	margin: 0 auto;
 	padding: 0 var(--spacing);
 	width: 100%;
-	max-width: var(--container-large);
+	max-width: var(--container);
 }
 .container--small {
 	margin: 0 auto;
 	padding: 0 var(--spacing);
 	width: 100%;
 	max-width: var(--container-small);
+}
+.container--large {
+	margin: 0 auto;
+	padding: 0 var(--spacing);
+	width: 100%;
+	max-width: var(--container-large);
 }
 section {
 	margin-bottom: var(--spacing);
