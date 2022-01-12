@@ -134,6 +134,11 @@ input[type="button"]:focus {
 		display: flex;
 		flex-wrap: wrap;
 		margin: 0 -0.5rem;
+		fieldset {
+			max-width: none;
+			display: flex;
+			width: 100%;
+		}
 		.hs-submit {
 			margin-top: 1rem;
 			width: 100%;
@@ -145,6 +150,13 @@ input[type="button"]:focus {
 			.input, input {
 				width: 100%;
 			}
+		}
+		.hs-richtext {
+			margin: 0 0.5rem;
+		}
+		.hs-message,
+		.hs-input {
+			width: 100% !important;
 		}
 	}
 }

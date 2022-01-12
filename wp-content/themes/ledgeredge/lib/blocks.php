@@ -229,6 +229,16 @@ function ledgeredge_acf_blocks() {
 			'keywords'			=> array( 'testimonial, quote' ),
 		));
 		acf_register_block(array(
+			'name'				=> 'text-icon',
+			'title'				=> __('Text with icon'),
+			'description'		=> __('Add a standard text with icon block'),
+			'render_callback'	=> 'ledgeredge_acf_block_render_callback',
+			'category'			=> 'ledgeredge-blocks',
+			'icon'				=> 'align-full-width',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'icon, text, image' ),
+		));
+		acf_register_block(array(
 			'name'				=> 'text-image',
 			'title'				=> __('Text with image'),
 			'description'		=> __('Add a standard text with image block'),
@@ -277,7 +287,6 @@ function ledgeredge_allowed_block_types( $allowed_blocks ) {
 		// 'acf/accordion',
 		// 'acf/awards',
 		'acf/banner',
-		'acf/text-image',
 		// 'acf/careers',
 		'acf/carousel',
 		'acf/content',
@@ -297,6 +306,8 @@ function ledgeredge_allowed_block_types( $allowed_blocks ) {
 		'acf/team',
 		'acf/timeline',
 		'acf/testimonial',
+		'acf/text-icon',
+		'acf/text-image',
 		// 'acf/video'
 	);
  

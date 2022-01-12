@@ -95,8 +95,15 @@
 .btn--quaternary {
 	background-color:  var(--color-quaternary);
 	color: white;
+	stroke: white;
 
-	&:hover, &:focus {
+	a {
 		color: white;
+		&:after {
+			content: url('../../src/icons/arrow-white.svg');
+		}
+	}
+	&:before {
+		background: var(--color-primary);
 	}
 }
