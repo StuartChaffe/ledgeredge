@@ -12,7 +12,10 @@
 		// margin: 0 -0.75rem;
 		padding: 0 var(--spacing-l);
 		&-item {
-			padding: 1rem 4rem;
+			padding: 1rem 1rem;
+			@include mq(medium) {
+				padding: 1rem 4rem;
+			}
 			img {
 				width: 100%;
 			}

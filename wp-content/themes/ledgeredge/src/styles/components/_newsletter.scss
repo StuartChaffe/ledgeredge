@@ -2,6 +2,9 @@
 	background: black;
 	padding: var(--spacing) 0;
 	text-align: center;
+	@include mq(medium) {
+		padding: var(--spacing) 0;
+	}
 	h1, h2, h3, h4, h5, h6 {
 		color: var(--color-secondary);
 	}
@@ -18,6 +21,7 @@
 			display: flex;
 			flex-wrap: wrap;
 			margin: 0;
+			padding: 0 var(--spacing-s);
 			@include mq(medium) {
 				justify-content: center;
 			}
@@ -28,7 +32,9 @@
 			}
 			.field {
 				margin: 0 0.5rem;
-				width: auto;
+				@include mq(medium) {
+					width: auto;
+				}
 				.input, input {
 					width: 100%;
 				}

@@ -19,6 +19,23 @@
 				transform: rotate(180deg);
 			}
 		}
+		.addthis_inline_share_toolbox {
+			display: flex;
+			align-items: center;
+		}
+		.at-share-tbx-element .at-share-btn {
+			margin: 0 0.1rem;
+		}
+		.at-icon-wrapper {
+			line-height: 26px;
+			height: 26px !important;
+			display: flex;
+			align-items: center;
+		}
+		.at-icon {
+			color: var(--color-text-base);
+			fill: var(--color-text-base);
+		}
 	}
 	&-footer {
 		border-top: 1px solid var(--color-text-base);

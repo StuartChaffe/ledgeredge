@@ -22,7 +22,7 @@
 	</section>
 	<div class="container">
 		<div class="post-header">
-			<a href="/news"><?php echo get_icon('arrow'); ?> Back to list</a> <p><strong>Share:</strong> Social Share</p>
+			<a href="/news"><?php echo get_icon('arrow'); ?> Back to list</a> <div class="addthis_inline_share_toolbox"><p><strong>Share:</strong></p></div>
 		</div>
 	</div>
 	<article>
@@ -32,7 +32,7 @@
 	</article>
 	<div class="container">
 		<div class="post-header post-footer">
-			<a href="/news"><?php echo get_icon('arrow'); ?> Back to list</a> <p><strong>Share:</strong> Social Share</p>
+			<a href="/news"><?php echo get_icon('arrow'); ?> Back to list</a> <div class="addthis_inline_share_toolbox"><p><strong>Share:</strong></p></div>
 		</div>
 	</div>
 	
