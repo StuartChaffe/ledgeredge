@@ -687,7 +687,7 @@ pre {
 @media (min-width: 50em) {
   .banner--content {
     width: 50%;
-    max-width: 500px;
+    max-width: 501px;
   }
 }
 @media (min-width: 70em) {
