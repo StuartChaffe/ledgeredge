@@ -1568,7 +1568,7 @@ ul.menu .sub-menu li a:after {
   max-width: var(--container-small);
 }
 
-.container--large {
+.container--large, .text-icon {
   margin: 0 auto;
   padding: 0 var(--spacing);
   width: 100%;
@@ -2317,6 +2317,80 @@ body.nav-open {
 .testimonial--author, .testimonial--company {
   margin-bottom: 0;
   color: var(--color-quaternary);
+}
+
+.text-icon {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: var(--spacing-l);
+  padding-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-l);
+}
+.text-icon .btn, .text-icon .global-header--nav .menu-secondary-container ul li:last-of-type a, .global-header--nav .menu-secondary-container ul li:last-of-type .text-icon a {
+  margin: 8rem auto 0 auto;
+}
+.text-icon-line {
+  width: 3px;
+  height: 100%;
+  background-color: var(--color-secondary);
+  left: 50%;
+  top: 0;
+  text-indent: -9999px;
+  transform: translateX(-50%);
+  position: absolute;
+  border-bottom: 60px solid var(--body-background-color);
+}
+.text-icon-line::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  left: 1px;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-secondary);
+  border-radius: 40px;
+}
+.text-icon-item {
+  display: flex;
+  flex-direction: column;
+  margin: var(--spacing-s) 0;
+  width: 35%;
+}
+.text-icon-item:nth-child(odd) {
+  margin-left: calc(15% + var(--spacing));
+  margin-top: 200px;
+}
+.text-icon-item--image {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  margin: 1.5rem 0;
+}
+.text-icon-item--image img {
+  width: 100%;
+  height: 100%;
+}
+.text-icon-item--date {
+  padding: 0;
+  position: absolute;
+  display: block;
+  color: white;
+  font-weight: var(--font-weight-bold);
+  width: auto;
+  z-index: 999;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 75px;
+  transform: translate(-50%, -50%);
+  border-left: 20px solid var(--body-background-color);
+  border-right: 20px solid var(--body-background-color);
+}
+.text-icon-item--date span {
+  padding: 0.1rem 0.75rem;
+  background-color: var(--color-quinary);
 }
 
 .text-image {
