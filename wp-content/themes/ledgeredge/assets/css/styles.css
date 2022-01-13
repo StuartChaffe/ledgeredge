@@ -1659,7 +1659,7 @@ body.nav-open {
 @media (min-width: 70em) {
   .banner--content {
     width: 50%;
-    max-width: 600px;
+    max-width: 450px;
   }
 }
 .banner--content p + h1 {
