@@ -699,12 +699,15 @@ pre {
 .banner--content {
   z-index: 1;
   width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 @media (min-width: 50em) {
   .banner--content {
     width: 50%;
     max-width: 501px;
-    padding-left: var(--spacing);
+    padding: 0 0 0 var(--spacing);
+    margin-bottom: 0;
   }
 }
 @media (min-width: 70em) {
@@ -729,10 +732,12 @@ pre {
 .banner--image {
   width: 100%;
   margin-left: auto;
+  padding: 1rem;
 }
 @media (min-width: 50em) {
   .banner--image {
     width: 50%;
+    padding: 0;
   }
 }
 .banner--bkg__asset {
@@ -792,7 +797,8 @@ pre {
   }
 }
 .banner--bkg__image .banner {
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
 }
 @media (min-width: 50em) {
   .banner--bkg__image .banner {
@@ -804,6 +810,10 @@ pre {
   .banner--bkg__image .banner {
     padding-top: 15%;
   }
+}
+.banner--bkg__image .banner--content {
+  width: 85%;
+  padding-left: var(--spacing);
 }
 .banner--bkg__image h1, .banner--bkg__image h2, .banner--bkg__image h3, .banner--bkg__image h4, .banner--bkg__image .testimonial .lead, .banner--bkg__image .testimonial .text-image__double p, .text-image__double .banner--bkg__image .testimonial p, .banner--bkg__image .testimonial .text-image__single--text p, .text-image__single--text .banner--bkg__image .testimonial p, .testimonial .banner--bkg__image .lead, .testimonial .banner--bkg__image .text-image__double p, .text-image__double .testimonial .banner--bkg__image p, .testimonial .banner--bkg__image .text-image__single--text p, .text-image__single--text .testimonial .banner--bkg__image p, .banner--bkg__image h5, .banner--bkg__image h6, .banner--bkg__image p {
   color: white;
@@ -845,12 +855,11 @@ pre {
   order: 2;
   padding: 0;
   margin-left: 0.5rem;
-  width: 10px;
   overflow: hidden;
 }
 @media (min-width: 50em) {
   .btn a:after, .global-header--nav .menu-secondary-container ul li:last-of-type a a:after {
-    display: flex;
+    display: inline-flex;
   }
 }
 .btn a:hover, .global-header--nav .menu-secondary-container ul li:last-of-type a a:hover, .btn a:focus, .global-header--nav .menu-secondary-container ul li:last-of-type a a:focus {
