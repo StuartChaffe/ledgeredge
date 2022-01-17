@@ -5,11 +5,6 @@
 	--font-size: calc(1rem + 0.15vw);
 	--font-size-lead: calc(1.2rem + 0.1vw);
 	--font-size-small: calc(0.8rem + 0.1vw);
-	--font-size-h1: calc(2rem + 0.2vw);
-	--font-size-h2: calc(1.8rem + 0.2vw);
-	--font-size-h3: calc(1.5rem + 0.2vw);
-	--font-size-h4: calc(1.3rem + 0.2vw);
-	--font-size-h5: calc(1.2rem + 0.2vw);
 
 	--font-weight-light: 100;
 	--font-weight-normal: 400;
@@ -58,6 +53,19 @@
 	--container-small: 900px;
 	--container: 1200px;
 	--container-large: 1600px;
+
+	--font-size-h1: calc(2rem + 0.2vw);
+	--font-size-h2: calc(1.8rem + 0.2vw);
+	--font-size-h3: calc(1.5rem + 0.2vw);
+	--font-size-h4: calc(1.3rem + 0.2vw);
+	--font-size-h5: calc(1.2rem + 0.2vw);
+	@include mq(medium) {
+		--font-size-h1: calc(2.5rem + 0.2vw);
+		--font-size-h2: calc(2.2rem + 0.2vw);
+		--font-size-h3: calc(2rem + 0.2vw);
+		--font-size-h4: calc(1.4rem + 0.2vw);
+		--font-size-h5: calc(1.2rem + 0.2vw);
+	}
 
 	@include mq(large) {
 		--font-size-h1: calc(2.7rem + 0.2vw);
