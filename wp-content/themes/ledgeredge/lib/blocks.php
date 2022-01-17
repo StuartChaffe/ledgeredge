@@ -17,26 +17,6 @@ function ledgeredge_block_categories( $categories, $post )
 add_action('acf/init', 'ledgeredge_acf_blocks');
 function ledgeredge_acf_blocks() {
 	if( function_exists('acf_register_block') ) {
-		// acf_register_block(array(
-		// 	'name'				=> 'accordion',
-		// 	'title'				=> __('Accordion'),
-		// 	'description'		=> __('Add expanding content'),
-		// 	'render_callback'	=> 'ledgeredge_acf_block_render_callback',
-		// 	'category'			=> 'ledgeredge-blocks',
-		// 	'icon'				=> 'insert',
-		// 	'align' 			=> 'wide',
-		// 	'keywords'			=> array( 'accordion, expanding' ),
-		// ));
-		// acf_register_block(array(
-		// 	'name'				=> 'awards',
-		// 	'title'				=> __('Awards'),
-		// 	'description'		=> __('Add an award block'),
-		// 	'render_callback'	=> 'ledgeredge_acf_block_render_callback',
-		// 	'category'			=> 'ledgeredge-blocks',
-		// 	'icon'				=> 'awards',
-		// 	'align' 			=> 'wide',
-		// 	'keywords'			=> array( 'award' ),
-		// ));
 		acf_register_block(array(
 			'name'				=> 'banner',
 			'title'				=> __('Banner'),
@@ -47,16 +27,6 @@ function ledgeredge_acf_blocks() {
 			'align' 			=> 'full',
 			'keywords'			=> array( 'banner' ),
 		));
-		// acf_register_block(array(
-		// 	'name'				=> 'careers',
-		// 	'title'				=> __('Careers'),
-		// 	'description'		=> __('Add a careers block'),
-		// 	'render_callback'	=> 'ledgeredge_acf_block_render_callback',
-		// 	'category'			=> 'ledgeredge-blocks',
-		// 	'icon'				=> 'admin-users',
-		// 	'align' 			=> 'full',
-		// 	'keywords'			=> array( 'careers, jobs' ),
-		// ));
 		acf_register_block(array(
 			'name'				=> 'carousel',
 			'title'				=> __('Carousel'),
@@ -88,46 +58,16 @@ function ledgeredge_acf_blocks() {
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'cta, call to action' ),
 		));
-		// acf_register_block(array(
-		// 	'name'				=> 'download',
-		// 	'title'				=> __('Download'),
-		// 	'description'		=> __('Add a download block'),
-		// 	'render_callback'	=> 'ledgeredge_acf_block_render_callback',
-		// 	'category'			=> 'ledgeredge-blocks',
-		// 	'icon'				=> 'download',
-		// 	'align' 			=> 'wide',
-		// 	'keywords'			=> array( 'download' ),
-		// ));
-		// acf_register_block(array(
-		// 	'name'				=> 'featured-posts',
-		// 	'title'				=> __('Featured posts'),
-		// 	'description'		=> __('Add featured posts'),
-		// 	'render_callback'	=> 'ledgeredge_acf_block_render_callback',
-		// 	'category'			=> 'ledgeredge-blocks',
-		// 	'icon'				=> 'screenoptions',
-		// 	'align' 			=> 'wide',
-		// 	'keywords'			=> array( 'posts, featured' ),
-		// ));
-		// acf_register_block(array(
-		// 	'name'				=> 'featured-lists',
-		// 	'title'				=> __('Featured lists'),
-		// 	'description'		=> __('Add a featured list'),
-		// 	'render_callback'	=> 'ledgeredge_acf_block_render_callback',
-		// 	'category'			=> 'ledgeredge-blocks',
-		// 	'icon'				=> 'screenoptions',
-		// 	'align' 			=> 'wide',
-		// 	'keywords'			=> array( 'list, featured' ),
-		// ));
-		// acf_register_block(array(
-		// 	'name'				=> 'featured-team',
-		// 	'title'				=> __('Featured team members'),
-		// 	'description'		=> __('Add team members'),
-		// 	'render_callback'	=> 'ledgeredge_acf_block_render_callback',
-		// 	'category'			=> 'ledgeredge-blocks',
-		// 	'icon'				=> 'admin-users',
-		// 	'align' 			=> 'wide',
-		// 	'keywords'			=> array( 'team, featured' ),
-		// ));
+		acf_register_block(array(
+			'name'				=> 'featured-posts',
+			'title'				=> __('Featured posts'),
+			'description'		=> __('Add featured posts'),
+			'render_callback'	=> 'ledgeredge_acf_block_render_callback',
+			'category'			=> 'ledgeredge-blocks',
+			'icon'				=> 'screenoptions',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'posts, featured' ),
+		));
 		acf_register_block(array(
 			'name'				=> 'form',
 			'title'				=> __('Form'),
@@ -138,26 +78,6 @@ function ledgeredge_acf_blocks() {
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'form, contact' ),
 		));
-		// acf_register_block(array(
-		// 	'name'				=> 'highlighted-service',
-		// 	'title'				=> __('Highlighted service'),
-		// 	'description'		=> __('Add highlighted service'),
-		// 	'render_callback'	=> 'ledgeredge_acf_block_render_callback',
-		// 	'category'			=> 'ledgeredge-blocks',
-		// 	'icon'				=> 'align-full-width',
-		// 	'align' 			=> 'wide',
-		// 	'keywords'			=> array( 'services, highlight' ),
-		// ));
-		// acf_register_block(array(
-		// 	'name'				=> 'highlighted-text',
-		// 	'title'				=> __('Highlighted text'),
-		// 	'description'		=> __('Add highlighted text'),
-		// 	'render_callback'	=> 'ledgeredge_acf_block_render_callback',
-		// 	'category'			=> 'ledgeredge-blocks',
-		// 	'icon'				=> 'menu-alt3',
-		// 	'align' 			=> 'wide',
-		// 	'keywords'			=> array( 'text, highlight' ),
-		// ));
 		acf_register_block(array(
 			'name'				=> 'image',
 			'title'				=> __('Image'),
@@ -168,26 +88,6 @@ function ledgeredge_acf_blocks() {
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'images, image' )
 		));
-		// acf_register_block(array(
-		// 	'name'				=> 'link-list',
-		// 	'title'				=> __('Link list'),
-		// 	'description'		=> __('Add link list block'),
-		// 	'render_callback'	=> 'ledgeredge_acf_block_render_callback',
-		// 	'category'			=> 'ledgeredge-blocks',
-		// 	'icon'				=> 'columns',
-		// 	'align' 			=> 'wide',
-		// 	'keywords'			=> array( 'link list, links' ),
-		// ));
-		// acf_register_block(array(
-		// 	'name'				=> 'platforms',
-		// 	'title'				=> __('Platform list'),
-		// 	'description'		=> __('Add platform list'),
-		// 	'render_callback'	=> 'ledgeredge_acf_block_render_callback',
-		// 	'category'			=> 'ledgeredge-blocks',
-		// 	'icon'				=> 'columns',
-		// 	'align' 			=> 'wide',
-		// 	'keywords'			=> array( 'platform' ),
-		// ));
 		acf_register_block(array(
 			'name'				=> 'posts',
 			'title'				=> __('Posts'),
@@ -258,16 +158,6 @@ function ledgeredge_acf_blocks() {
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'timeline' ),
 		));
-		// acf_register_block(array(
-		// 	'name'				=> 'video',
-		// 	'title'				=> __('Video'),
-		// 	'description'		=> __('Add a video'),
-		// 	'render_callback'	=> 'ledgeredge_acf_block_render_callback',
-		// 	'category'			=> 'ledgeredge-blocks',
-		// 	'icon'				=> 'video-alt3',
-		// 	'align' 			=> 'wide',
-		// 	'keywords'			=> array( 'video' ),
-		// ));
 	}
 }
 
@@ -292,7 +182,7 @@ function ledgeredge_allowed_block_types( $allowed_blocks ) {
 		'acf/content',
 		// 'acf/cta',
 		// 'acf/download',
-		// 'acf/featured-posts',
+		'acf/featured-posts',
 		// 'acf/featured-lists',
 		// 'acf/featured-team',
 		'acf/form',
