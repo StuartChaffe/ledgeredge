@@ -7,6 +7,7 @@
 		$cat = $category->name;
 		$category_link = get_category_link( $category->term_id );
 	}
+	$hide = get_field('hide_featured');
 ?>
 
 	<section class="fade bkg__darkblue">
@@ -26,7 +27,8 @@
 		</div>
 	</div>
 	<article>
-	<?php if (has_post_thumbnail() ) { ?><div class="posts-item--image"><?php the_post_thumbnail(); ?></div><?php } ?>
+
+	<?php if ( $hide == '0' ) { ?><div class="posts-item--image"><?php the_post_thumbnail(); ?></div><?php } ?>
 		<div class="posts-item--meta"><p><strong><?php echo $cat ?></strong></p>&nbsp; / &nbsp;<p><?php echo get_the_date('d.m.y'); ?></p></div>
 		<h1><?php the_title(); ?></h1>
 		<?php the_content(); ?>
