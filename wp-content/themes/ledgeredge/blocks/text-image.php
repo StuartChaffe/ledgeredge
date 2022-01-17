@@ -16,7 +16,7 @@ $image = get_field('image');
 		<?php echo $text ?>
 	</div>
 	<?php if ( $image['text-image-image'] ) { ?>
-	<div class="text-image--image<?php if ( $image['text-image-pad'] == '1' ) { ?> text-image--image__pad<?php } else { ?> text-image--image__nopad<?php } ?>" <?php if ( $image['text-image-pad'] == '0' ) { ?>style="background-image: url('<?php echo $image['text-image-image']['url']; ?>')"<?php } ?>>
+	<div class="text-image--image<?php if ( $image['text-image-pad'] == '1' ) { ?> text-image--image__pad<?php } elseif ( $image['text-image-pad-left'] == '0' ) { ?> text-image--image__pad-left<?php } else { ?> text-image--image__nopad<?php } ?>" <?php if ( $image['text-image-pad'] == '0' ) { ?>style="background-image: url('<?php echo $image['text-image-image']['url']; ?>')"<?php } ?>>
 		<img loading="lazy" src="<?php echo $image['text-image-image']['url']; ?>" alt="<?php echo $image['text-image-image']['alt']; ?>" />
 	</div>
 	<?php } ?>

@@ -266,6 +266,25 @@
                     "ui": 1,
                     "ui_on_text": "",
                     "ui_off_text": ""
+                },
+                {
+                    "key": "field_61e563a09aad2",
+                    "label": "Pad image left?",
+                    "name": "text-image-pad-left",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
                 }
             ]
         },
@@ -400,5 +419,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1640349538
+    "modified": 1642423276
 }
