@@ -939,6 +939,16 @@ article .content {
   color: var(--color-text-dark);
 }
 
+.global-header + .content {
+  padding-top: 150px;
+}
+@media (min-width: 50em) {
+  .global-header + .content {
+    padding: var(--spacing-l) var(--spacing);
+    padding-top: 200px;
+  }
+}
+
 .icon {
   display: inline-block;
   vertical-align: middle;

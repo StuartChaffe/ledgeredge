@@ -90,3 +90,10 @@ article {
 		color: var(--color-text-dark);
 	}
 }
+.global-header + .content {
+	padding-top: 150px;
+	@include mq(medium) {
+		padding: var(--spacing-l) var(--spacing);
+		padding-top: 200px;
+	}
+}

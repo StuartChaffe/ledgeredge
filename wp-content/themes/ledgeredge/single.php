@@ -38,4 +38,6 @@
 	
 <?php endwhile; ?>
 
+<?php include '/blocks/newsletter.php';?>
+
 <?php get_footer(); ?>
