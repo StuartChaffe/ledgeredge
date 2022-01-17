@@ -2081,6 +2081,7 @@ body.nav-open {
   display: flex;
   flex-direction: column;
   margin: var(--spacing-s) 0;
+  padding-left: var(--spacing);
   width: 35%;
 }
 .text-icon-item:nth-child(odd) {
