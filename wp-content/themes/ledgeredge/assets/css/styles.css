@@ -2405,6 +2405,12 @@ body.nav-open {
   margin-bottom: var(--spacing) !important;
   color: var(--color-secondary);
 }
+.team-item--bio {
+  margin-bottom: 1rem;
+}
+.team-item--bio p {
+  font-size: var(--font-size-small);
+}
 .team-item .btn a:after, .team-item .global-header--nav .menu-secondary-container ul li:last-of-type a a:after, .global-header--nav .menu-secondary-container ul li:last-of-type .team-item a a:after {
   display: none;
 }
