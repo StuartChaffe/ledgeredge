@@ -1711,7 +1711,6 @@ body.nav-open {
 @media (min-width: 70em) {
   .banner--content {
     width: 50%;
-    max-width: 450px;
   }
 }
 .banner--content p + h1 {
@@ -2283,6 +2282,11 @@ body.nav-open {
   .text-image__double {
     padding: var(--spacing-l);
     width: 50%;
+  }
+}
+@media (min-width: 100em) {
+  .text-image__double {
+    min-height: calc(var(--container-large) / 2);
   }
 }
 .text-image__double:first-of-type {

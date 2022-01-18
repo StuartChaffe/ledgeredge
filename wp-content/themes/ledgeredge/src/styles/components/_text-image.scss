@@ -41,6 +41,10 @@
 			padding: var(--spacing-l);
 			width: 50%;
 		}
+		@include mq(container) {
+			min-height: calc(var(--container-large) / 2);
+			// max-height: calc(var(--container-large) / 2);
+		}
 		&:first-of-type {
 			margin-bottom: var(--spacing);
 			@include mq(medium) {
