@@ -1564,9 +1564,6 @@ body.nav-open {
     flex-direction: column;
   }
 }
-.global-footer--info p {
-  margin-right: 1rem;
-}
 .global-footer--info a {
   color: var(--color-text-base);
 }
@@ -1599,6 +1596,9 @@ body.nav-open {
   }
 }
 .global-footer--copy .menu {
+  margin-left: 0;
+}
+.global-footer--copy .menu a {
   margin-left: 1rem;
 }
 .global-footer--logo {
