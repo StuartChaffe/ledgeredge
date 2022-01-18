@@ -59,7 +59,7 @@ $sticky = get_option('sticky_posts');
 				<div class="connect--social-links-item"><a href="<?php the_field('linkedin', 'options'); ?>" target="_blank" class="connect--social-links-item-link"><?php echo get_icon('linkedin'); ?>
 				Connect</a></div>
 			<?php endif; ?>
-			<div class="connect--social-links-item"><a href="/contact" class="connect--social-links-item-link"><?php echo get_icon('email'); ?>
+			<div class="connect--social-links-item"><a href="/contact-us" class="connect--social-links-item-link"><?php echo get_icon('email'); ?>
 				Contact</a></div>
 		</div>
 	</section>
