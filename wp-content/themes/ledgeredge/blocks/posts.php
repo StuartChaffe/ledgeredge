@@ -30,7 +30,7 @@ $sticky = get_option('sticky_posts');
 		<div class="posts-item posts-item--featured fade">	
 			<?php if (has_post_thumbnail() ) { ?><a href="<?php esc_url( the_permalink() ); ?>" class="posts-item--image"><?php the_post_thumbnail(); ?><div class="posts-item--featured__label"><p>Featured</p></div></a><?php } ?>
 			<div class="posts-item--content">
-				<div class="posts-item--meta"><p><strong><?php echo $cat ?></strong></p>&nbsp; / &nbsp;<p><?php echo get_the_date('d.m.y'); ?></p></div>
+				<div class="posts-item--meta"><p><strong><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $cat ?></a></strong></p>&nbsp; / &nbsp;<p><?php echo get_the_date('d.m.y'); ?></p></div>
 				<a href="<?php esc_url( the_permalink() ); ?>" title="Article: <?php the_title(); ?>">
 					<!-- <p class="lead"><strong><?php the_title(); ?></strong></p> -->
 					<h4><?php the_title(); ?></h4>
@@ -92,7 +92,7 @@ $sticky = get_option('sticky_posts');
 					
 				<?php if (has_post_thumbnail() ) { ?><a href="<?php esc_url( the_permalink() ); ?>" class="posts-item--image"><?php the_post_thumbnail(); ?></a><?php } ?>
 				<div class="posts-item--content">
-					<div class="posts-item--meta"><p><strong><?php echo $cat ?></strong></p>&nbsp; / &nbsp;<p><?php echo get_the_date('d.m.y'); ?></p></div>
+					<div class="posts-item--meta"><p><strong><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $cat ?></a></strong></p>&nbsp; / &nbsp;<p><?php echo get_the_date('d.m.y'); ?></p></div>
 					<a href="<?php esc_url( the_permalink() ); ?>" title="Article: <?php the_title(); ?>">
 						<!-- <p class="lead"><strong><?php the_title(); ?></strong></p> -->
 						<h4><?php the_title(); ?></h4>

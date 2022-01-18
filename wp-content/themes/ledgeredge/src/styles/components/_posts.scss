@@ -88,12 +88,22 @@
 				color: var(--color-text-base) !important;
 			}
 		}
+		a {
+			color: var(--color-text-base);
+			&:hover {
+				color: var(--color-primary);
+				text-decoration: none;
+			}
+		}
 		&--meta {
 			display: flex;
 			font-size: var(--font-size-small);
 			color: var(--color-primary);
 			p {
 				margin-bottom: 0.5rem;
+			}
+			a {
+				color: var(--color-primary);
 			}
 		}
 
@@ -116,13 +126,7 @@
 				}
 			}
 		}
-		a {
-			color: var(--color-text-base);
-			&:hover {
-				color: var(--color-primary);
-				text-decoration: none;
-			}
-		}
+		
 		// .excerpt,
 		// a {
 		// 	+ .posts-item--content-link {

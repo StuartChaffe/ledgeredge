@@ -2001,6 +2001,13 @@ body.nav-open {
 .posts-item--image:hover {
   color: var(--color-text-base) !important;
 }
+.posts-item a {
+  color: var(--color-text-base);
+}
+.posts-item a:hover {
+  color: var(--color-primary);
+  text-decoration: none;
+}
 .posts-item--meta {
   display: flex;
   font-size: var(--font-size-small);
@@ -2008,6 +2015,9 @@ body.nav-open {
 }
 .posts-item--meta p {
   margin-bottom: 0.5rem;
+}
+.posts-item--meta a {
+  color: var(--color-primary);
 }
 .posts-item--content {
   padding: var(--spacing);
@@ -2027,13 +2037,6 @@ body.nav-open {
   width: 20px;
   height: 10px;
   margin-left: 0.2rem;
-}
-.posts-item a {
-  color: var(--color-text-base);
-}
-.posts-item a:hover {
-  color: var(--color-primary);
-  text-decoration: none;
 }
 .posts-item--featured {
   margin-bottom: 0;
