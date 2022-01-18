@@ -54,7 +54,7 @@
 		}
 		@include mq(large) {
 			width: 50%;
-			max-width: 450px;
+			// max-width: 450px;
 		}
 		p + h1 {
 			margin-top: 0.5rem;
