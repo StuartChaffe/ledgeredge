@@ -31,6 +31,6 @@
 				</ul>
 			</div>
 		</div>
-		<div class="global-footer--copy hidedesktop"><p>&copy; <?php echo date('Y'); ?> LedgerEdge 2021</p> <?php wp_nav_menu( array('theme_location' => 'privacy') ); ?></div>
+		<div class="global-footer--copy hidedesktop"><p>&copy; <?php echo date('Y'); ?> LedgerEdge</p> <?php wp_nav_menu( array('theme_location' => 'privacy') ); ?></div>
 	</div>
 </footer>
