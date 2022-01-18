@@ -29,7 +29,7 @@
 	<article>
 
 	<?php if ( $hide == '0' ) { ?><div class="posts-item--image"><?php the_post_thumbnail(); ?></div><?php } ?>
-		<div class="posts-item--meta"><p><strong><a href="<?php esc_url( the_permalink() ); ?>"><?php echo $cat ?></a></strong></p>&nbsp; / &nbsp;<p><?php echo get_the_date('d.m.y'); ?></p></div>
+		<div class="posts-item--meta"><p><strong><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $cat ?></a></strong></p>&nbsp; / &nbsp;<p><?php echo get_the_date('d.m.y'); ?></p></div>
 		<h1><?php the_title(); ?></h1>
 		<p class="lead"><?php echo get_the_excerpt(); ?></p>
 		<br />

@@ -2134,6 +2134,9 @@ body.nav-open {
 .posts-item--meta a {
   color: var(--color-primary);
 }
+.posts-item--meta a:hover {
+  text-decoration: none;
+}
 .posts-item--content {
   padding: var(--spacing);
   display: flex;
