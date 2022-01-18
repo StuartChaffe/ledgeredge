@@ -86,3 +86,18 @@ img.aligncenter     { display: block; margin-left: auto; margin-right: auto; }
 .fade--delay__3 {
 	transition-delay: 0.7s;
 }
+
+@keyframes rotate {
+	0% {
+	  -webkit-transform: rotate(0deg);
+	}
+	50% {
+	  -webkit-transform: rotate(359deg);
+	}
+	100% {
+	  -webkit-transform: rotate(720deg);
+	}
+}
+.rotate {
+	-webkit-animation: rotate 250s infinite linear;
+}

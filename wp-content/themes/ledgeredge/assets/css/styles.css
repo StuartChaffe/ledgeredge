@@ -3088,6 +3088,33 @@ img.aligncenter {
   transition-delay: 0.7s;
 }
 
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(359deg);
+  }
+  100% {
+    -webkit-transform: rotate(720deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(359deg);
+  }
+  100% {
+    -webkit-transform: rotate(720deg);
+  }
+}
+.rotate {
+  -webkit-animation: rotate 250s infinite linear;
+}
+
 @media print {
   * {
     background: #ffffff;
