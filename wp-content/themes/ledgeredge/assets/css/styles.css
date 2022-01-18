@@ -700,6 +700,11 @@ input[type=button]:focus {
   font-weight: var(--font-weight-bold);
 }
 
+.submitted-message {
+  color: var(--color-secondary);
+  font-weight: var(--font-weight-bold);
+}
+
 .global-container {
   display: flex;
   flex-direction: column;

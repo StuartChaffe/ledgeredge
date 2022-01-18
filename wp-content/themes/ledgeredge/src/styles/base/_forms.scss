@@ -174,3 +174,7 @@ input[type="button"]:focus {
 		}
 	}
 }
+.submitted-message {
+	color: var(--color-secondary);
+	font-weight: var(--font-weight-bold);
+}
