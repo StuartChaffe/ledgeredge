@@ -22,10 +22,13 @@
 		form {
 			text-align: left;
 			display: flex;
-			flex-wrap: wrap;
+			flex-wrap: nowrap;
 			margin: 0;
 			padding: 0 var(--spacing-s);
 			position: relative;
+			@include mq($until: medium) {
+				flex-wrap: wrap;
+			}
 
 			@include mq(medium) {
 				justify-content: center;

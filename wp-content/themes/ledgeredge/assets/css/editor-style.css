@@ -1872,10 +1872,15 @@ body.nav-open {
 .newsletter .hbspt-form form {
   text-align: left;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: 0;
   padding: 0 var(--spacing-s);
   position: relative;
+}
+@media (max-width: 49.99em) {
+  .newsletter .hbspt-form form {
+    flex-wrap: wrap;
+  }
 }
 @media (min-width: 50em) {
   .newsletter .hbspt-form form {
