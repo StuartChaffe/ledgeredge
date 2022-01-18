@@ -77,9 +77,12 @@ input[type="button"] {
 	text-align: center;
 	overflow: hidden;
 	transition: .3s;
-	padding: 0.5rem 3.2rem 0.5rem 1rem;
+	padding: 0.5rem 1rem;
 	color: var(--color-text-dark);
 	background-color: var(--color-primary);
+	@include mq(medium) {
+		padding: 0.5rem 3.2rem 0.5rem 1rem;
+	}
 	&:hover, &:focus {
 		color: var(--color-text-dark);
 		text-decoration: none;
@@ -92,6 +95,7 @@ input[type="button"] {
 	position: relative;
 	display: inline-block;
 	&:after {
+		display: none;
 		content: url('../../src/icons/arrow.svg');
 		position: absolute;
 		order: 2;
@@ -103,6 +107,9 @@ input[type="button"] {
 		right: 1rem;
 		z-index: 99;
 		overflow: hidden;
+		@include mq(medium) {
+			display: inline-flex;
+		}
 	}
 }
 

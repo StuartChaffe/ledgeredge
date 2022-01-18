@@ -600,9 +600,16 @@ input[type=button] {
   text-align: center;
   overflow: hidden;
   transition: 0.3s;
-  padding: 0.5rem 3.2rem 0.5rem 1rem;
+  padding: 0.5rem 1rem;
   color: var(--color-text-dark);
   background-color: var(--color-primary);
+}
+@media (min-width: 50em) {
+  input[type=submit],
+input[type=reset],
+input[type=button] {
+    padding: 0.5rem 3.2rem 0.5rem 1rem;
+  }
 }
 input[type=submit]:hover, input[type=submit]:focus,
 input[type=reset]:hover,
@@ -620,6 +627,7 @@ input[type=button]:focus {
   display: inline-block;
 }
 .actions:after {
+  display: none;
   content: url("../../src/icons/arrow.svg");
   position: absolute;
   order: 2;
@@ -631,6 +639,11 @@ input[type=button]:focus {
   right: 1rem;
   z-index: 99;
   overflow: hidden;
+}
+@media (min-width: 50em) {
+  .actions:after {
+    display: inline-flex;
+  }
 }
 
 input[type=submit].center,
