@@ -47,7 +47,6 @@
 			max-width: 290px;
 			max-height: 290px;
 			height: calc(60vw - var(--spacing) - 0px);
-			// max-height: calc(var(--container) / 3 - var(--spacing) - 80px);
 			margin: 0 auto;
 			margin-bottom: var(--spacing);
 			@include mq(medium) {
@@ -83,19 +82,11 @@
 
 			img {
 				transform: rotate(-15deg);
-				// display: none;
-				// visibility: hidden;
 			}
 		}
 		
 		&:nth-child(3n+1) {
 			background-color: var(--color-quinary);
-			.team-item--image__clip {
-				// transform: rotate(10deg);
-				// img {
-				// 	transform: rotate(-10deg);
-				// }
-			}
 		}
 		&:nth-child(3n+2) {
 			background-color: var(--color-quaternary);
