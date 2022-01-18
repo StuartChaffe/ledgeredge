@@ -1675,6 +1675,12 @@ body.nav-open {
   background-position: left center;
   height: 100%;
   width: 50%;
+  display: none;
+}
+@media (min-width: 50em) {
+  .banner__small .banner--image {
+    display: block;
+  }
 }
 .banner__small .banner--image img {
   display: none;
