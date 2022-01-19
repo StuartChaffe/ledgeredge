@@ -54,11 +54,13 @@
 				}
 				.icon {
 					color: var(--color-quaternary);
+					fill: var(--color-quaternary);
 				}
 				&:hover {
 					color: var(--color-text-base);
 					.icon {
 						color: var(--color-text-base);
+						fill: var(--color-text-base);
 					}
 				}
 			}

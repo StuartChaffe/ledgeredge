@@ -1925,12 +1925,14 @@ body.nav-open {
 }
 .connect--social-links-item-link .icon {
   color: var(--color-quaternary);
+  fill: var(--color-quaternary);
 }
 .connect--social-links-item-link:hover {
   color: var(--color-text-base);
 }
 .connect--social-links-item-link:hover .icon {
   color: var(--color-text-base);
+  fill: var(--color-text-base);
 }
 
 .cta {
