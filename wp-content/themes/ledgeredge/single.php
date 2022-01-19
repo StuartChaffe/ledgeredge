@@ -32,7 +32,6 @@
 		<div class="posts-item--meta"><p><strong><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $cat ?></a></strong></p>&nbsp; / &nbsp;<p><?php echo get_the_date('d.m.y'); ?></p></div>
 		<h1><?php the_title(); ?></h1>
 		<p class="lead"><?php echo get_the_excerpt(); ?></p>
-		<br />
 		<?php the_content(); ?>
 	</article>
 	<div class="container">
