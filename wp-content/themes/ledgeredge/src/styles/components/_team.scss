@@ -49,7 +49,6 @@
 			height: calc(60vw - var(--spacing) - 0px);
 			margin: 0 auto;
 			margin-bottom: var(--spacing);
-			-moz-transform: rotate(15deg);
 			@include mq(medium) {
 				width: 100%;
 				height: calc(33.333vw - var(--spacing) - 80px);
@@ -92,6 +91,7 @@
 		&:nth-child(3n+2) {
 			background-color: var(--color-quaternary);
 			.team-item--image {
+				-moz-transform: rotate(15deg);
 				&__clip {
 					transform: rotate(-10deg);
 					-moz-transform: rotate(-25deg);

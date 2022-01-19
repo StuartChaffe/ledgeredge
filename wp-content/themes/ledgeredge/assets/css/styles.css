@@ -2501,7 +2501,6 @@ body.nav-open {
   height: calc(60vw - var(--spacing) - 0px);
   margin: 0 auto;
   margin-bottom: var(--spacing);
-  -moz-transform: rotate(15deg);
 }
 @media (min-width: 50em) {
   .team-item--image {
@@ -2542,6 +2541,9 @@ body.nav-open {
 }
 .team-item:nth-child(3n+2) {
   background-color: var(--color-quaternary);
+}
+.team-item:nth-child(3n+2) .team-item--image {
+  -moz-transform: rotate(15deg);
 }
 .team-item:nth-child(3n+2) .team-item--image__clip {
   transform: rotate(-10deg);
