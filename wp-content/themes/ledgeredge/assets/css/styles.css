@@ -1916,22 +1916,19 @@ body.nav-open {
 .connect--social-links-item-link {
   display: flex;
   flex-direction: column;
+  color: var(--color-text-base);
   align-items: center;
   font-weight: var(--font-weight-bold);
-}
-.connect--social-links-item-link span {
-  color: var(--color-text-base);
 }
 .connect--social-links-item-link:hover {
   color: var(--color-text-base);
 }
-.connect--social-links-item-link:hover .icon {
-  color: var(--color-text-base);
-  fill: var(--color-text-base);
+
+.connect--social-links-item a {
+  color: red;
 }
-.connect .icon {
-  color: var(--color-quaternary);
-  fill: var(--color-quaternary);
+.connect--social-links-item a span {
+  color: var(--color-text-base);
 }
 
 .cta {
