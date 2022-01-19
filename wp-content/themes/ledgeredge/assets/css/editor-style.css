@@ -1051,7 +1051,7 @@ pre {
 }
 
 .connect--social-links-item a {
-  color: red;
+  color: green;
 }
 .connect--social-links-item a .icon {
   fill: currentColor;
