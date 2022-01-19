@@ -1622,7 +1622,6 @@ ul.menu .sub-menu li a:after {
 .icon {
   display: inline-block;
   vertical-align: middle;
-  fill: currentColor;
 }
 
 .icon--arrow {
@@ -2356,6 +2355,7 @@ body.nav-open {
 .social-links__item .icon {
   height: 20px;
   max-width: 30px;
+  fill: currentColor;
 }
 
 .social-links__link {
