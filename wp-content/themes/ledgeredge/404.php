@@ -1,4 +1,4 @@
 <?php
-    wp_redirect( get_permalink( '1578' ) );
+    wp_redirect( get_permalink( '1861' ) );
     exit();
 ?>

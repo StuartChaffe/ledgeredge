@@ -1,6 +1,6 @@
 <?php
 // If 404 page return 404 header
-if(is_page('1578')):
+if(is_page('1861')):
     header("HTTP/1.0 404 Not Found");
 endif;
 get_header();
