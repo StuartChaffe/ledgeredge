@@ -73,7 +73,6 @@
 				background-position: center center;
 				clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
 				transform: rotate(15deg);
-				-moz-transform: rotate(0deg);
 				img {
 					transform: rotate(-15deg);
 					width: 108%;
@@ -102,6 +101,7 @@
 				}
 				.icon {
 					transform: rotate(15deg);
+					-moz-transform: rotate(0deg);
 					// color: var(--color-primary);
 				}
 			}

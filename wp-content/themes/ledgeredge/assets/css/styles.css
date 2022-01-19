@@ -2527,7 +2527,6 @@ body.nav-open {
   -webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
           clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
   transform: rotate(15deg);
-  -moz-transform: rotate(0deg);
 }
 .team-item--image__clip img {
   transform: rotate(-15deg);
@@ -2553,6 +2552,7 @@ body.nav-open {
 }
 .team-item:nth-child(3n+2) .team-item--image .icon {
   transform: rotate(15deg);
+  -moz-transform: rotate(0deg);
 }
 .team-item:nth-child(3n+3) {
   background-color: white;
