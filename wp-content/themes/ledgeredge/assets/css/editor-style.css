@@ -1043,9 +1043,12 @@ pre {
 .connect--social-links-item-link {
   display: flex;
   flex-direction: column;
-  color: var(--color-text-base);
+  color: var(--color-quaternary);
   align-items: center;
   font-weight: var(--font-weight-bold);
+}
+.connect--social-links-item-link span {
+  color: var(--color-text-base);
 }
 .connect--social-links-item-link .icon {
   color: var(--color-quaternary);

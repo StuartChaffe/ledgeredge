@@ -53,14 +53,14 @@ $sticky = get_option('sticky_posts');
 		<div class="connect--social-links">
 			<?php if(get_field('twitter', 'options')): ?>
 				<div class="connect--social-links-item"><a href="<?php the_field('twitter', 'options'); ?>" target="_blank" class="connect--social-links-item-link"><?php echo get_icon('twitter'); ?>
-				Follow us</a></div>
+				<span>Follow us</span></a></div>
 			<?php endif; ?>
 			<?php if(get_field('linkedin', 'options')): ?>
 				<div class="connect--social-links-item"><a href="<?php the_field('linkedin', 'options'); ?>" target="_blank" class="connect--social-links-item-link"><?php echo get_icon('linkedin'); ?>
-				Connect</a></div>
+				<span>Connect</span></a></div>
 			<?php endif; ?>
 			<div class="connect--social-links-item"><a href="/contact-us" class="connect--social-links-item-link"><?php echo get_icon('email'); ?>
-				Contact</a></div>
+				<span>Contact</span></a></div>
 		</div>
 	</section>
 </div>
