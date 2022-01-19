@@ -1926,6 +1926,9 @@ body.nav-open {
 .connect--social-links-item a {
   color: red;
 }
+.connect--social-links-item a .icon {
+  fill: currentColor;
+}
 .connect--social-links-item a span {
   color: var(--color-text-base);
 }

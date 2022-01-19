@@ -65,6 +65,9 @@
 
 .connect--social-links-item a {
 	color: red;
+	.icon {
+		fill: currentColor;
+	}
 
 	span {
 		color: var(--color-text-base);
