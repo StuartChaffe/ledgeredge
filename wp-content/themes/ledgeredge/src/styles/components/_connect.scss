@@ -46,30 +46,19 @@
 			&-link {
 				display: flex;
 				flex-direction: column;
-				// color: var(--color-text-base);
+				color: var(--color-text-base);
 				align-items: center;
 				font-weight: var(--font-weight-bold);
-				// .icon {
-				// 	color: var(--color-quaternary);
-				// }
+				.icon {
+					color: var(--color-text-base);
+				}
 				&:hover {
 					color: var(--color-text-base);
-					// .icon {
-					// 	color: var(--color-text-base);
-					// }
+					.icon {
+						color: var(--color-quaternary);
+					}
 				}
 			}
 		}
-	}
-}
-
-.connect--social-links-item a {
-	color: green;
-	.icon {
-		fill: currentColor;
-	}
-
-	span {
-		color: var(--color-text-base);
 	}
 }
