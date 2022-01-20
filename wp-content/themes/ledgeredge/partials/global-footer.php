@@ -2,7 +2,7 @@
 	<div class="global-footer--inner">
 		<div class="global-footer--info">
 			<a href="<?php echo home_url(); ?>" class="global-footer--logo"><img src="<?php echo get_template_directory_uri(); ?>/src/images/logo-dark.svg" alt="Ledger Edge logo" /></a>
-			<div class="global-footer--copy hidemobile"><p>&copy; <?php echo date('Y'); ?> LedgerEdge 2021</p> <?php wp_nav_menu( array('theme_location' => 'privacy') ); ?></div>
+			<div class="global-footer--copy hidemobile"><p>&copy; <?php echo date('Y'); ?> LedgerEdge</p> <?php wp_nav_menu( array('theme_location' => 'privacy') ); ?></div>
 		</div>
 		<div class="global-footer--links">
 			<?php wp_nav_menu( array('theme_location' => 'footer-left') ); ?>
