@@ -1660,6 +1660,9 @@ ul.menu .sub-menu li a:after {
   width: 100%;
   margin-bottom: var(--spacing-l);
 }
+.image img {
+  width: 100%;
+}
 
 .global-container {
   display: flex;

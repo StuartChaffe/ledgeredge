@@ -1947,6 +1947,9 @@ body.nav-open {
   width: 100%;
   margin-bottom: var(--spacing-l);
 }
+.image img {
+  width: 100%;
+}
 
 .newsletter {
   background: black;
