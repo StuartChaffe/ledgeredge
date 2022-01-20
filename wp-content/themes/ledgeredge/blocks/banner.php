@@ -57,5 +57,5 @@ $image = get_field('banner_image');
 </section>
 
 <div class="lightbox" id="banner-video">
-	<video src="<?php echo $buttons['banner_button']; ?>" loop="false" muted="false" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster=""></video>
+	<video src="<?php echo $buttons['banner_button']; ?>" controls="controls" loop="false" muted="false" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster=""></video>
 </div>
