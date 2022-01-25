@@ -11,6 +11,9 @@
 <link rel="icon" href="https://secureservercdn.net/160.153.137.218/p9m.de4.myftpupload.com/wp-content/uploads/2021/02/cropped-Favicon-Icons-01-192x192.png" sizes="192x192" />
 <link rel="apple-touch-icon" href="https://secureservercdn.net/160.153.137.218/p9m.de4.myftpupload.com/wp-content/uploads/2021/02/cropped-Favicon-Icons-01-180x180.png" />
 <meta name="msapplication-TileImage" content="http://staging-ledgeredge.kinsta.cloud/wp-content/uploads/Smart_orders.png" />
+
+<meta property="og:image" content="http://staging-ledgeredge.kinsta.cloud/wp-content/uploads/Smart_orders.png" />
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
