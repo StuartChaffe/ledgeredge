@@ -7,12 +7,7 @@
 <title><?php wp_title(''); ?></title>
 <link rel="icon" href="/favicon.ico"><!-- 32×32 -->
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="https://secureservercdn.net/160.153.137.218/p9m.de4.myftpupload.com/wp-content/uploads/2021/02/cropped-Favicon-Icons-01-32x32.png" sizes="32x32" />
-<link rel="icon" href="https://secureservercdn.net/160.153.137.218/p9m.de4.myftpupload.com/wp-content/uploads/2021/02/cropped-Favicon-Icons-01-192x192.png" sizes="192x192" />
-<link rel="apple-touch-icon" href="https://secureservercdn.net/160.153.137.218/p9m.de4.myftpupload.com/wp-content/uploads/2021/02/cropped-Favicon-Icons-01-180x180.png" />
-<meta name="msapplication-TileImage" content="http://staging-ledgeredge.kinsta.cloud/wp-content/uploads/Smart_orders.png" />
-
-<meta property="og:image" content="http://staging-ledgeredge.kinsta.cloud/wp-content/uploads/Smart_orders.png" />
+<meta property="og:image" content="http://staging-ledgeredge.kinsta.cloud/wp-content/uploads/LE_Display.png" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
