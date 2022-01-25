@@ -7,6 +7,8 @@
 <title><?php wp_title(''); ?></title>
 <link rel="icon" href="/favicon.ico"><!-- 32×32 -->
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="msapplication-TileImage" content="http://staging-ledgeredge.kinsta.cloud/wp-content/uploads/LE_Display.png" />
+
 <meta property="og:image" content="http://staging-ledgeredge.kinsta.cloud/wp-content/uploads/LE_Display.png" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
