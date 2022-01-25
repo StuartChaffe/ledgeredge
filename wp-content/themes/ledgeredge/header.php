@@ -13,6 +13,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 <?php wp_head(); ?>
 
+<meta name="msapplication-TileImage" content="https://staging-ledgeredge.kinsta.cloud/wp-content/themes/ledgeredge/src/images/logo-dark.svg" />
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-188598978"></script>
 <script>
