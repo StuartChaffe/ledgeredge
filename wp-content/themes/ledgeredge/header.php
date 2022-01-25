@@ -7,16 +7,14 @@
 <title><?php wp_title(''); ?></title>
 <link rel="icon" href="/favicon.ico"><!-- 32×32 -->
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- 180×180 -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-<?php wp_head(); ?>
-
 <link rel="icon" href="https://secureservercdn.net/160.153.137.218/p9m.de4.myftpupload.com/wp-content/uploads/2021/02/cropped-Favicon-Icons-01-32x32.png" sizes="32x32" />
 <link rel="icon" href="https://secureservercdn.net/160.153.137.218/p9m.de4.myftpupload.com/wp-content/uploads/2021/02/cropped-Favicon-Icons-01-192x192.png" sizes="192x192" />
 <link rel="apple-touch-icon" href="https://secureservercdn.net/160.153.137.218/p9m.de4.myftpupload.com/wp-content/uploads/2021/02/cropped-Favicon-Icons-01-180x180.png" />
 <meta name="msapplication-TileImage" content="http://staging-ledgeredge.kinsta.cloud/wp-content/uploads/Smart_orders.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<?php wp_head(); ?>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-188598978"></script>
