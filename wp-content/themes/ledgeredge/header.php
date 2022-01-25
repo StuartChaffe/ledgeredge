@@ -7,9 +7,9 @@
 <title><?php wp_title(''); ?></title>
 <link rel="icon" href="/favicon.ico"><!-- 32×32 -->
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<meta name="msapplication-TileImage" content="http://staging-ledgeredge.kinsta.cloud/wp-content/uploads/LE_Display.png" />
+<meta name="msapplication-TileImage" content="<?php echo content_url() ?>/uploads/LE_Display_Rev.png" />
 
-<meta property="og:image" content="http://staging-ledgeredge.kinsta.cloud/wp-content/uploads/LE_Display.png" />
+<meta property="og:image" content="<?php echo content_url() ?>/uploads/LE_Display_Rev.png" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
