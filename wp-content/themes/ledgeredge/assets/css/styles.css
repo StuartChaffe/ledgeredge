@@ -635,7 +635,7 @@ input[type=button]:focus {
   width: 32px;
   height: 26px;
   top: 50%;
-  transform: translateY(calc(-50% - 2px));
+  transform: translateY(calc(-50% - 0px));
   right: 1rem;
   z-index: 99;
   overflow: hidden;
@@ -644,6 +644,12 @@ input[type=button]:focus {
   .actions:after {
     display: inline-flex;
   }
+}
+
+input[type=submit],
+input[type=reset],
+input[type=button] {
+  -webkit-appearance: none !important;
 }
 
 input[type=submit].center,
@@ -1051,7 +1057,7 @@ article .content {
   text-align: center;
   overflow: hidden;
   transition: 0.3s;
-  -webkit-appearance: none;
+  -webkit-appearance: none !important;
 }
 .btn a {
   padding: 0.5rem 1rem;

@@ -877,7 +877,7 @@ pre {
   text-align: center;
   overflow: hidden;
   transition: 0.3s;
-  -webkit-appearance: none;
+  -webkit-appearance: none !important;
 }
 .btn a {
   padding: 0.5rem 1rem;
