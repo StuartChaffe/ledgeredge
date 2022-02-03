@@ -17,13 +17,13 @@
 <?php wp_head(); ?>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-188598978"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C3R7BLEM89"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-188598978');
+  gtag('config', 'G-C3R7BLEM89');
 </script>
 </head>
 <body <?php body_class(); ?>>
