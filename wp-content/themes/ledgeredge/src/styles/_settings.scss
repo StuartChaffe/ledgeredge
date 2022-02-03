@@ -10,7 +10,8 @@ $mq-breakpoints: (
 	large: 70em,
 	xlarge: 80em,
 	xxlarge: 90em,
-	xxxlarge: 100em
+	xxxlarge: 100em,
+	container: 1600px,
 );
 
 $z-scale: (
@@ -21,5 +22,5 @@ $z-scale: (
 );
 
 @if $debug == true {
-	$mq-show-breakpoints: (small, small-major, medium, medium-major, large, xlarge, xxlarge, xxxlarge);
+	$mq-show-breakpoints: (small, small-major, medium, medium-major, large, xlarge, xxlarge, xxxlarge, container);
 }

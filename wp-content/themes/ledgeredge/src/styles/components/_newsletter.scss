@@ -16,12 +16,20 @@
 	}
 	.hbspt-form {
 		margin-top: 1rem;
+		max-width: var(--container);
+		margin: 1rem auto 0 auto;
+		position: relative;
 		form {
 			text-align: left;
 			display: flex;
-			flex-wrap: wrap;
+			flex-wrap: nowrap;
 			margin: 0;
 			padding: 0 var(--spacing-s);
+			position: relative;
+			@include mq($until: medium) {
+				flex-wrap: wrap;
+			}
+
 			@include mq(medium) {
 				justify-content: center;
 			}
@@ -30,9 +38,20 @@
 				margin-left: 1rem;
 				width: auto;
 			}
+			.hs_error_rollup {
+				position: absolute;
+				bottom: -25px;
+				left: calc(var(--spacing) - 0.5rem);
+				@include mq(medium) {
+					bottom: 0;
+					left: 58.5%;
+				}
+			}
 			.field {
 				margin: 0 0.5rem;
+				
 				@include mq(medium) {
+					flex-grow: 1;
 					width: auto;
 				}
 				.input, input {

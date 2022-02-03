@@ -1,23 +1,40 @@
 .connect {
 	display: flex;
+	flex-direction: column;
+	width: 100%;
 	background-color: var(--color-tertiary);
-	padding: var(--spacing-xl);
+	padding: var(--spacing-l);
 	border-radius: var(--border-radius);
 	margin-bottom: calc(var(--spacing-xl) - var(--spacing-s));
+	@include mq(medium) {
+		padding: var(--spacing-xl);
+		flex-direction: row;
+	}
 	&--title {
 		display: flex;
-		width: 40%;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 2rem;
+		@include mq(medium) {
+			width: 40%;
+			text-align: left;
+			margin-bottom: 0;
+		}
 		h2, h3, h4, h5, p {
 			margin-bottom: 0;
 		}
 	}
 	&--social-links {
-		width: 50%;
+		width: 100%;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		padding-left: var(--spacing-s);
-		margin-left: auto;
+	
+		@include mq(medium) {
+			width: 50%;
+			margin-left: auto;
+			padding-left: var(--spacing-s);
+		}
 
 		&-item {
 			margin: 0 auto;
@@ -33,7 +50,7 @@
 				align-items: center;
 				font-weight: var(--font-weight-bold);
 				.icon {
-					color: var(--color-quaternary);
+					color: var(--color-text-base);
 				}
 				&:hover {
 					color: var(--color-text-base);

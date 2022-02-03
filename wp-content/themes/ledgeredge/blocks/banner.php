@@ -20,7 +20,10 @@ $image = get_field('banner_image');
 
 <section class="fade <?php echo $bkgcolor ?><?php if ($asset) { ?> <?php echo $asset ?><?php } ?>" <?php if ( $bkgcolor == 'banner--bkg__image' ) { ?> style="background-image: url('<?php echo $bkgimage['url']; ?>')"<?php } ?>>
 	<div class="banner<?php if ( $size == 'banner__small' ) { ?> banner__small<?php } ?> container--large">
-	<?php if ( $bkgcolor == 'banner--bkg__image' ) { ?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 899.95 843.78" class="banner--bkg__asset fade fade--delay__2 <?php echo $asset ?>"><g data-name="Layer 2"><g data-name="Layer 1"><polygon points="590.24 0 899.95 419.57 596.61 843.78 99.44 686.38 95.5 164.89 590.24 0"/><polygon fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="3.94px" points="403.32 13.89 2.36 347.36 195.6 831.73 715.99 797.63 844.36 292.18 403.32 13.89"/></g></g></svg><?php } ?>
+	<?php if ( $bkgcolor == 'banner--bkg__image' ) { ?>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 899.95 843.78" class="banner--bkg__asset fade fade--delay__2"><g data-name="Layer 2"><g data-name="Layer 1"><polygon points="590.24 0 899.95 419.57 596.61 843.78 99.44 686.38 95.5 164.89 590.24 0"/></g></svg>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 899.95 843.78" class="rotate banner--bkg__asset fade fade--delay__2 <?php echo $asset ?>"><g data-name="Layer 2"><polygon fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="3.94px" points="403.32 13.89 2.36 347.36 195.6 831.73 715.99 797.63 844.36 292.18 403.32 13.89"/></g></g></svg>
+		<?php } ?>
 		<div class="banner--content fade fade--delay__2">
 		<?php if ($label) { ?>
 			<p><?php echo $label ?></p>
@@ -54,5 +57,5 @@ $image = get_field('banner_image');
 </section>
 
 <div class="lightbox" id="banner-video">
-	<video src="<?php echo $buttons['banner_button']; ?>" loop="false" muted="false" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster=""></video>
+	<video src="<?php echo $buttons['banner_button']; ?>" controls="controls" loop="false" muted="false" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster=""></video>
 </div>

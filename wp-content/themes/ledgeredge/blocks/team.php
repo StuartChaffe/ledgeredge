@@ -33,7 +33,7 @@
 		<?php } ?>
 		<h4><?php the_title(); ?></h4>
 		<?php if ($job) { ?><h4 class="team-item--job"><?php echo $job; ?></h4><?php } ?>
-		<?php if ($bio) { ?><p class="team-item--bio"><?php echo $bio; ?></p><?php } ?>
+		<?php if ($bio) { ?><div class="team-item--bio"><?php echo $bio; ?></div><?php } ?>
 		<?php if ($link) { ?><span class="btn btn--primary btn__small"><a href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?> <?php echo get_icon('arrow'); ?></a></span><?php } ?>
 	</div>
 

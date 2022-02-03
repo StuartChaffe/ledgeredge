@@ -30,7 +30,7 @@ $sticky = get_option('sticky_posts');
 		<div class="posts-item posts-item--featured fade">	
 			<?php if (has_post_thumbnail() ) { ?><a href="<?php esc_url( the_permalink() ); ?>" class="posts-item--image"><?php the_post_thumbnail(); ?><div class="posts-item--featured__label"><p>Featured</p></div></a><?php } ?>
 			<div class="posts-item--content">
-				<div class="posts-item--meta"><p><strong><?php echo $cat ?></strong></p>&nbsp; / &nbsp;<p><?php echo get_the_date('d.m.y'); ?></p></div>
+				<div class="posts-item--meta"><p><strong><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $cat ?></a></strong></p>&nbsp; / &nbsp;<p><?php echo get_the_date('d.m.y'); ?></p></div>
 				<a href="<?php esc_url( the_permalink() ); ?>" title="Article: <?php the_title(); ?>">
 					<!-- <p class="lead"><strong><?php the_title(); ?></strong></p> -->
 					<h4><?php the_title(); ?></h4>
@@ -52,15 +52,15 @@ $sticky = get_option('sticky_posts');
 		</div>
 		<div class="connect--social-links">
 			<?php if(get_field('twitter', 'options')): ?>
-				<div class="connect--social-links-item"><a href="<?php the_field('twitter', 'options'); ?>" class="connect--social-links-item-link"><?php echo get_icon('twitter'); ?>
-				Follow us</a></div>
+				<div class="connect--social-links-item"><a href="<?php the_field('twitter', 'options'); ?>" target="_blank" class="connect--social-links-item-link"><?php echo get_icon('twitter'); ?>
+				<span>Follow us</span></a></div>
 			<?php endif; ?>
 			<?php if(get_field('linkedin', 'options')): ?>
-				<div class="connect--social-links-item"><a href="<?php the_field('linkedin', 'options'); ?>" class="connect--social-links-item-link"><?php echo get_icon('linkedin'); ?>
-				Connect</a></div>
+				<div class="connect--social-links-item"><a href="<?php the_field('linkedin', 'options'); ?>" target="_blank" class="connect--social-links-item-link"><?php echo get_icon('linkedin'); ?>
+				<span>Connect</span></a></div>
 			<?php endif; ?>
-			<div class="connect--social-links-item"><a href="/contact" class="connect--social-links-item-link"><?php echo get_icon('email'); ?>
-				Contact</a></div>
+			<div class="connect--social-links-item"><a href="/contact-us" class="connect--social-links-item-link"><?php echo get_icon('email'); ?>
+				<span>Contact</span></a></div>
 		</div>
 	</section>
 </div>
@@ -92,7 +92,7 @@ $sticky = get_option('sticky_posts');
 					
 				<?php if (has_post_thumbnail() ) { ?><a href="<?php esc_url( the_permalink() ); ?>" class="posts-item--image"><?php the_post_thumbnail(); ?></a><?php } ?>
 				<div class="posts-item--content">
-					<div class="posts-item--meta"><p><strong><?php echo $cat ?></strong></p>&nbsp; / &nbsp;<p><?php echo get_the_date('d.m.y'); ?></p></div>
+					<div class="posts-item--meta"><p><strong><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $cat ?></a></strong></p>&nbsp; / &nbsp;<p><?php echo get_the_date('d.m.y'); ?></p></div>
 					<a href="<?php esc_url( the_permalink() ); ?>" title="Article: <?php the_title(); ?>">
 						<!-- <p class="lead"><strong><?php the_title(); ?></strong></p> -->
 						<h4><?php the_title(); ?></h4>
