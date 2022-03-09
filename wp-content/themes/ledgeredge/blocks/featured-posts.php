@@ -27,7 +27,7 @@ $featuredposts = get_field( 'select_posts' );
 		?>
 		<div class="posts-item fade">
 			<div class="posts-item--content">
-				<div class="posts-item--meta"><p><strong><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $cat ?></a></strong></p>&nbsp; / &nbsp;<p><?php echo get_the_date('d.m.y'); ?></p></div>
+				<div class="posts-item--meta"><p><strong><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $cat ?></a></strong></p>&nbsp; / &nbsp;<p><?php echo get_the_date('d.m.y', $featuredpost); ?></p></div>
 				<a href="<?php esc_url( the_permalink($featuredpost) ); ?>" title="Article: <?php the_title(); ?>">
 					<h4><?php echo $title; ?></h4>
 				</a>
