@@ -24,6 +24,7 @@
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 <link rel="manifest" href="/manifest.json">
+<meta name="msapplication-config" content="/browserconfig.xml" />
 <meta name="theme-color" content="#ffffff">
 
 
