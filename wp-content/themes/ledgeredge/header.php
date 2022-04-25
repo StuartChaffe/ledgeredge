@@ -20,9 +20,15 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileColor" content="#2b5797">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="manifest" href="/manifest.json">
 <meta name="theme-color" content="#ffffff">
+
+
+
+
 
 <meta name="msapplication-TileImage" content="<?php echo content_url() ?>/uploads/LE_Display_Rev.png" />
 
