@@ -33,8 +33,6 @@
 
 <meta name="msapplication-TileImage" content="<?php echo content_url() ?>/uploads/LE_Display_Rev.png" />
 
-<meta property="og:image" content="<?php echo content_url() ?>/uploads/LE_Display_Rev.png" />
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
