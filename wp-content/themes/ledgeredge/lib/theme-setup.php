@@ -144,3 +144,21 @@ function origin_clean_body_classes( $classes ) {
 	return array_intersect( $classes, $allowed_classes );
 }
 add_filter( 'body_class', 'origin_clean_body_classes', 20 );
+
+
+function my_password_form() {
+    global $post;
+    $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
+    $o = '<form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post" class="post-password-form">
+    ' . __( "This content is password protected.<br /> To view it please enter your password below:" ) . '
+    <p><label for="' . $label . '">' . __( "Password:" ) . ' </label><input name="post_password" id="' . $label . '" type="password" size="20" maxlength="20" /><input type="submit" name="Submit" value="' . esc_attr__( "Submit" ) . '" /></p>
+    </form>
+    ';
+    return $o;
+}
+add_filter( 'the_password_form', 'my_password_form' );
+
+add_filter( 'protected_title_format', 'remove_protected_text' );
+	function remove_protected_text() {
+	return __('%s');
+}
