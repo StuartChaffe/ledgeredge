@@ -9,7 +9,7 @@
 	--font-weight-light: 100;
 	--font-weight-normal: 400;
 	--font-weight-medium: 500;
-	--font-weight-bold: 700;
+	--font-weight-bold: 600;
 	--font-weight-heavy: 900;
 	--font-weight-heavy: var(--font-weight-bold);
 
@@ -23,10 +23,10 @@
 	--color-primary: #f77f64;
 	--color-secondary: #5affb8;
 	--color-tertiary: #63d3c5;
-	--color-quaternary: #3b6cc8;
+	--color-quaternary: #2243EB;
 	--color-quinary: #000430;
 
-	--color-text-base: var(--color-quinary);
+	--color-text-base: #000;
 	--color-text-dark: #000;
 	--color-text-reversed: #fff;
 	--color-text-link: #0087D0;
@@ -51,7 +51,7 @@
 
 	--content-width: 768px;
 	--container-small: 900px;
-	--container: 1200px;
+	--container: 1400px;
 	--container-large: 1600px;
 
 	--font-size-h1: calc(2rem + 0.2vw);

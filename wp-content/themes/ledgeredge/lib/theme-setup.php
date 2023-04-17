@@ -54,6 +54,12 @@ function my_custom_styles( $init_array ) {
 			'block' => 'span',  
 			'classes' => 'btn',
 			'wrapper' => false,
+		),
+		array(  
+			'title' => 'Black button',  
+			'block' => 'span',  
+			'classes' => 'btn btn--secondary',
+			'wrapper' => false,
 		),  
 		array(  
 			'title' => 'Orange button',  

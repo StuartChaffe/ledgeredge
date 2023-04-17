@@ -51,7 +51,7 @@
 	flex-wrap: wrap;
 	margin: 0 -10px var(--spacing-l) -10px;
 	@include mq(medium) {
-		margin: 0 -10px var(--spacing-xl) -10px;
+		margin: 0 -30px var(--spacing-xl) -30px;
 	}
 	&--title {
 		width: 100%;
@@ -62,28 +62,21 @@
 	&-item {
 		display: flex;
 		flex-direction: column;
-		background-color: white;
-		border-radius: var(--border-radius);
+		// background-color: white;
 		min-height: 250px;
 		width: 100%;
-		margin: var(--spacing-s);
+		margin: var(--spacing);
 		flex-grow: 0;
 		@include mq(medium) {
 			min-height: 380px;
-			width: calc(100% / 2 - 30px);
+			width: calc(100% / 2 - 60px);
 		}
 		@include mq(large) {
 			min-height: 380px;
-			width: calc(100% / 3 - 30px);
+			width: calc(100% / 3 - 60px);
 		}
 		&--image {
 			position: relative;
-			border-top-left-radius: var(--border-radius);
-			border-top-right-radius: var(--border-radius);
-			img {
-				border-top-left-radius: var(--border-radius);
-				border-top-right-radius: var(--border-radius);
-			}
 			&:hover {
 				color: var(--color-text-base) !important;
 			}
@@ -97,13 +90,13 @@
 		}
 		&--meta {
 			display: flex;
-			font-size: var(--font-size-small);
-			color: var(--color-primary);
+			// font-size: var(--font-size-small);
+			// color: var(--color-primary);
 			p {
 				margin-bottom: 0.5rem;
 			}
 			a {
-				color: var(--color-primary);
+				// color: var(--color-primary);
 				&:hover {
 					text-decoration: none;
 				}
@@ -111,15 +104,18 @@
 		}
 
 		&--content {
-			padding: var(--spacing);
+			padding: var(--spacing) 0;
 			display: flex;
 			flex-direction: column;
 			height: 100%;
+			h4 {
+				margin-bottom: var(--spacing-s);
+			}
 			.excerpt {
-				margin-bottom: 3rem;
+				margin-bottom: 1rem;
 			}
 			&-link {
-				margin-top: auto;
+				// margin-top: auto;
 				font-size: var(--font-size-small);
 				font-weight: var(--font-weight-bold);
 				.icon-arrow {
@@ -141,7 +137,7 @@
 			margin-bottom: 0;
 			@include mq(large) {
 				min-height: 380px;
-				width: calc(100% / 2 - 30px);
+				width: calc(100% / 2 - 60px);
 			}
 			&__label {
 				position: absolute;

@@ -89,9 +89,18 @@
 }
 
 .btn--secondary {
-	background-color:  var(--color-secondary);
+	background-color:  #000000;
+	color: white;
+	stroke: white;
+
+	a {
+		color: white;
+		&:after {
+			content: url('../../src/icons/arrow-white.svg');
+		}
+	}
 	&:before {
-		background: white;
+		background: var(--color-primary);
 	}
 }
 .btn--tertiary {
