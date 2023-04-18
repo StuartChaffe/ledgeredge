@@ -40,6 +40,13 @@
                 "operator": "==",
                 "value": "acf\/content"
             }
+        ],
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/image"
+            }
         ]
     ],
     "menu_order": 0,
@@ -51,5 +58,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1681819755
+    "modified": 1681829088
 }

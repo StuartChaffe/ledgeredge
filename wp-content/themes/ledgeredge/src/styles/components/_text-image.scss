@@ -1,5 +1,6 @@
 .text-image {
 	display: flex;
+	align-items: center;
 	flex-direction: column;
 	overflow: hidden;
 	background-size: cover;
@@ -12,6 +13,7 @@
 
 	&--container {
 		margin-bottom: 0;
+		padding: var(--spacing) 0;
 	}
 	&__single {
 		// align-items: center;
@@ -131,7 +133,7 @@
 		// 	width: 100%;
 		// }
 		@include mq(medium) {
-			width: 50%;
+			width: 40%;
 			margin-left: 10%;
 		}
 		&__pad {

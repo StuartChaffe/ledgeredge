@@ -34,7 +34,7 @@ $featuredposts = get_field( 'select_posts' );
 				</a>
 				<?php if (has_excerpt($featuredpost) ) { ?><p class="small excerpt"><?php echo get_the_excerpt($featuredpost); ?></p><?php } ?>
 				<a class="posts-item--content-link" href="<?php esc_url( the_permalink($featuredpost) ); ?>" title="Article: <?php the_title($featuredpost); ?>">
-					Read more <?php echo get_icon('arrow'); ?>
+					Read >
 				</a>
 			</div>
 		</div>

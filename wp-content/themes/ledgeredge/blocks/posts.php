@@ -37,7 +37,7 @@ $sticky = get_option('sticky_posts');
 				</a>
 				<?php if (has_excerpt() ) { ?><p class=" excerpt"><?php echo get_the_excerpt(); ?></p><?php } ?>
 				<a class="posts-item--content-link" href="<?php esc_url( the_permalink() ); ?>" title="Article: <?php the_title(); ?>">
-					Read <?php echo get_icon('arrow'); ?>
+					Read >
 				</a>
 			</div>
 		</div>
@@ -99,7 +99,7 @@ $sticky = get_option('sticky_posts');
 					</a>
 					<?php if (has_excerpt() ) { ?><p class="excerpt"><?php echo get_the_excerpt(); ?></p><?php } ?>
 					<a class="posts-item--content-link" href="<?php esc_url( the_permalink() ); ?>" title="Article: <?php the_title(); ?>">
-						Read <?php echo get_icon('arrow'); ?>
+						Read >
 					</a>
 				</div>
 			</div>
