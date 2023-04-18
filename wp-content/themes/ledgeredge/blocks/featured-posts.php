@@ -38,7 +38,7 @@ $featuredposts = get_field( 'select_posts' );
 				</a>
 			</div>
 		</div>
-	
+	 
 		<?php endforeach; ?>
 	<?php endif; ?>
 	</section>

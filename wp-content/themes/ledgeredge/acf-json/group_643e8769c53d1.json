@@ -1,0 +1,55 @@
+{
+    "key": "group_643e8769c53d1",
+    "title": "Background colour",
+    "fields": [
+        {
+            "key": "field_643e876a0400d",
+            "label": "Background colour",
+            "name": "bkg-colour",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "bkg__lightblue": "Blue",
+                "bkg__darkblue": "Dark blue",
+                "bkg__green": "Green",
+                "bkg__white": "White",
+                "bkg__grey": "Grey",
+                "bkg__black": "Black"
+            },
+            "default_value": "bkg--white",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/content"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1681819755
+}

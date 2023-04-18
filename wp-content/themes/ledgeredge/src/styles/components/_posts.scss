@@ -51,13 +51,13 @@
 	flex-wrap: wrap;
 	margin: 0 -10px var(--spacing-l) -10px;
 	@include mq(medium) {
-		margin: 0 -30px var(--spacing-xl) -30px;
+		margin: 0 -20px var(--spacing-xl) -20px;
 	}
 	&--title {
 		width: 100%;
 		padding: var(--spacing-l) 0 0 0;
 		border-top: 1px solid var(--color-text-base);
-		margin: 0 var(--spacing);
+		margin: 0 calc(var(--spacing-xs) * 2);
 	}
 	&-item {
 		display: flex;
@@ -65,15 +65,15 @@
 		// background-color: white;
 		min-height: 250px;
 		width: 100%;
-		margin: var(--spacing);
+		margin: 0 calc(var(--spacing-xs) * 2);
 		flex-grow: 0;
 		@include mq(medium) {
 			min-height: 380px;
-			width: calc(100% / 2 - 60px);
+			width: calc(100% / 2 - 40px);
 		}
 		@include mq(large) {
 			min-height: 380px;
-			width: calc(100% / 3 - 60px);
+			width: calc(100% / 3 - 40px);
 		}
 		&--image {
 			position: relative;

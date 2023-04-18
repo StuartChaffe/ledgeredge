@@ -30,10 +30,10 @@
 	}
 }
 section {
-	margin-bottom: 20px;
-	@include mq(medium) {
-		margin-bottom: var(--spacing);
-	}
+	// margin-bottom: 20px;
+	// @include mq(medium) {
+	// 	margin-bottom: var(--spacing);
+	// }
 }
 
 .main {
@@ -75,6 +75,9 @@ section {
 				background: linear-gradient(90deg, rgba(0,4,48,1) 0%, rgba(0,4,48,0) 100%);
 			}
 		}
+	}
+	&__grey {
+		background-color: var(--color-grey);
 	}
 	&__lightblue {
 		background-color: var(--color-quaternary);
