@@ -6,10 +6,9 @@
 	&-item {
 		width: 100%;
 		border-radius: var(--border-radius);
-		background-color: var(--color-quinary);
-		color: white;
+		// background-color: var(--color-quinary);
+		// color: white;
 		padding: var(--spacing-xs) var(--spacing) var(--spacing) var(--spacing);
-		text-align: center;
 		margin: 0 0 var(--spacing) 0;
 
 		@include mq(medium) {
@@ -20,12 +19,21 @@
 		h4 {
 			margin-bottom: 0;
 		}
+
+		a {
+			color: var(--color-text-dark);
+			font-size: var(--font-size-small);
+			text-decoration: underline;
+			&:hover {
+				color: var(--color-quaternary);
+			}
+		}
 		&--job {
 			margin-bottom: var(--spacing) !important;
-			color: var(--color-secondary);
+			color: var(--color-quaternary);
 		}
 		&--bio {
-			margin-bottom: 1rem;
+			margin-bottom: 0.5rem;
 			p {
 				font-size: 15px;
 			}
@@ -65,15 +73,19 @@
 				// color: var(--color-secondary);
 			}
 			&__clip {
+				position: absolute;
+				top: 0;
+				left: 0;
+				
 				width: 100%;
 				height: 100%;
 				background: none !important;
 				background-size: cover;
 				background-position: center center;
 				clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-				transform: rotate(15deg);
+				// transform: rotate(15deg);
 				img {
-					transform: rotate(-15deg);
+					transform: rotate(-30deg);
 					width: 108%;
 					max-width: none;
 					margin-left: -4%;
@@ -81,48 +93,25 @@
 			}
 
 			img {
-				transform: rotate(-15deg);
+				transform: rotate(-30deg);
 			}
-		}
-		
-		&:nth-child(3n+1) {
-			background-color: var(--color-quinary);
-		}
-		&:nth-child(3n+2) {
-			background-color: var(--color-quaternary);
-			.team-item--image {
-				-moz-transform: rotate(15deg);
-				&__clip {
-					transform: rotate(-10deg);
-					-moz-transform: rotate(-25deg);
-					img {
-						transform: rotate(10deg);
-					}
-				}
-				.icon {
-					transform: rotate(15deg);
-					-moz-transform: rotate(0deg);
-					// color: var(--color-primary);
-				}
-			}
-		}
-		&:nth-child(3n+3) {
-			background-color: white;
-			color: var(--color-text-base);
 		}
 	}
 }
-
-.team-item {
-	&:nth-child(3n+1),
-	&:nth-child(3n+3) {
-		.icon-asset-team {
-			color: var(--color-primary);
-		}
-	}
-	&:nth-child(3n+2) {
-		.icon-asset-team {
-			color: var(--color-secondary);
-		}
-	}
+.hexagone {
+	display:inline-block;
+	width: 100%;
+	height: 100%;
+	color: transparent;
+	transform: rotate(30deg);
+	overflow: hidden;
+	filter:url(#round);
+}
+.hexagone::before {
+	content:'';
+	display:block;
+	padding-top: 100%;
+	transform: rotate(30deg);
+	background-color: transparent;
+	// clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
 }
