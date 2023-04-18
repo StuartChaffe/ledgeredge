@@ -11,7 +11,7 @@ article {
 	max-width: var(--container-small);
 	margin-right: auto;
 	margin-left: auto;
-	padding: var(--spacing-s) var(--spacing);
+	padding: var(--spacing-l) var(--spacing-l);
 	@include mq(medium) {
 		padding: var(--spacing-xl) var(--spacing);
 	}
@@ -88,6 +88,10 @@ article {
 		font-weight: bold;
 		margin-right: 0.6em;
 		color: var(--color-text-dark);
+	}
+
+	h4 {
+		margin-bottom: var(--spacing);
 	}
 }
 .global-header + .content {

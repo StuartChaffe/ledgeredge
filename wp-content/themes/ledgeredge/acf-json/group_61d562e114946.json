@@ -6,6 +6,7 @@
             "key": "field_61d5635ab156d",
             "label": "Timeline",
             "name": "timeline",
+            "aria-label": "",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -25,6 +26,7 @@
                     "key": "field_61d56362b156e",
                     "label": "Date",
                     "name": "timeline_date",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -38,12 +40,14 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "maxlength": ""
+                    "maxlength": "",
+                    "parent_repeater": "field_61d5635ab156d"
                 },
                 {
                     "key": "field_61d56371b156f",
                     "label": "Image",
                     "name": "timeline_image",
+                    "aria-label": "",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -63,12 +67,14 @@
                     "max_height": "",
                     "max_size": "",
                     "mime_types": "",
-                    "default_value": ""
+                    "default_value": "",
+                    "parent_repeater": "field_61d5635ab156d"
                 },
                 {
                     "key": "field_61d56383b1570",
                     "label": "Content",
                     "name": "timeline_content",
+                    "aria-label": "",
                     "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
@@ -82,14 +88,38 @@
                     "tabs": "all",
                     "toolbar": "full",
                     "media_upload": 0,
-                    "delay": 0
+                    "delay": 0,
+                    "parent_repeater": "field_61d5635ab156d"
+                },
+                {
+                    "key": "field_643eb4d8733cd",
+                    "label": "Year",
+                    "name": "timeline_year",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_61d5635ab156d"
                 }
-            ]
+            ],
+            "rows_per_page": 20
         },
         {
             "key": "field_61d563e003269",
             "label": "Button",
             "name": "timeline_button",
+            "aria-label": "",
             "type": "link",
             "instructions": "",
             "required": 0,
@@ -120,5 +150,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1641375228
+    "modified": 1681831188
 }
