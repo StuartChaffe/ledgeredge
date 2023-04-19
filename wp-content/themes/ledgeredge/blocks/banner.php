@@ -13,6 +13,8 @@ $edges = get_field('banner_edges');
 $text = get_field('banner_text');
 $buttons = get_field('buttons');
 $image = get_field('banner_image');
+$video = get_field('banner_video');
+$options = get_field('video_options');
 
 // banner_button
 // banner_button_2
@@ -36,11 +38,17 @@ $image = get_field('banner_image');
 		<a class="hide" href="https://player.vimeo.com/video/219014507?autoplay=1&loop=1&autopause=0" data-featherlight="iframe" allow="autoplay; fullscreen" allowfullscreen > YT</a>
 			
 		</div>
-		<div class="banner--image fade fade--delay__3" <?php if ( $size == 'banner__small' ) { ?>style="background-image: url('<?php echo $image['url']; ?>')"<?php } ?>>
 		<?php if ($image) { ?>
+		<div class="banner--image fade fade--delay__3" <?php if ( $size == 'banner__small' ) { ?>style="background-image: url('<?php echo $image['url']; ?>')"<?php } ?>>
 			<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-		<?php } ?>
 		</div>
+		<?php } ?>
+		<?php if ($video) { ?>
+		<video class="banner--video" muted preload loop autoplay <?php if ( $options['poster'] ) { ?>poster="<?php echo $options['poster']['url']; ?>"<?php } ?>>
+			<source src="<?php echo $video['url']; ?>" type="video/mp4">
+			<p>Your user agent does not support the HTML5 Video element.</p>
+		</video>
+		<?php } ?>
 	</div>
 </section>
 

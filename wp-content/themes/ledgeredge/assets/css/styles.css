@@ -1673,6 +1673,8 @@ body.nav-open {
   align-items: center;
   padding-top: 110px;
   min-height: 600px;
+  position: relative;
+  overflow: hidden;
 }
 @media (min-width: 50em) {
   .banner {
@@ -1721,7 +1723,7 @@ body.nav-open {
 .banner--content {
   z-index: 1;
   width: 100%;
-  padding: 1rem;
+  padding: var(--spacing);
   margin-bottom: 1rem;
 }
 @media (min-width: 50em) {
@@ -1761,6 +1763,16 @@ body.nav-open {
     width: 50%;
     padding: 0;
   }
+}
+.banner--video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: none;
+  transform: translate(-50%, -50%);
+  min-width: calc(100% + 2px);
+  min-height: calc(100% + 2px);
+  display: block;
 }
 .banner--bkg__video {
   background-color: var(--color-quinary);
@@ -2156,7 +2168,6 @@ body.nav-open {
   margin: 8rem auto 0 auto;
 }
 .text-icon-line {
-  display: none;
   width: 6px;
   height: 100%;
   background-image: url("../../src/images/timeline-line.svg");
