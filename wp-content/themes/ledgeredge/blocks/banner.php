@@ -6,19 +6,12 @@ $size = get_field('banner_size');
 $bkgcolor = get_field('background_colour');
 $bkgimage = get_field('background_image');
 $edges = get_field('banner_edges');
-// $asset = get_field('banner_colour');
-// $logo = get_field('banner_logo');
-// $label = get_field('banner_label');
-// $title = get_field('banner_title');
 $text = get_field('banner_text');
 $buttons = get_field('buttons');
 $image = get_field('banner_image');
 $video = get_field('banner_video');
-$options = get_field('video_options');
+$poster = get_field('banner_poster');
 
-// banner_button
-// banner_button_2
-// $title = get_field('banner_title', false, false);
 ?>
 
 <section class="fade <?php echo $bkgcolor ?>" <?php if ( $bkgcolor == 'banner--bkg__image' ) { ?> style="background-image: url('<?php echo $bkgimage['url']; ?>')"<?php } ?>>
@@ -44,7 +37,7 @@ $options = get_field('video_options');
 		</div>
 		<?php } ?>
 		<?php if ($video) { ?>
-		<video class="banner--video" muted preload loop autoplay <?php if ( $options['poster'] ) { ?>poster="<?php echo $options['poster']['url']; ?>"<?php } ?>>
+		<video class="banner--video" muted preload loop autoplay <?php if ( $poster ) { ?>poster="<?php echo $poster['url']; ?>"<?php } ?>>
 			<source src="<?php echo $video['url']; ?>" type="video/mp4">
 			<p>Your user agent does not support the HTML5 Video element.</p>
 		</video>
