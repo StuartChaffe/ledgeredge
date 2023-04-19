@@ -6,6 +6,11 @@
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
+	max-width: var(--container-large);
+	// border-left: 1px solid var(--color-grey);
+	// border-right: 1px solid var(--color-grey);
+	margin: 0 auto;
+	box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -92,7 +97,7 @@ section {
 		h3, .heading-3,
 		h4, .heading-4,
 		h5, .heading-5 {
-			color: var(--color-quaternary);
+			color: white;
 		}
 		// p {
 		// 	color: white;
@@ -121,7 +126,7 @@ section {
 	h3, .heading-3,
 	h4, .heading-4,
 	h5, .heading-5 {
-		color: var(--color-secondary);
+		color: white;
 	}
 	p, li, li:before {
 		color: white;

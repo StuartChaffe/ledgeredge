@@ -4,7 +4,7 @@
 		justify-content: space-between;
 		border-bottom: 1px solid var(--color-text-base);
 		font-size: var(--font-size-small);
-		padding-bottom: var(--spacing);
+		padding: var(--spacing) 0;
 		a {
 			color: var(--color-text-base);
 			font-weight: var(--font-weight-bold);
@@ -90,7 +90,7 @@
 		}
 		&--meta {
 			display: flex;
-			// font-size: var(--font-size-small);
+			font-size: var(--font-size-small);
 			// color: var(--color-primary);
 			p {
 				margin-bottom: 0.5rem;

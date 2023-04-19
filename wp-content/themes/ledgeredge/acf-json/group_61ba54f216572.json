@@ -6,6 +6,7 @@
             "key": "field_61d578662034d",
             "label": "Size",
             "name": "banner_size",
+            "aria-label": "",
             "type": "select",
             "instructions": "",
             "required": 0,
@@ -31,6 +32,7 @@
             "key": "field_61ba54ff74131",
             "label": "Background",
             "name": "background_colour",
+            "aria-label": "",
             "type": "select",
             "instructions": "",
             "required": 0,
@@ -43,15 +45,17 @@
             "choices": {
                 "bkg__lightblue": "Blue",
                 "bkg__darkblue": "Dark Blue",
+                "bkg__green": "Green",
                 "bkg__black": "Black",
                 "bkg__white": "White",
-                "banner--bkg__image": "Image"
+                "banner--bkg__image": "Image",
+                "banner--bkg__video": "Video"
             },
             "default_value": "bkg__darkblue",
-            "allow_null": 0,
-            "multiple": 0,
-            "ui": 0,
             "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
             "ajax": 0,
             "placeholder": ""
         },
@@ -59,6 +63,7 @@
             "key": "field_61bb504fbc89e",
             "label": "Background image",
             "name": "background_image",
+            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -87,108 +92,12 @@
             "max_size": "",
             "mime_types": "",
             "default_value": ""
-        },
-        {
-            "key": "field_61c468794f14c",
-            "label": "Asset colour",
-            "name": "banner_colour",
-            "type": "select",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_61ba54ff74131",
-                        "operator": "==",
-                        "value": "banner--bkg__image"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "banner--bkg__asset--green": "Green",
-                "banner--bkg__asset--blue": "Blue",
-                "banner--bkg__asset--orange": "Orange"
-            },
-            "default_value": "banner--bkg__asset--green",
-            "allow_null": 0,
-            "multiple": 0,
-            "ui": 0,
-            "return_format": "value",
-            "ajax": 0,
-            "placeholder": ""
-        },
-        {
-            "key": "field_61bb1f8723950",
-            "label": "Logo (icon \/ image)",
-            "name": "banner_logo",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "preview_size": "medium",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
-            "default_value": ""
-        },
-        {
-            "key": "field_61bb1b3659c71",
-            "label": "Label",
-            "name": "banner_label",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_61bb1b6159c72",
-            "label": "Title",
-            "name": "banner_title",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
         },
         {
             "key": "field_61bb1b7f59c73",
             "label": "Text",
             "name": "banner_text",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -208,6 +117,7 @@
             "key": "field_61bb1ba659c74",
             "label": "Buttons",
             "name": "buttons",
+            "aria-label": "",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -223,6 +133,7 @@
                     "key": "field_61bb1bdf59c75",
                     "label": "Video button",
                     "name": "banner_button",
+                    "aria-label": "",
                     "type": "file",
                     "instructions": "",
                     "required": 0,
@@ -242,6 +153,7 @@
                     "key": "field_61bb1cea59c76",
                     "label": "Button 2",
                     "name": "banner_button_2",
+                    "aria-label": "",
                     "type": "link",
                     "instructions": "",
                     "required": 0,
@@ -259,6 +171,7 @@
             "key": "field_61bb25c985979",
             "label": "Image",
             "name": "banner_image",
+            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -269,8 +182,8 @@
                 "id": ""
             },
             "return_format": "array",
-            "preview_size": "medium",
             "library": "all",
+            "default_value": "",
             "min_width": "",
             "min_height": "",
             "min_size": "",
@@ -278,7 +191,62 @@
             "max_height": "",
             "max_size": "",
             "mime_types": "",
-            "default_value": ""
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_643fce57ef4df",
+            "label": "Image to edges?",
+            "name": "banner_edges",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61bb25c985979",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_643fbe38c3ed0",
+            "label": "Video",
+            "name": "banner_video",
+            "aria-label": "",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61ba54ff74131",
+                        "operator": "==",
+                        "value": "banner--bkg__video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
@@ -299,5 +267,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1641380987
+    "modified": 1681907607
 }

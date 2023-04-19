@@ -35,7 +35,7 @@ $sticky = get_option('sticky_posts');
 					<!-- <p class="lead"><strong><?php the_title(); ?></strong></p> -->
 					<h4><?php the_title(); ?></h4>
 				</a>
-				<?php if (has_excerpt() ) { ?><p class=" excerpt"><?php echo get_the_excerpt(); ?></p><?php } ?>
+				<?php if (has_excerpt() ) { ?><p class="small excerpt"><?php echo get_the_excerpt(); ?></p><?php } ?>
 				<a class="posts-item--content-link" href="<?php esc_url( the_permalink() ); ?>" title="Article: <?php the_title(); ?>">
 					Read >
 				</a>
@@ -45,25 +45,6 @@ $sticky = get_option('sticky_posts');
 	</section>
 </div>
 <?php } ?>
-<div class="container">
-	<section class="connect">
-		<div class="connect--title">
-			<h4>Connect with LedgerEdge and never miss an update</h4>
-		</div>
-		<div class="connect--social-links">
-			<?php if(get_field('twitter', 'options')): ?>
-				<div class="connect--social-links-item"><a href="<?php the_field('twitter', 'options'); ?>" target="_blank" class="connect--social-links-item-link"><?php echo get_icon('twitter'); ?>
-				<span>Follow us</span></a></div>
-			<?php endif; ?>
-			<?php if(get_field('linkedin', 'options')): ?>
-				<div class="connect--social-links-item"><a href="<?php the_field('linkedin', 'options'); ?>" target="_blank" class="connect--social-links-item-link"><?php echo get_icon('linkedin'); ?>
-				<span>Connect</span></a></div>
-			<?php endif; ?>
-			<div class="connect--social-links-item"><a href="/contact-us" class="connect--social-links-item-link"><?php echo get_icon('email'); ?>
-				<span>Contact</span></a></div>
-		</div>
-	</section>
-</div>
 
 <?php
 	$posts = new WP_Query( array(
@@ -97,7 +78,7 @@ $sticky = get_option('sticky_posts');
 						<!-- <p class="lead"><strong><?php the_title(); ?></strong></p> -->
 						<h4><?php the_title(); ?></h4>
 					</a>
-					<?php if (has_excerpt() ) { ?><p class="excerpt"><?php echo get_the_excerpt(); ?></p><?php } ?>
+					<?php if (has_excerpt() ) { ?><p class="small excerpt"><?php echo get_the_excerpt(); ?></p><?php } ?>
 					<a class="posts-item--content-link" href="<?php esc_url( the_permalink() ); ?>" title="Article: <?php the_title(); ?>">
 						Read >
 					</a>
@@ -108,3 +89,24 @@ $sticky = get_option('sticky_posts');
 	</section>
 </div>
 <?php } ?>
+
+
+<section class="bkg__grey">
+	<div class="connect container">
+		<div class="connect--title">
+			<h4>Connect with LedgerEdge and never miss an update</h4>
+		</div>
+		<div class="connect--social-links">
+			<?php if(get_field('twitter', 'options')): ?>
+				<div class="connect--social-links-item"><a href="<?php the_field('twitter', 'options'); ?>" target="_blank" class="connect--social-links-item-link"><?php echo get_icon('twitter'); ?>
+				<span>Follow us</span></a></div>
+			<?php endif; ?>
+			<?php if(get_field('linkedin', 'options')): ?>
+				<div class="connect--social-links-item"><a href="<?php the_field('linkedin', 'options'); ?>" target="_blank" class="connect--social-links-item-link"><?php echo get_icon('linkedin'); ?>
+				<span>Connect</span></a></div>
+			<?php endif; ?>
+			<div class="connect--social-links-item"><a href="/contact-us" class="connect--social-links-item-link"><?php echo get_icon('email'); ?>
+				<span>Contact</span></a></div>
+		</div>
+	</div>
+</section>

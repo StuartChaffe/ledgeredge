@@ -33,7 +33,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <?php wp_head(); ?>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -50,7 +50,5 @@
 <div id="svg-sprite" style="height: 0; width: 0; position: absolute; visibility: hidden">
 <?php include get_theme_file_path('assets/svg/sprite.php'); ?>
 </div>
-
-<div class="global-container">
 <?php get_template_part( 'partials/global-alert' ); ?>
 <?php get_template_part( 'partials/global-header' ); ?>
