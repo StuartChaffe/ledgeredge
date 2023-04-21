@@ -20,6 +20,7 @@
   --color-secondary: #5affb8;
   --color-tertiary: #63cabc;
   --color-quaternary: #2243EB;
+  --color-quaternary-light: #4377C6;
   --color-quinary: #000430;
   --color-text-base: #000;
   --color-text-dark: #000;
@@ -650,6 +651,10 @@ strong {
   color: var(--color-quaternary) !important;
 }
 
+.lightblue {
+  color: var(--color-quaternary-light) !important;
+}
+
 .green {
   color: var(--color-secondary) !important;
 }
@@ -1028,6 +1033,9 @@ article .content {
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: var(--container-small);
   margin-right: auto;
   margin-left: auto;
@@ -1037,6 +1045,41 @@ article .content {
   .content {
     padding: var(--spacing-xl) var(--spacing);
   }
+}
+.content-cols {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: var(--spacing-s);
+}
+@media (min-width: 50em) {
+  .content-cols {
+    flex-direction: row;
+  }
+}
+.content-cols-item {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 1rem;
+  margin: 0 3rem;
+  flex: 1 1 0px;
+  text-align: center;
+  border-bottom: 1px solid var(--color-grey-dark);
+}
+@media (min-width: 50em) {
+  .content-cols-item {
+    padding: 0.5rem 1rem;
+    margin: 0;
+    border-bottom: 0;
+  }
+}
+@media (min-width: 50em) {
+  .content-cols-item:nth-child(even), .content-cols-item:last-of-type {
+    border-left: 1px solid var(--color-grey-dark);
+  }
+}
+.content-cols + .btn {
+  margin-top: var(--spacing-l);
 }
 .content a {
   color: var(--link-color);
@@ -2417,7 +2460,7 @@ body.nav-open {
   text-align: center;
 }
 .testimonial--title {
-  color: var(--color-quaternary);
+  color: var(--color-quaternary-light);
   font-weight: var(--font-weight-bold);
 }
 .testimonial .lead, .testimonial .text-image__double p, .text-image__double .testimonial p, .testimonial .text-image__single--text p, .text-image__single--text .testimonial p {
@@ -2443,6 +2486,9 @@ body.nav-open {
 }
 .text-icon .btn {
   margin: 8rem auto 0 auto;
+}
+.text-icon + .content--container .content {
+  border-top: 1px solid var(--color-grey-dark);
 }
 .text-icon-line {
   width: 6px;
@@ -2846,6 +2892,13 @@ body.nav-open {
     border-left: 20px solid var(--body-background-color);
     border-right: 20px solid var(--body-background-color);
   }
+}
+
+.video {
+  width: 100%;
+}
+.video video {
+  width: 100%;
 }
 
 .form {

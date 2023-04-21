@@ -89,6 +89,16 @@ function ledgeredge_acf_blocks() {
 			'keywords'			=> array( 'images, image' )
 		));
 		acf_register_block(array(
+			'name'				=> 'video',
+			'title'				=> __('Video'),
+			'description'		=> __('Add a video block'),
+			'render_callback'	=> 'ledgeredge_acf_block_render_callback',
+			'category'			=> 'ledgeredge-blocks',
+			'icon'				=> 'format-gallery',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'video' )
+		));
+		acf_register_block(array(
 			'name'				=> 'posts',
 			'title'				=> __('Posts'),
 			'description'		=> __('Add all posts'),
@@ -198,7 +208,7 @@ function ledgeredge_allowed_block_types( $allowed_blocks ) {
 		'acf/testimonial',
 		'acf/text-icon',
 		'acf/text-image',
-		// 'acf/video'
+		'acf/video'
 	);
  
 }
