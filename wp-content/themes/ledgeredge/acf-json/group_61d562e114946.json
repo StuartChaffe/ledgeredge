@@ -90,27 +90,6 @@
                     "media_upload": 0,
                     "delay": 0,
                     "parent_repeater": "field_61d5635ab156d"
-                },
-                {
-                    "key": "field_643eb4d8733cd",
-                    "label": "Year",
-                    "name": "timeline_year",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_61d5635ab156d"
                 }
             ],
             "rows_per_page": 20
@@ -150,5 +129,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1681831188
+    "modified": 1682343926
 }

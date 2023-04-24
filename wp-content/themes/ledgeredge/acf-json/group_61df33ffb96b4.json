@@ -23,27 +23,6 @@
             "button_label": "Add item",
             "sub_fields": [
                 {
-                    "key": "field_643eb57d71c19",
-                    "label": "Year",
-                    "name": "text_icon_year",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_61df33ffc84f5"
-                },
-                {
                     "key": "field_61df33ffca748",
                     "label": "Image",
                     "name": "text_icon_image",
@@ -129,5 +108,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1681831322
+    "modified": 1682345046
 }

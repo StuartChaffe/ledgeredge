@@ -7,7 +7,6 @@ $button = get_field('timeline_button');
 ?>
 
 <section class="text-icon" id="texticon">
-	<div class="text-icon-line">&nbsp;</div>
 	<?php if( have_rows('items') ): ?>
 		<?php while( have_rows('items') ): the_row();
 			$year = get_sub_field('text_icon_year');
@@ -15,7 +14,6 @@ $button = get_field('timeline_button');
 			$image = get_sub_field('text_icon_image');
 		?>
 		<div class="text-icon-item fade">
-			<?php if ($year) { ?><div class="text-icon-item--year"><?php echo $year; ?></div><?php } ?>
 			<div class="text-icon-item--container">
 				<?php if ($image) { ?>
 				<div class="text-icon-item--image">
