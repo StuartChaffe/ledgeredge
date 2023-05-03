@@ -40,6 +40,13 @@
 	}
 }
 
+.connect {
+	padding: var(--spacing-l) var(--spacing);
+	@include mq(medium) {
+		padding: var(--spacing-xl) var(--spacing);
+	}
+}
+
 
 .newsletter {
 	.hide {

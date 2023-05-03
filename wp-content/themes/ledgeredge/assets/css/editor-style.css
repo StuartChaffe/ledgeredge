@@ -2855,6 +2855,15 @@ body.nav-open {
   display: flex;
 }
 
+.connect {
+  padding: var(--spacing-l) var(--spacing);
+}
+@media (min-width: 50em) {
+  .connect {
+    padding: var(--spacing-xl) var(--spacing);
+  }
+}
+
 .newsletter .hide {
   justify-content: center;
   color: white;
