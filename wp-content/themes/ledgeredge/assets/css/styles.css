@@ -1725,11 +1725,6 @@ body.nav-open {
     min-height: 75vh;
   }
 }
-@media screen and (max-height: 1000px) {
-  .banner {
-    min-height: 100vh;
-  }
-}
 .banner__small {
   min-height: 450px;
   padding-top: 180px;
