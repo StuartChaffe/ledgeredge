@@ -38,6 +38,16 @@ function ledgeredge_acf_blocks() {
 			'keywords'			=> array( 'carousel' ),
 		));
 		acf_register_block(array(
+			'name'				=> 'connect',
+			'title'				=> __('Connect'),
+			'description'		=> __('Add a connect block'),
+			'render_callback'	=> 'ledgeredge_acf_block_render_callback',
+			'category'			=> 'ledgeredge-blocks',
+			'icon'				=> 'megaphone',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'connect' ),
+		));
+		acf_register_block(array(
 			'name'				=> 'content',
 			'title'				=> __('Content'),
 			'description'		=> __('Add a content block'),
@@ -189,6 +199,7 @@ function ledgeredge_allowed_block_types( $allowed_blocks ) {
 		'acf/banner',
 		// 'acf/careers',
 		'acf/carousel',
+		'acf/connect',
 		'acf/content',
 		// 'acf/cta',
 		// 'acf/download',
