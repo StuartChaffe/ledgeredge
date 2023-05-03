@@ -1,0 +1,9 @@
+.cols {
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--spacing-l) 0 var(--spacing-l) 0;
+    &-item {
+        width: calc(100% / 3);
+        margin-bottom: var(--spacing-l);
+    }
+}

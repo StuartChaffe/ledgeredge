@@ -854,6 +854,30 @@ input[type=button]:focus {
 .bkg__white {
   background-color: white;
 }
+.bkg__orange {
+  background-color: var(--color-primary);
+}
+.bkg__orange h1, .bkg__orange .heading-1,
+.bkg__orange h2, .bkg__orange .heading-2,
+.bkg__orange h3, .bkg__orange .heading-3,
+.bkg__orange h4,
+.bkg__orange .testimonial .lead,
+.bkg__orange .testimonial .text-image__double p,
+.text-image__double .bkg__orange .testimonial p,
+.bkg__orange .testimonial .text-image__single--text p,
+.text-image__single--text .bkg__orange .testimonial p,
+.testimonial .bkg__orange .lead,
+.testimonial .bkg__orange .text-image__double p,
+.text-image__double .testimonial .bkg__orange p,
+.testimonial .bkg__orange .text-image__single--text p,
+.text-image__single--text .testimonial .bkg__orange p, .bkg__orange .heading-4,
+.bkg__orange h5, .bkg__orange .heading-5 {
+  color: white;
+}
+.bkg__orange p, .bkg__orange li, .bkg__orange li:before {
+  color: white;
+}
+
 .bkg__lightblue h1, .bkg__lightblue .heading-1,
 .bkg__lightblue h2, .bkg__lightblue .heading-2,
 .bkg__lightblue h3, .bkg__lightblue .heading-3,
@@ -1862,6 +1886,16 @@ body.nav-open {
 }
 .carousel--slider-item img {
   width: 100%;
+}
+
+.cols {
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--spacing-l) 0 var(--spacing-l) 0;
+}
+.cols-item {
+  width: calc(100% / 3);
+  margin-bottom: var(--spacing-l);
 }
 
 .connect {

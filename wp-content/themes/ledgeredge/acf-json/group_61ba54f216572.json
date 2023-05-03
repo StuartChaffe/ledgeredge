@@ -46,6 +46,7 @@
                 "bkg__lightblue": "Blue",
                 "bkg__darkblue": "Dark Blue",
                 "bkg__green": "Green",
+                "bkg__orange": "Orange",
                 "bkg__black": "Black",
                 "bkg__white": "White",
                 "banner--bkg__image": "Image",
@@ -300,5 +301,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1681910354
+    "modified": 1683111517
 }
