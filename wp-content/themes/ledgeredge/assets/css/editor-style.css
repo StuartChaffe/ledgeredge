@@ -950,6 +950,22 @@ input[type=submit], input[type=reset], input[type=button] {
   width: 100%;
 }
 
+.cols {
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--spacing-l) 0 var(--spacing-l) 0;
+}
+.cols-item {
+  width: 100%;
+  margin-bottom: var(--spacing-l);
+}
+@media (min-width: 50em) {
+  .cols-item {
+    width: calc(100% / 3);
+    padding-right: 2rem;
+  }
+}
+
 .connect {
   display: flex;
   flex-direction: column;
