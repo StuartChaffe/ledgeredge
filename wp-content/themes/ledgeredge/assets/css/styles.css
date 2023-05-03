@@ -1894,8 +1894,13 @@ body.nav-open {
   padding: var(--spacing-l) 0 var(--spacing-l) 0;
 }
 .cols-item {
-  width: calc(100% / 3);
+  width: 100%;
   margin-bottom: var(--spacing-l);
+}
+@media (min-width: 50em) {
+  .cols-item {
+    width: calc(100% / 3);
+  }
 }
 
 .connect {
