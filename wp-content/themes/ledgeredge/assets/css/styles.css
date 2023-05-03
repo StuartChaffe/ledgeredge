@@ -1900,6 +1900,7 @@ body.nav-open {
 @media (min-width: 50em) {
   .cols-item {
     width: calc(100% / 3);
+    padding-right: 2rem;
   }
 }
 
