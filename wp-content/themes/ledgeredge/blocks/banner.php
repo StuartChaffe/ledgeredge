@@ -32,7 +32,7 @@ $poster = get_field('banner_poster');
 			
 		</div>
 		<?php if ($image) { ?>
-		<div class="banner--image fade fade--delay__3" <?php if ( $size == 'banner__small' ) { ?>style="background-image: url('<?php echo $image['url']; ?>')"<?php } ?>>
+		<div class="banner--image" <?php if ( $size == 'banner__small' ) { ?>style="background-image: url('<?php echo $image['url']; ?>')"<?php } ?>>
 			<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 		</div>
 		<?php } ?>
