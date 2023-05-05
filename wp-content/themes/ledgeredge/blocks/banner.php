@@ -4,6 +4,7 @@
 */
 $size = get_field('banner_size');
 $bkgcolor = get_field('background_colour');
+$bkg = get_field('bkg_colour');
 $bkgimage = get_field('background_image');
 $edges = get_field('banner_edges');
 $text = get_field('banner_text');
@@ -14,7 +15,7 @@ $poster = get_field('banner_poster');
 
 ?>
 
-<section class="fade <?php echo $bkgcolor ?>" <?php if ( $bkgcolor == 'banner--bkg__image' ) { ?> style="background-image: url('<?php echo $bkgimage['url']; ?>')"<?php } ?>>
+<section class="fade <?php echo $bkgcolor ?><?php if ( $bkg ) { ?> <?php echo $bkg ?><?php } ?>" <?php if ( $bkgcolor == 'banner--bkg__image' ) { ?> style="background-image: url('<?php echo $bkgimage['url']; ?>')"<?php } ?>>
 	<div class="banner<?php if ( $size == 'banner__small' ) { ?> banner__small<?php } ?><?php if ( $edges == ! 'True' ) { ?> banner__pad<?php } ?>">
 		<div class="banner--content fade fade--delay__2">
 		<?php if ($text) { ?>

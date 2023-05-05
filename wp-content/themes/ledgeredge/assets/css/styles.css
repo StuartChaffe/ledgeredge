@@ -1839,9 +1839,6 @@ body.nav-open {
 .banner--video {
   width: 100%;
 }
-.banner--bkg__video {
-  background-color: var(--color-quinary);
-}
 .banner--bkg__video h1, .banner--bkg__video h2, .banner--bkg__video h3, .banner--bkg__video h4, .banner--bkg__video .testimonial .lead, .banner--bkg__video .testimonial .text-image__double p, .text-image__double .banner--bkg__video .testimonial p, .banner--bkg__video .testimonial .text-image__single--text p, .text-image__single--text .banner--bkg__video .testimonial p, .testimonial .banner--bkg__video .lead, .testimonial .banner--bkg__video .text-image__double p, .text-image__double .testimonial .banner--bkg__video p, .testimonial .banner--bkg__video .text-image__single--text p, .text-image__single--text .testimonial .banner--bkg__video p, .banner--bkg__video h5, .banner--bkg__video h6, .banner--bkg__video p {
   color: white;
 }
