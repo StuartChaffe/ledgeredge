@@ -1826,7 +1826,7 @@ body.nav-open {
     padding: 0;
   }
 }
-.banner--video {
+.banner--video-bkg {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1836,11 +1836,30 @@ body.nav-open {
   min-height: calc(100% + 2px);
   display: block;
 }
+.banner--video {
+  width: 100%;
+}
 .banner--bkg__video {
   background-color: var(--color-quinary);
 }
 .banner--bkg__video h1, .banner--bkg__video h2, .banner--bkg__video h3, .banner--bkg__video h4, .banner--bkg__video .testimonial .lead, .banner--bkg__video .testimonial .text-image__double p, .text-image__double .banner--bkg__video .testimonial p, .banner--bkg__video .testimonial .text-image__single--text p, .text-image__single--text .banner--bkg__video .testimonial p, .testimonial .banner--bkg__video .lead, .testimonial .banner--bkg__video .text-image__double p, .text-image__double .testimonial .banner--bkg__video p, .testimonial .banner--bkg__video .text-image__single--text p, .text-image__single--text .testimonial .banner--bkg__video p, .banner--bkg__video h5, .banner--bkg__video h6, .banner--bkg__video p {
   color: white;
+}
+.banner--bkg__video .banner {
+  min-height: 100px;
+}
+.banner--bkg__video .banner__pad {
+  padding: 110px 0 0 0;
+}
+@media (min-width: 50em) {
+  .banner--bkg__video .banner__pad {
+    padding: 0;
+  }
+}
+@media (min-width: 50em) {
+  .banner--bkg__video .banner--content {
+    position: absolute;
+  }
 }
 .banner--bkg__image {
   background-size: cover;
