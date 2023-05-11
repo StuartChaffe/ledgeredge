@@ -2535,7 +2535,7 @@ body.nav-open {
   margin-bottom: 0.5rem;
 }
 .team-item--bio p {
-  font-size: 15px;
+  font-size: var(--font-size-small);
 }
 .team-item .btn a:after {
   display: none;
