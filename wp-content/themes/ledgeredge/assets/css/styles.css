@@ -2288,6 +2288,7 @@ body.nav-open {
 }
 .text-icon-item--image {
   max-width: 300px;
+  max-height: 300px;
   position: relative;
   margin: 2rem 0 1.5rem 0;
 }
