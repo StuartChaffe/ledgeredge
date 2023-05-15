@@ -2211,7 +2211,7 @@ body.nav-open {
 @media (min-width: 70em) {
   .posts-item--featured {
     min-height: 380px;
-    width: calc(100% / 2 - 60px);
+    width: calc(100% / 2 - 40px);
   }
 }
 .posts-item--featured__label {

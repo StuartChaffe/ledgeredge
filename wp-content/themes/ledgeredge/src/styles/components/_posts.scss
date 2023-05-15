@@ -137,7 +137,7 @@
 			margin-bottom: 0;
 			@include mq(large) {
 				min-height: 380px;
-				width: calc(100% / 2 - 60px);
+				width: calc(100% / 2 - 40px);
 			}
 			&__label {
 				position: absolute;
