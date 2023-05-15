@@ -50,7 +50,7 @@ $sticky = get_option('sticky_posts');
 	$posts = new WP_Query( array(
 		'post_type' => 'post',
 		'post__not_in' => get_option( 'sticky_posts' ) ,
-		'posts_per_page' => -1,
+		'posts_per_page' => 9,
 		'orderby' => 'date',
 		'order' => 'DESC',
 	));
