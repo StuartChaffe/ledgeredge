@@ -38,7 +38,7 @@ $poster = get_field('banner_poster');
 		</div>
 		<?php } ?>
 		<?php if ($video) { ?>
-		<video class="banner--video" muted preload loop autoplay <?php if ( $poster ) { ?>poster="<?php echo $poster['url']; ?>"<?php } ?>>
+		<video class="banner--video hidemobile" muted preload loop autoplay <?php if ( $poster ) { ?>poster="<?php echo $poster['url']; ?>"<?php } ?>>
 			<source src="<?php echo $video['url']; ?>" type="video/mp4">
 			<p>Your user agent does not support the HTML5 Video element.</p>
 		</video>
