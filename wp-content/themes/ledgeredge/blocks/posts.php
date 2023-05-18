@@ -87,5 +87,8 @@ $sticky = get_option('sticky_posts');
 			
 		<?php endwhile; wp_reset_query(); ?>
 	</section>
+	<div class="posts-btn">
+		<span class="btn btn--secondary"><a href="/archive">View archive</a></span>
+	</div>
 </div>
 <?php } ?>

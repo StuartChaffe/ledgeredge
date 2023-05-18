@@ -130,6 +130,16 @@ function ledgeredge_acf_blocks() {
 			'keywords'			=> array( 'posts, blogs' ),
 		));
 		acf_register_block(array(
+			'name'				=> 'archive',
+			'title'				=> __('Archive posts'),
+			'description'		=> __('Add archive'),
+			'render_callback'	=> 'ledgeredge_acf_block_render_callback',
+			'category'			=> 'ledgeredge-blocks',
+			'icon'				=> 'calendar-alt',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'archive, posts' ),
+		));
+		acf_register_block(array(
 			'name'				=> 'newsletter',
 			'title'				=> __('Newsletter'),
 			'description'		=> __('Add a newsletter'),
@@ -207,6 +217,7 @@ function ledgeredge_allowed_block_types( $allowed_blocks ) {
 	return array(
 		// 'acf/accordion',
 		// 'acf/awards',
+		'acf/archive',
 		'acf/banner',
 		// 'acf/careers',
 		'acf/carousel',

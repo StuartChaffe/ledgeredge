@@ -53,6 +53,11 @@
 	@include mq(medium) {
 		margin: 0 -20px var(--spacing-xl) -20px;
 	}
+	&-btn {
+		width: 100%;
+		text-align: center;
+		margin-bottom: var(--spacing-l);
+	}
 	&--title {
 		width: 100%;
 		padding: var(--spacing-l) 0 0 0;
