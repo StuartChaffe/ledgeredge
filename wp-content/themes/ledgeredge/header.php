@@ -45,6 +45,9 @@
 
   gtag('config', 'G-C3R7BLEM89');
 </script>
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7922763.js"></script>
+<!-- End of HubSpot Embed Code -->
 </head>
 <body <?php body_class(); ?>>
 <div id="svg-sprite" style="height: 0; width: 0; position: absolute; visibility: hidden">
