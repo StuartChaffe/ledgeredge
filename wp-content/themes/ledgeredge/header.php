@@ -5,15 +5,35 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?php wp_title(''); ?></title>
-<link rel="icon" href="/favicon.ico"><!-- 32×32 -->
+<link rel="icon" href="/favicon.ico">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<meta name="msapplication-TileImage" content="<?php echo content_url() ?>/uploads/LE_Display_Rev.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-config" content="/browserconfig.xml" />
+<meta name="theme-color" content="#ffffff">
 
-<meta property="og:image" content="<?php echo content_url() ?>/uploads/LE_Display_Rev.png" />
+
+
+
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <?php wp_head(); ?>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -25,12 +45,13 @@
 
   gtag('config', 'G-C3R7BLEM89');
 </script>
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7922763.js"></script>
+<!-- End of HubSpot Embed Code -->
 </head>
 <body <?php body_class(); ?>>
 <div id="svg-sprite" style="height: 0; width: 0; position: absolute; visibility: hidden">
 <?php include get_theme_file_path('assets/svg/sprite.php'); ?>
 </div>
-
-<div class="global-container">
 <?php get_template_part( 'partials/global-alert' ); ?>
 <?php get_template_part( 'partials/global-header' ); ?>

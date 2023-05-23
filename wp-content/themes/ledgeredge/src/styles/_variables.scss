@@ -6,27 +6,28 @@
 	--font-size-lead: calc(1.2rem + 0.1vw);
 	--font-size-small: calc(0.8rem + 0.1vw);
 
-	--font-weight-light: 100;
-	--font-weight-normal: 400;
-	--font-weight-medium: 500;
-	--font-weight-bold: 700;
+	--font-weight-light: 300;
+	--font-weight-normal: 300;
+	--font-weight-medium: 400;
+	--font-weight-bold: 600;
 	--font-weight-heavy: 900;
 	--font-weight-heavy: var(--font-weight-bold);
 
-	--line-height: 1.4;
+	--line-height: 1.2;
 	--line-height-headings: 1.1;
 
 	--color-grey-dark: #6a6a6a;
-	--color-grey: #efece6;
+	--color-grey: #e6e3dd;
 	--color-grey-light: #efefef;
 
 	--color-primary: #f77f64;
 	--color-secondary: #5affb8;
-	--color-tertiary: #63d3c5;
-	--color-quaternary: #3b6cc8;
-	--color-quinary: #000430;
-
-	--color-text-base: var(--color-quinary);
+	--color-tertiary: #90D2C9;
+	--color-quaternary: #2243EB;
+	--color-quaternary-light: #4377C6;
+	--color-quinary: #020045;
+	
+	--color-text-base: #000;
 	--color-text-dark: #000;
 	--color-text-reversed: #fff;
 	--color-text-link: #0087D0;
@@ -38,7 +39,7 @@
 	--color-youtube: #cc181e;
 	--color-linkedin: #0077B5;
 
-	--body-background-color: var(--color-grey);
+	--body-background-color: #fff;
 
 	--border-radius: 30px;
 
@@ -50,7 +51,7 @@
 	--spacing-xs: 10px;
 
 	--content-width: 768px;
-	--container-small: 900px;
+	--container-small: 1000px;
 	--container: 1200px;
 	--container-large: 1600px;
 

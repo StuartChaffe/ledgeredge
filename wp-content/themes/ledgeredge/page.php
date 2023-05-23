@@ -1,3 +1,4 @@
+<div class="global-container">
 <?php
 // If 404 page return 404 header
 if(is_page('1861')):

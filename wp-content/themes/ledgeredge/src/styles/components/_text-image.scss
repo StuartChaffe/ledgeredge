@@ -1,5 +1,6 @@
 .text-image {
 	display: flex;
+	align-items: center;
 	flex-direction: column;
 	overflow: hidden;
 	background-size: cover;
@@ -9,9 +10,13 @@
 	@include mq(medium) {
 		flex-direction: row;
 	}
+
+	&--container {
+		margin-bottom: 0;
+		padding: var(--spacing) 0;
+	}
 	&__single {
 		// align-items: center;
-		border-radius: var(--border-radius);
 		// padding: var(--spacing-xl) var(--spacing-l);
 		&--text {
 			width: 100%;
@@ -30,7 +35,6 @@
 		}
 	}
 	&__double {
-		border-radius: var(--border-radius);
 		width: 100%;
 		padding: var(--spacing);
 		min-height: calc(50vw - var(--spacing) * 1.5); 
@@ -129,7 +133,7 @@
 		// 	width: 100%;
 		// }
 		@include mq(medium) {
-			width: 50%;
+			width: 40%;
 			margin-left: 10%;
 		}
 		&__pad {

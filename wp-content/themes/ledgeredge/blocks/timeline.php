@@ -16,13 +16,15 @@ $button = get_field('timeline_button');
 		?>
 		<div class="timeline-item fade">
 			<?php if ($date) { ?><div class="timeline-item--date"><span><?php echo $date; ?></span></div><?php } ?>
-			<?php if ($image) { ?>
-			<div class="timeline-item--image">
-				<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
-			</div>
-			<?php } ?>
-			<div class="timeline-item--content" <?php if (!$image) { ?> style="margin-top: 50px"<?php } ?>>
-				<?php echo $content; ?>
+			<div class="timeline-item--container">
+				<?php if ($image) { ?>
+				<div class="timeline-item--image">
+					<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+				</div>
+				<?php } ?>
+				<div class="timeline-item--content" <?php if (!$image) { ?> style="margin-top: 50px"<?php } ?>>
+					<?php echo $content; ?>
+				</div>
 			</div>
 		</div>
 		<?php endwhile; ?>

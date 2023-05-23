@@ -1,24 +1,21 @@
-<section class="connect">
-	<h2>Connect with LedgerEdge and never miss an update</h2>
-
-	<ul class="social-links">
-		<?php if(get_field('twitter', 'options')): ?>
-			<li class="social-links__item"><a href="<?php the_field('twitter', 'options'); ?>" target="_blank" class="social-links__link"><?php echo get_icon('twitter'); ?></a></li>
+<section class="bkg__grey">
+	<div class="connect container">
+		<?php if(get_field('connect_content', 'options')): ?>
+		<div class="connect--title">
+			<h4><?php echo the_field('connect_content', 'options'); ?></h4>
+		</div>
 		<?php endif; ?>
-		<?php if(get_field('facebook', 'options')): ?>
-			<li class="social-links__item"><a href="<?php the_field('facebook', 'options'); ?>" target="_blank" class="social-links__link"><?php echo get_icon('facebook'); ?></a></li>
-		<?php endif; ?>
-		<?php if(get_field('instagram', 'options')): ?>
-			<li class="social-links__item"><a href="<?php the_field('instagram', 'options'); ?>" target="_blank" class="social-links__link"><?php echo get_icon('instagram'); ?></a></li>
-		<?php endif; ?>
-		<?php if(get_field('youtube', 'options')): ?>
-			<li class="social-links__item"><a href="<?php the_field('youtube', 'options'); ?>" target="_blank" class="social-links__link"><?php echo get_icon('youtube'); ?></a></li>
-		<?php endif; ?>
-		<?php if(get_field('vimeo', 'options')): ?>
-			<li class="social-links__item"><a href="<?php the_field('vimeo', 'options'); ?>" target="_blank" class="social-links__link"><?php echo get_icon('vimeo'); ?></a></li>
-		<?php endif; ?>
-		<?php if(get_field('linkedin', 'options')): ?>
-			<li class="social-links__item"><a href="<?php the_field('linkedin', 'options'); ?>" target="_blank" class="social-links__link"><?php echo get_icon('linkedin'); ?></a></li>
-		<?php endif; ?>
-	</ul>
+		<div class="connect--social-links">
+			<?php if(get_field('twitter', 'options')): ?>
+				<div class="connect--social-links-item"><a href="<?php the_field('twitter', 'options'); ?>" target="_blank" class="connect--social-links-item-link"><?php echo get_icon('twitter'); ?>
+				<span>Follow us</span></a></div>
+			<?php endif; ?>
+			<?php if(get_field('linkedin', 'options')): ?>
+				<div class="connect--social-links-item"><a href="<?php the_field('linkedin', 'options'); ?>" target="_blank" class="connect--social-links-item-link"><?php echo get_icon('linkedin'); ?>
+				<span>Connect</span></a></div>
+			<?php endif; ?>
+			<div class="connect--social-links-item"><a href="/contact-us" class="connect--social-links-item-link"><?php echo get_icon('email'); ?>
+				<span>Contact</span></a></div>
+		</div>
+	</div>
 </section>

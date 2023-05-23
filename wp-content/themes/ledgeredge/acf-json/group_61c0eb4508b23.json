@@ -6,6 +6,7 @@
             "key": "field_61c0eb4f41b74",
             "label": "# Blocks",
             "name": "no_blocks",
+            "aria-label": "",
             "type": "radio",
             "instructions": "",
             "required": 0,
@@ -30,6 +31,7 @@
             "key": "field_61c0eb884cdcf",
             "label": "Blocks",
             "name": "blocks",
+            "aria-label": "",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -57,6 +59,7 @@
                     "key": "field_61c0ec1f4cdd2",
                     "label": "Text",
                     "name": "text-image-text",
+                    "aria-label": "",
                     "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
@@ -70,12 +73,14 @@
                     "tabs": "all",
                     "toolbar": "full",
                     "media_upload": 1,
-                    "delay": 0
+                    "delay": 0,
+                    "parent_repeater": "field_61c0eb884cdcf"
                 },
                 {
                     "key": "field_61c0ec2c4cdd3",
                     "label": "Image",
                     "name": "text-image-image",
+                    "aria-label": "",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -95,12 +100,14 @@
                     "max_height": "",
                     "max_size": "",
                     "mime_types": "",
-                    "default_value": ""
+                    "default_value": "",
+                    "parent_repeater": "field_61c0eb884cdcf"
                 },
                 {
                     "key": "field_61c224460e6cc",
                     "label": "Background colour",
                     "name": "bkg-colour",
+                    "aria-label": "",
                     "type": "select",
                     "instructions": "",
                     "required": 0,
@@ -123,12 +130,14 @@
                     "ui": 0,
                     "return_format": "value",
                     "ajax": 0,
-                    "placeholder": ""
+                    "placeholder": "",
+                    "parent_repeater": "field_61c0eb884cdcf"
                 },
                 {
                     "key": "field_61c3647af0323",
                     "label": "Icons",
                     "name": "icons",
+                    "aria-label": "",
                     "type": "repeater",
                     "instructions": "",
                     "required": 0,
@@ -142,12 +151,13 @@
                     "min": 0,
                     "max": 0,
                     "layout": "table",
-                    "button_label": "",
+                    "button_label": "Add Row",
                     "sub_fields": [
                         {
                             "key": "field_61c364a0f0324",
                             "label": "Icon",
                             "name": "icon",
+                            "aria-label": "",
                             "type": "image",
                             "instructions": "",
                             "required": 0,
@@ -167,16 +177,21 @@
                             "max_height": "",
                             "max_size": "",
                             "mime_types": "",
-                            "default_value": ""
+                            "default_value": "",
+                            "parent_repeater": "field_61c3647af0323"
                         }
-                    ]
+                    ],
+                    "rows_per_page": 20,
+                    "parent_repeater": "field_61c0eb884cdcf"
                 }
-            ]
+            ],
+            "rows_per_page": 20
         },
         {
             "key": "field_61c0ebbc4cdd0",
             "label": "Text",
             "name": "text-image-text",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -204,6 +219,7 @@
             "key": "field_61c5bb84057e2",
             "label": "Image",
             "name": "image",
+            "aria-label": "",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -227,6 +243,7 @@
                     "key": "field_61c5bba0057e3",
                     "label": "Image",
                     "name": "text-image-image",
+                    "aria-label": "",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -252,6 +269,7 @@
                     "key": "field_61c5bbac057e4",
                     "label": "Pad image?",
                     "name": "text-image-pad",
+                    "aria-label": "",
                     "type": "true_false",
                     "instructions": "",
                     "required": 0,
@@ -271,6 +289,7 @@
                     "key": "field_61e563a09aad2",
                     "label": "Pad image left?",
                     "name": "text-image-pad-left",
+                    "aria-label": "",
                     "type": "true_false",
                     "instructions": "",
                     "required": 0,
@@ -292,6 +311,7 @@
             "key": "field_61c0ec6540066",
             "label": "Background",
             "name": "bgk",
+            "aria-label": "",
             "type": "select",
             "instructions": "",
             "required": 0,
@@ -325,6 +345,7 @@
             "key": "field_61c0ecde40067",
             "label": "Background image",
             "name": "bkg-image",
+            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -363,6 +384,7 @@
             "key": "field_61c0ecf140068",
             "label": "Colour",
             "name": "bkg-colour",
+            "aria-label": "",
             "type": "select",
             "instructions": "",
             "required": 0,
@@ -390,13 +412,14 @@
                 "bkg__darkblue": "Dark blue",
                 "bkg__green": "Green",
                 "bkg__white": "White",
+                "bkg__grey": "Grey",
                 "bkg__black": "Black"
             },
             "default_value": "bkg--white",
-            "allow_null": 0,
-            "multiple": 0,
-            "ui": 0,
             "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
             "ajax": 0,
             "placeholder": ""
         }
@@ -419,5 +442,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1642423276
+    "modified": 1681815408
 }

@@ -2,11 +2,11 @@
 	max-width: var(--container-small);
 	margin-right: auto;
 	margin-left: auto;
-	padding: var(--spacing-l) var(--spacing);
+	padding: var(--spacing-xl) var(--spacing);
 	text-align: center;
 
 	&--title {
-		color: var(--color-quaternary);
+		color: var(--color-quaternary-light);
 		font-weight: var(--font-weight-bold);
 	}
 	.lead {

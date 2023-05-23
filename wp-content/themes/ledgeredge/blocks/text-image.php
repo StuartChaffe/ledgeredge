@@ -9,8 +9,9 @@ $bkgimage = get_field('bkg-image');
 $text = get_field('text-image-text');
 $image = get_field('image');
 ?>
+<section class="text-image--container <?php if ( $bkg ) { ?><?php echo $bkg ?><?php } ?>">
 <div class="container--large">
-<section class="text-image <?php if ( $bkg ) { ?><?php echo $bkg ?><?php } ?><?php if ( $bkgimage ) { ?>bkg__image<?php } ?><?php if ( $blocks == 'text-image__single' ) { ?> fade text-image__single<?php } ?>" <?php if ( $bkgimage ) { ?>style="background-image:url(<?php echo $bkgimage['url'] ?>);"<?php } ?>>
+<div class="text-image <?php if ( $bkgimage ) { ?>bkg__image<?php } ?><?php if ( $blocks == 'text-image__single' ) { ?> fade text-image__single<?php } ?>" <?php if ( $bkgimage ) { ?>style="background-image:url(<?php echo $bkgimage['url'] ?>);"<?php } ?>>
 <?php if ( $blocks == 'text-image__single' ) { ?>
 	<div class="text-image--text text-image__single--text">
 		<?php echo $text ?>
@@ -30,7 +31,7 @@ $image = get_field('image');
 			$text = get_sub_field('text-image-text');
 			$image = get_sub_field('text-image-image');
 		?>
-		<div class="text-image__double fade <?php echo $bkg ?> <?php if ( $image ) { ?>text-image--text__half<?php } ?>">
+		<div class="text-image__double fade <?php if ( $image ) { ?>text-image--text__half<?php } ?>">
 			<div class="text-image--text text-image__double--text">
 				<?php echo $text ?>
 
@@ -55,5 +56,6 @@ $image = get_field('image');
 		<?php endwhile; ?>
 	<?php endif; ?>
 <?php } ?>
-</section>
 </div>
+</div>
+</section>

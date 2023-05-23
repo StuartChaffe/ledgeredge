@@ -7,20 +7,22 @@ $button = get_field('timeline_button');
 ?>
 
 <section class="text-icon" id="texticon">
-	<div class="text-icon-line">&nbsp;</div>
 	<?php if( have_rows('items') ): ?>
 		<?php while( have_rows('items') ): the_row();
+			$year = get_sub_field('text_icon_year');
 			$content = get_sub_field('text_icon_content');
 			$image = get_sub_field('text_icon_image');
 		?>
 		<div class="text-icon-item fade">
-			<?php if ($image) { ?>
-			<div class="text-icon-item--image">
-				<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
-			</div>
-			<?php } ?>
-			<div class="text-icon-item--content" <?php if (!$image) { ?> style="margin-top: 50px"<?php } ?>>
-				<?php echo $content; ?>
+			<div class="text-icon-item--container">
+				<?php if ($image) { ?>
+				<div class="text-icon-item--image">
+					<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+				</div>
+				<?php } ?>
+				<div class="text-icon-item--content" <?php if (!$image) { ?> style="margin-top: 50px"<?php } ?>>
+					<?php echo $content; ?>
+				</div>
 			</div>
 		</div>
 		<?php endwhile; ?>

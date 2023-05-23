@@ -38,6 +38,27 @@ function ledgeredge_acf_blocks() {
 			'keywords'			=> array( 'carousel' ),
 		));
 		acf_register_block(array(
+			'name'				=> 'cols',
+			'title'				=> __('Columns'),
+			'description'		=> __('Add a columns block'),
+			'render_callback'	=> 'ledgeredge_acf_block_render_callback',
+			'category'			=> 'ledgeredge-blocks',
+			'icon'				=> 'columns',
+			'align' 			=> 'wide',
+			'mode' => 'auto',
+			'keywords'			=> array( 'columns' ),
+		));
+		acf_register_block(array(
+			'name'				=> 'connect',
+			'title'				=> __('Connect'),
+			'description'		=> __('Add a connect block'),
+			'render_callback'	=> 'ledgeredge_acf_block_render_callback',
+			'category'			=> 'ledgeredge-blocks',
+			'icon'				=> 'megaphone',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'connect' ),
+		));
+		acf_register_block(array(
 			'name'				=> 'content',
 			'title'				=> __('Content'),
 			'description'		=> __('Add a content block'),
@@ -89,6 +110,16 @@ function ledgeredge_acf_blocks() {
 			'keywords'			=> array( 'images, image' )
 		));
 		acf_register_block(array(
+			'name'				=> 'video',
+			'title'				=> __('Video'),
+			'description'		=> __('Add a video block'),
+			'render_callback'	=> 'ledgeredge_acf_block_render_callback',
+			'category'			=> 'ledgeredge-blocks',
+			'icon'				=> 'format-gallery',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'video' )
+		));
+		acf_register_block(array(
 			'name'				=> 'posts',
 			'title'				=> __('Posts'),
 			'description'		=> __('Add all posts'),
@@ -97,6 +128,16 @@ function ledgeredge_acf_blocks() {
 			'icon'				=> 'calendar-alt',
 			'align' 			=> 'wide',
 			'keywords'			=> array( 'posts, blogs' ),
+		));
+		acf_register_block(array(
+			'name'				=> 'archive',
+			'title'				=> __('Archive posts'),
+			'description'		=> __('Add archive'),
+			'render_callback'	=> 'ledgeredge_acf_block_render_callback',
+			'category'			=> 'ledgeredge-blocks',
+			'icon'				=> 'calendar-alt',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'archive, posts' ),
 		));
 		acf_register_block(array(
 			'name'				=> 'newsletter',
@@ -176,9 +217,12 @@ function ledgeredge_allowed_block_types( $allowed_blocks ) {
 	return array(
 		// 'acf/accordion',
 		// 'acf/awards',
+		'acf/archive',
 		'acf/banner',
 		// 'acf/careers',
 		'acf/carousel',
+		'acf/cols',
+		'acf/connect',
 		'acf/content',
 		// 'acf/cta',
 		// 'acf/download',
@@ -198,7 +242,7 @@ function ledgeredge_allowed_block_types( $allowed_blocks ) {
 		'acf/testimonial',
 		'acf/text-icon',
 		'acf/text-image',
-		// 'acf/video'
+		'acf/video'
 	);
  
 }
