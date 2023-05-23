@@ -938,7 +938,6 @@ article .content {
 .content {
   display: flex;
   flex-direction: column;
-  align-items: center;
   max-width: var(--container-small);
   margin-right: auto;
   margin-left: auto;
