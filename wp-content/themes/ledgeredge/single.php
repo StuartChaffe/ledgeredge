@@ -10,15 +10,13 @@
 	$hide = get_field('hide_featured');
 ?>
 
-	<section class="fade bkg__darkblue">
-		<div class="banner banner__small container">
+
+	<section class="fade bkg__lightblue">
+		<div class="banner banner__small">
 			<div class="banner--content fade fade--delay__2">
-				<p>News</p>
-				<h2>See who's talking about LedgerEdge</h2>
+				<h1>See who's talking about LedgerEdge</h1>
 			</div>
-			<div class="banner--image fade fade--delay__3" style="background-image: url('<?php echo get_template_directory_uri(); ?>/src/images/news-banner.png')">
-				<img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/src/images/news-banner.png" alt="News banner image" />
-			</div>
+		
 		</div>
 	</section>
 	<div class="container">
