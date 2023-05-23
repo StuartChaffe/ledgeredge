@@ -16,8 +16,8 @@
 			<div class="banner--content fade fade--delay__2">
 				<h1>See who's talking about LedgerEdge</h1>
 			</div>
-			<div class="hide banner--image fade fade--delay__3" style="background-image: url('<?php echo get_template_directory_uri(); ?>/src/images/news-banner.png')">
-				<img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/src/images/news-banner.png" alt="News banner image" />
+			<div class="banner--image fade fade--delay__3" style="background-image: url('<?php echo get_template_directory_uri(); ?>/src/images/news-banner.svg')">
+				<img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/src/images/news-banner.svg" alt="News banner image" />
 			</div>
 		</div>
 	</section>
