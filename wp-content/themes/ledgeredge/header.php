@@ -48,6 +48,7 @@
 <!-- Start of HubSpot Embed Code -->
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7922763.js"></script>
 <!-- End of HubSpot Embed Code -->
+<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61efc85078230d14"></script>
 </head>
 <body <?php body_class(); ?>>
 <div class="global-container">
