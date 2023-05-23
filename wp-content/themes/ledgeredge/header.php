@@ -50,6 +50,7 @@
 <!-- End of HubSpot Embed Code -->
 </head>
 <body <?php body_class(); ?>>
+<div class="global-container">
 <div id="svg-sprite" style="height: 0; width: 0; position: absolute; visibility: hidden">
 <?php include get_theme_file_path('assets/svg/sprite.php'); ?>
 </div>
